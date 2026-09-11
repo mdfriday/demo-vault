@@ -1,7 +1,0 @@
-{{- /* [CAP:toc] → see caps/toc/manifest.json */ -}}
-{{- if and .Params.toc (gt (len .TableOfContents) 100) -}}
-<nav class="toc" aria-label="Table of Contents">
-  <h3>On this page</h3>
-  {{ .TableOfContents }}
-</nav>
-{{- end -}}

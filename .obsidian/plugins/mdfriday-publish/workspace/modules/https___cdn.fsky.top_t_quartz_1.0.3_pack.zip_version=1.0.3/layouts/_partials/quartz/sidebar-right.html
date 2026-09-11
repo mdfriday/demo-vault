@@ -1,9 +1,0 @@
-{{/* layouts/_partials/quartz/sidebar-right.html — Quartz right sidebar (SKILL §Scenario F-B)
-     Contains: graph visualization, table of contents, backlinks.
-     Graph: quartz/graph.html (Quartz legacy UI + data-cfg); rendered by Base caps/graph/graph.js. */}}
-{{- if .Site.Params.graph -}}
-{{- partial "quartz/graph.html" . -}}
-{{- end -}}
-{{- partial "quartz/toc.html" . -}}
-{{- partial "quartz/backlinks.html" . -}}
-

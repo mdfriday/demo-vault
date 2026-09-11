@@ -1,9 +1,0 @@
-{{- $date := .Date -}}
-{{- $format := default "Jan 2, 2006" .Format -}}
-
-{{- if $date -}}
-<time datetime="{{ time.Format "2006-01-02" $date }}">
-    {{ time.Format $format $date }}
-</time>
-{{- end -}}
-

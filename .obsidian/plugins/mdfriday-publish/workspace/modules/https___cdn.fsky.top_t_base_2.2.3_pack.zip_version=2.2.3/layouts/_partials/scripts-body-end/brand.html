@@ -1,5 +1,0 @@
-{{- /* Brand Capability（由 Site.Params.branding 控制，仅生产环境）*/}}
-{{- if and .Site.Params.branding hugo.IsProduction -}}
-  {{- partial "mdf-brand.html" . -}}
-{{- end -}}
-

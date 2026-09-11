@@ -1,6 +1,0 @@
-{{ define "header" }}{{/* intentionally empty — Quartz 3-column layout rendered in define "main" */}}{{ end }}
-{{ define "footer" }}{{/* intentionally empty — Quartz footer is inside #quartz-body */}}{{ end }}
-{{ define "main" }}
-{{- $shell := partial "quartz/page-shell-list.html" . -}}
-{{- partial "encrypt-content.html" (dict "Page" . "HTML" $shell) -}}
-{{ end }}

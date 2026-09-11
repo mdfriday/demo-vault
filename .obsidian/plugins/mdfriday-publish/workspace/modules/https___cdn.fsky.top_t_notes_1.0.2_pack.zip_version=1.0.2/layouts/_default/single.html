@@ -1,5 +1,0 @@
-{{/* layouts/_default/single.html — Note theme single page */}}
-{{ define "main" }}
-{{- $shell := partial "notes/main-shell.html" . -}}
-{{- partial "encrypt-content.html" (dict "Page" . "HTML" $shell) -}}
-{{ end }}

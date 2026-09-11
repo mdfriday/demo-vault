@@ -1,8 +1,0 @@
-name = "Foundry Base V2"
-license = "MIT"
-description = "Standard base theme following BASE-THEME-LAYOUT-GUIDE.md"
-homepage = "https://test.local"
-
-[author]
-  name = "Test"
-

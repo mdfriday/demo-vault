@@ -1,6 +1,0 @@
-{{- /* [CAP:comments] → see caps/comments/manifest.json */ -}}
-{{- if .Params.comments -}}
-  {{- if .Site.Params.disqus -}}
-    {{- partial "disqus.html" . -}}
-  {{- end -}}
-{{- end -}}

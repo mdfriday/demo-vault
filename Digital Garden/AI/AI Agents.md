@@ -25,7 +25,7 @@ An agent is a loop with tools: observe → decide → act → check. The hard pa
 - Better instructions → [[Prompt Engineering]]
 - Better tools → [[MCP]]
 - Better coding partner → [[Claude Code]]
-- Why ship thin → [[AI Product Development]]
+- Why ship thin → [[Share exactly what you see in Obsidian]]
 
 $$
 \text{Useful autonomy} \approx \frac{\text{clear goal} \times \text{safe tools}}{\text{open-endedness}}

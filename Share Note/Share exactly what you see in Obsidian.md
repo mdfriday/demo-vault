@@ -109,25 +109,6 @@ For early AI products, track **time saved per session** before you track ROI. Us
 ## AI History
 ```timeline
 [line-3, body-2]
-+ 1950s</br> The beginning
-+ Artificial Intelligence
-+ In 1950, Alan Turing introduced the idea of machines that could think. In 1956, the term "Artificial Intelligence" was coined at the Dartmouth Conference, marking the birth of AI as a field.
-
-+ 1960s–1980s</br> Early AI
-+ Rules and Expert Systems
-+ Early AI relied on symbolic reasoning, rules, and expert systems. These systems could solve specific problems but struggled with uncertainty and real-world complexity.
-
-+ 1990s–2010s</br> Machine Learning
-+ Learning from Data
-+ AI shifted from hand-written rules to machine learning. With more data and computing power, systems became increasingly capable of recognizing patterns, making predictions, and understanding language.
-
-+ 2012</br> Deep Learning
-+ Neural Networks
-+ Deep learning transformed AI. Large neural networks trained on massive datasets achieved breakthroughs in image recognition, speech, and natural language processing.
-
-+ 2017</br> Transformers
-+ A New Architecture
-+ The Transformer architecture introduced a powerful way to process language in parallel. It became the foundation for modern large language models and generative AI.
 
 + 2022</br> Generative AI
 + AI Goes Mainstream

@@ -13,7 +13,7 @@ A second brain is not a second inbox. It is a place where **ideas become reusabl
 
 1. Capture fast (don’t format yet)
 2. Organize by how you’ll reuse it
-3. Express as notes you’d be proud to [[AI Product Development|publish]]
+3. Express as notes you’d be proud to [[Share exactly what you see in Obsidian|publish]]
 
 > [!tip]
 > If a note never gets linked, it isn’t in the brain yet — it’s in storage. Start with [[Knowledge Management]].

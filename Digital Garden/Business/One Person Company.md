@@ -34,5 +34,5 @@ A one-person company is not “do everything alone forever.” It is **own the c
 ## See also
 
 - [[Audience Building]]
-- [[AI Product Development]]
+- [[Share exactly what you see in Obsidian]]
 - [[Knowledge Management]]

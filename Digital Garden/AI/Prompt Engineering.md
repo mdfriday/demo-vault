@@ -39,4 +39,4 @@ Once a prompt is reused daily, promote it:
 - [[Claude Code]]
 - [[AI Agents]]
 - [[MCP]]
-- [[AI Product Development]]
+- [[Share exactly what you see in Obsidian]]

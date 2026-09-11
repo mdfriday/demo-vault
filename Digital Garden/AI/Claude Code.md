@@ -23,7 +23,7 @@ Claude Code is leverage for people who already know what “done” looks like. 
 
 Keep architecture notes in Obsidian. Link decisions here so future-you (and future agents) can find them:
 
-- Product wedge → [[AI Product Development]]
+- Product wedge → [[Share exactly what you see in Obsidian]]
 - Tooling surface → [[MCP]]
 - Autonomy boundary → [[AI Agents]]
 

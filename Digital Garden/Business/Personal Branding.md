@@ -31,4 +31,4 @@ Personal brand is the *promise* people remember when your name shows up. For bui
 
 - [[One Person Company]]
 - [[Digital Garden]]
-- [[AI Product Development]]
+- [[Share exactly what you see in Obsidian]]

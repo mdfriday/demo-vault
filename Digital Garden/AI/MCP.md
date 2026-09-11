@@ -44,5 +44,5 @@ Related thinking: [[AI Agents]], [[Prompt Engineering]], [[Claude Code]].
 ## See also
 
 - [[AI Agents]]
-- [[AI Product Development]]
+- [[Share exactly what you see in Obsidian]]
 - [[One Person Company]]

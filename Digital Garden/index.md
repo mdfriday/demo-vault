@@ -7,6 +7,8 @@ tags:
 
 # Digital Garden
 
+> Turn a folder into a digital garden
+
 Welcome — this folder is a small, living map of how I think about AI, building in public, and personal knowledge.
 
 This is the page you’d open after **Publish Folder**. From here you can wander by topic, search, or open the graph.
@@ -50,7 +52,7 @@ mindmap
 
 ## Featured note for demos
 
-For single-note publishing and theme comparisons, use [[AI Product Development]] in `Share Note`.
+For single-note publishing and theme comparisons, use [[Share exactly what you see in Obsidian]] in `Share Note`.
 
 ## See also
 

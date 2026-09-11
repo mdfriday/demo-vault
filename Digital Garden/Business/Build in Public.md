@@ -22,7 +22,7 @@ Building in public is a distribution habit, not a personality type. Share **prog
 
 - Weekly: one artifact (note, clip, changelog)
 - Monthly: one deeper essay in the [[Digital Garden]]
-- Always: link back to a living note like [[AI Product Development]]
+- Always: link back to a living note like [[Share exactly what you see in Obsidian]]
 
 ```mermaid
 flowchart LR

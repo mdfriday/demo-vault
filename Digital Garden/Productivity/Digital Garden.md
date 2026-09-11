@@ -35,7 +35,7 @@ flowchart TD
 |--|--------------|----------------|
 | Unit | One URL | Many linked pages |
 | Best for | Essays, announcements | Docs, courses, PKM |
-| Demo note | [[AI Product Development]] | This folder |
+| Demo note | [[Share exactly what you see in Obsidian]] | This folder |
 
 ## See also
 

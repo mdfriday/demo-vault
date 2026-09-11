@@ -1,0 +1,69 @@
+# 导航
+- id: nav.home
+  translation: "首页"
+- id: nav.back
+  translation: "返回"
+
+# 组件
+- id: toc.title
+  translation: "目录"
+- id: tags.title
+  translation: "标签"
+- id: recent.title
+  translation: "最近笔记"
+- id: page_title.home
+  translation: "首页"
+- id: explorer.title
+  translation: "文件浏览器"
+- id: explorer.toggle
+  translation: "切换文件浏览器"
+
+# 元数据
+- id: meta.reading_time
+  translation: "分钟阅读"
+- id: meta.words
+  translation: "字"
+- id: meta.published
+  translation: "发布于"
+- id: meta.modified
+  translation: "最后修改"
+
+# 占位符（即将推出的功能）
+- id: search.placeholder
+  translation: "搜索内容..."
+- id: search.title
+  translation: "搜索"
+
+# 关系图谱
+- id: graph.title
+  translation: "关系图谱"
+- id: graph.globalLabel
+  translation: "全局图谱"
+
+# 反向链接
+- id: backlinks.title
+  translation: "反向链接"
+- id: backlinks.noBacklinksFound
+  translation: "无法找到反向链接"
+
+# 文件夹/列表页
+- id: list.itemsUnderFolder
+  translation: "项目在此文件夹下"
+- id: list.itemsUnderFolderPlural
+  translation: "项目在此文件夹下"
+
+# 分类页
+- id: taxonomy.itemsWithTag
+  translation: "{{ .count }} 项标记为 #{{ .tag }}"
+- id: taxonomy.allTagsDescription
+  translation: "站点中使用的所有标签"
+
+# 页脚
+- id: footer.built_with
+  translation: "构建于"
+
+
+# 阅读模式
+- id: readermode.title
+  translation: "阅读模式"
+

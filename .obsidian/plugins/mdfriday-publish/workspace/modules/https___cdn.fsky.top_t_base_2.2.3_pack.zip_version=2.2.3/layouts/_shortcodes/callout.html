@@ -1,0 +1,33 @@
+{{- /*
+  layouts/_shortcodes/callout.html
+  CAP-03: Callout / alert block shortcode.
+
+  Usage:
+    {{< callout type="note" >}}Basic note{{< /callout >}}
+    {{< callout type="warning" title="Watch out" >}}With title{{< /callout >}}
+    {{< callout type="tip" title="Tip" fold="open" >}}Collapsible{{< /callout >}}
+
+  Params:
+    type  — note | info | warning | error | tip | success  (default: note)
+    title — optional heading string
+    fold  — "open" to render as open <details>; omit for non-collapsible
+
+  CSS: static/caps/callout/callout.css (always loaded by base; sub-theme can override)
+*/ -}}
+{{- $type  := .Get "type"  | default "note" -}}
+{{- $title := .Get "title" -}}
+{{- $fold  := .Get "fold"  -}}
+{{- if $fold -}}
+<details class="mdf-callout mdf-callout-{{ $type }}"{{ if eq $fold "open" }} open{{ end }}>
+  <summary class="mdf-callout__title">{{ $title | default ($type | title) }}</summary>
+  <div class="mdf-callout__body">{{ .Inner | safeHTML }}</div>
+</details>
+{{- else -}}
+<div class="mdf-callout mdf-callout-{{ $type }}" role="note">
+  {{- if $title -}}
+  <div class="mdf-callout__title">{{ $title }}</div>
+  {{- end -}}
+  <div class="mdf-callout__body">{{ .Inner | safeHTML }}</div>
+</div>
+{{- end -}}
+

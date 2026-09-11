@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}" data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>404 — {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="{{ partial "asset" "css/quartz.css" }}">
+    <link rel="stylesheet" href="{{ partial "asset" "css/callout.css" }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400;1,600&display=swap">
+    <script>
+    (function() {
+        var saved = localStorage.getItem('mdf-theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = saved || (prefersDark ? 'dark' : 'light');
+    })();
+    </script>
+</head>
+<body>
+    <div class="page">
+        <div id="quartz-body">
+            <article class="center">
+                <h1>404 — Page Not Found</h1>
+                <p>The page you're looking for doesn't exist.</p>
+                <p><a href="{{ .Site.Home.RelPermalink }}">← {{ i18n "nav.home" | default "Home" }}</a></p>
+            </article>
+        </div>
+    </div>
+</body>
+</html>
+

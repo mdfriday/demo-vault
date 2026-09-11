@@ -1,0 +1,20 @@
+{
+  "id": "ai-product-development-mtw8yzbq",
+  "name": "AI Product Development",
+  "type": "site",
+  "createdAt": 1789088284506,
+  "updatedAt": 1789089453372,
+  "workspaceId": "workspace-1789088259151-pwqqkkbps",
+  "fileLink": {
+    "sourcePath": "/Users/weisun/github/mdfriday/workspace/demo-vault/Share Note/AI Product Development.md",
+    "targetPath": "/Users/weisun/github/mdfriday/workspace/demo-vault/.obsidian/plugins/mdfriday-publish/workspace/projects/AI Product Development/content/index.md",
+    "isSymlink": true
+  },
+  "cloudflare": {
+    "cloudflareProjectId": "p_de61f362ec1c710b3c26fd9da08eae73",
+    "hostingMode": "share",
+    "boundAt": 1789089416550,
+    "siteId": "IlEBaN",
+    "publicBaseUrl": "https://share.fsky.top"
+  }
+}

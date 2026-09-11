@@ -1,0 +1,36 @@
+{{- /*
+  layouts/_partials/breadcrumbs.html
+  CAP-07: Breadcrumb navigation (conditional).
+
+  Activation:
+    Global:  [params] breadcrumbs = true  in config.toml
+    Per-page: breadcrumbs: false          in front-matter to disable
+
+  Placement: call at top of single.html define "main", or via slot-before-main block.
+
+  CSS class: .mdf-breadcrumbs — override in sub-theme main.css.
+
+  v2.2: baseURL-aware — strips deploy prefix (e.g. /subfolder/) from path segments.
+*/ -}}
+{{- if and (not .IsHome) (.Params.breadcrumbs | default .Site.Params.breadcrumbs) -}}
+{{- $baseURL := .Site.BaseURL | default "/" -}}
+{{- $baseURLPath := "" -}}
+{{- if ne $baseURL "/" -}}
+  {{- $u := urls.Parse $baseURL -}}
+  {{- $baseURLPath = $u.Path | strings.TrimPrefix "/" | strings.TrimSuffix "/" -}}
+{{- end -}}
+<nav class="mdf-breadcrumbs" aria-label="{{ i18n "breadcrumbs.label" | default "Breadcrumb" }}">
+  <a href="{{ .Site.Home.RelPermalink }}" class="mdf-breadcrumbs__item">{{ .Site.Title }}</a>
+  <span class="mdf-breadcrumbs__separator" aria-hidden="true">›</span>
+  {{- range .Ancestors.Reverse -}}
+  {{- if not .IsHome -}}
+  {{- $title := .Title -}}
+  {{- $url := .RelPermalink -}}
+  <a href="{{ $url }}" class="mdf-breadcrumbs__item">{{ $title }}</a>
+  <span class="mdf-breadcrumbs__separator" aria-hidden="true">›</span>
+  {{- end -}}
+  {{- end -}}
+  <span class="mdf-breadcrumbs__item mdf-breadcrumbs__current" aria-current="page">{{ .Title }}</span>
+</nav>
+{{- end -}}
+

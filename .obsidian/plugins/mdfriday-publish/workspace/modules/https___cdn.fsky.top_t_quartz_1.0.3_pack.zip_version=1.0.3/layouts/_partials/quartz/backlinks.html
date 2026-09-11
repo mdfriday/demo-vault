@@ -1,0 +1,41 @@
+{{/* 
+  Backlinks Component - Shows pages that link to the current page
+  Based on Quartz Backlinks.tsx
+  Source: quartz-src/quartz/components/Backlinks.tsx
+  
+  Title Fallback Strategy (following Quartz fileTrie.ts displayName logic):
+  1. Page.Title (frontmatter title)
+  2. Page.File.OriginalFileName (original filename without extension, preserves case and spaces)
+  
+  This ensures consistency with Explorer component and provides readable display names.
+*/}}
+
+{{- $backlinks := .Backlinks -}}
+{{- $hideWhenEmpty := true -}}
+{{- with .Site.Params.backlinks -}}
+    {{- $hideWhenEmpty = .hideWhenEmpty | default true -}}
+{{- end -}}
+
+{{- if or (not $hideWhenEmpty) (gt (len $backlinks) 0) -}}
+<div class="backlinks">
+    <h3>{{ i18n "backlinks.title" | default "Backlinks" }}</h3>
+    <ul class="overflow">
+        {{- if gt (len $backlinks) 0 -}}
+            {{- range $backlinks -}}
+            {{- $displayTitle := .Title -}}
+            {{- if not $displayTitle -}}
+                {{- $displayTitle = .File.OriginalBaseName -}}
+            {{- end -}}
+            <li>
+                <a href="{{ .RelPermalink }}" class="internal">
+                    {{ $displayTitle }}
+                </a>
+            </li>
+            {{- end -}}
+        {{- else -}}
+            <li>{{ i18n "backlinks.noBacklinksFound" | default "No backlinks found" }}</li>
+        {{- end -}}
+    </ul>
+</div>
+{{- end -}}
+

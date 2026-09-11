@@ -1,0 +1,26 @@
+{{- /*
+  layouts/_shortcodes/gallery.html
+  CAP-08: PhotoSwipe lightbox gallery.
+
+  Usage:
+    {{< gallery class="my-gallery" >}}
+      <img src="photo1.jpg" alt="Photo 1">
+      <img src="photo2.jpg" alt="Photo 2">
+    {{< /gallery >}}
+
+  Param:
+    class — additional CSS class on the gallery wrapper (optional)
+
+  Assets loaded lazily via Scratch (only on pages that use the gallery):
+    static/caps/gallery/photoswipe.umd.min.js
+    static/caps/gallery/photoswipe.min.css
+    static/caps/gallery/gallery-init.js
+*/ -}}
+{{- if not (.Page.Scratch.Get "mdf-gallery") -}}
+<link rel="stylesheet" href="{{ partial "base-asset" "caps/gallery/photoswipe.min.css" }}">
+<script defer src="{{ partial "base-asset" "caps/gallery/photoswipe.umd.min.js" }}"></script>
+<script defer src="{{ partial "base-asset" "caps/gallery/gallery-init.js" }}"></script>
+{{- .Page.Scratch.Set "mdf-gallery" true -}}
+{{- end -}}
+<div class="mdf-gallery {{ .Get "class" }}">{{ .Inner | safeHTML }}</div>
+

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://mdfriday.com/schemas/capability-manifest/v1",
+  "name": "vimeo",
+  "version": "1.0.0",
+  "type": "shortcode",
+  "description": "Embed Vimeo videos with responsive 16:9 container.",
+  "entry": "shortcode:vimeo",
+  "config": {
+    "scope": "shortcode",
+    "params": [
+      { "key": "id", "in": "shortcode-param", "type": "string", "required": true, "description": "Vimeo video ID (from the URL)", "example": "123456789" },
+      { "key": "title", "in": "shortcode-param", "type": "string", "required": false, "default": "Vimeo Video" }
+    ],
+    "usage": "{{< vimeo id=\"123456789\" >}}"
+  },
+  "assets": { "css": null, "js": [], "future_lazy_load": false, "size_impact": "~0KB local" },
+  "locked": { "html_ids": [], "html_data_attrs": [], "js_files": [], "reason": "No locked elements" },
+  "child_override": {
+    "css": null,
+    "css_in_main": { "classes": [".mdf-video-wrapper", ".vimeo-wrapper"] },
+    "partials": [{ "file": "layouts/_shortcodes/vimeo.html", "level": "safe" }]
+  }
+}
+

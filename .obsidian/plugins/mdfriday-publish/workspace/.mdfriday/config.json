@@ -1,0 +1,8 @@
+{
+  "site": {
+    "downloadServer": "global"
+  },
+  "publish": {
+    "method": "cloudflare"
+  }
+}

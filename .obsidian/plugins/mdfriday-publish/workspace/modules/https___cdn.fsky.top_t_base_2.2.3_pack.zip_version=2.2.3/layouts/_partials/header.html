@@ -1,0 +1,10 @@
+{{/* _partials/header.html — 页头组合入口，子主题不覆盖；覆盖 header/ 下的子 partial */}}
+{{- partial "header/alert.html" . -}}
+<header class="site-header">
+  {{- partial "header/logo.html" . -}}
+  {{- partial "header/nav.html" . -}}
+  {{- partial "header/lang-switch.html" . -}}
+  {{- partial "header/theme-toggle.html" . -}}
+  {{- partial "header/extra.html" . -}}
+</header>
+

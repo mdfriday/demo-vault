@@ -1,0 +1,25 @@
+{{- /*
+  layouts/_partials/base-url-path.html
+  Path prefix of .Site.BaseURL, no leading/trailing slash.
+
+  Contract (arch/03): baseURL is always a root-relative path — never scheme/host.
+    /              → ""
+    /demo/quartz/  → demo/quartz
+    /s/a7x9Q2/     → s/a7x9Q2
+
+  Absolute URLs are stripped if present (legacy share / Foundry RelPermalink
+  when someone passed https://… as baseURL). Do not rely on that input.
+*/ -}}
+{{- $raw := .Site.BaseURL | default "/" -}}
+{{- $path := $raw -}}
+{{- if or (strings.HasPrefix $raw "https://") (strings.HasPrefix $raw "http://") -}}
+  {{- $rest := $raw | strings.TrimPrefix "https://" | strings.TrimPrefix "http://" -}}
+  {{- $segs := split $rest "/" -}}
+  {{- $path = "" -}}
+  {{- range $i, $s := $segs -}}
+    {{- if gt $i 0 -}}
+      {{- $path = printf "%s/%s" $path $s -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return ($path | strings.TrimPrefix "/" | strings.TrimSuffix "/") -}}

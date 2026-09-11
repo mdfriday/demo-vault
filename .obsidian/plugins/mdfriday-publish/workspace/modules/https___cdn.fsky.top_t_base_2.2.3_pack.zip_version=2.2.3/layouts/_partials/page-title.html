@@ -1,0 +1,25 @@
+{{- /*
+  layouts/_partials/page-title.html
+  Standard display title for a Hugo page (Base v2.2+).
+  Used by search-data.html for Explorer, Graph, and Search labels.
+
+  Fallback order matches legacy Quartz title.html:
+    LinkTitle → Title → section dir / file name → RelPermalink segment
+
+  Sub-themes may override for family-specific title rules.
+*/ -}}
+{{- $title := "" -}}
+
+{{- if .LinkTitle -}}
+  {{- $title = .LinkTitle -}}
+{{- else if .Title -}}
+  {{- $title = .Title -}}
+{{- else if and .IsSection .File -}}
+  {{- $title = path.Base .File.Dir | humanize | title -}}
+{{- else if and .IsPage .File -}}
+  {{- $title = .File.BaseFileName | humanize | title -}}
+{{- else if .RelPermalink -}}
+  {{- $title = .RelPermalink | strings.TrimSuffix "/" | path.Base | humanize | title -}}
+{{- end -}}
+
+{{- return $title -}}

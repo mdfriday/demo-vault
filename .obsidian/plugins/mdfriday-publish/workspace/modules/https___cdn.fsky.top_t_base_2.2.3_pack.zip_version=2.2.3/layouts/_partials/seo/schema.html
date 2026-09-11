@@ -1,0 +1,23 @@
+{{- if .IsHome -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}"
+}
+</script>
+{{- else if .IsPage -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "url": "{{ .Permalink }}"
+  {{- with .Date -}},
+  "datePublished": "{{ . | time.Format "2006-01-02" }}"
+  {{- end -}}
+}
+</script>
+{{- end -}}
+

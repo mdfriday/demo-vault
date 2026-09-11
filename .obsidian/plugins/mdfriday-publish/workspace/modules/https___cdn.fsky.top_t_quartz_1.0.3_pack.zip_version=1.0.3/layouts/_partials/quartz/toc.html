@@ -1,0 +1,40 @@
+{{- $enableToc := true -}}
+{{- if isset .Params "toc" -}}
+  {{- $enableToc = .Params.toc -}}
+{{- end -}}
+
+{{- if $enableToc -}}
+{{- $toc := .TableOfContents -}}
+{{- if $toc -}}
+<div class="toc desktop-only">
+    <button type="button" 
+            class="toc-header" 
+            aria-controls="toc-content"
+            aria-expanded="true">
+        <h3>{{ i18n "toc.title" | default "Table of Contents" }}</h3>
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="fold">
+            <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+    </button>
+    <div id="toc-content" class="toc-content">
+        <!-- Quartz 源码: OverflowList 使用 ul.overflow 包装 -->
+        <ul class="overflow" id="toc-list">
+            {{ $toc }}
+            <!-- Quartz 源码: overflow-end 用于 IntersectionObserver 检测滚动底部 -->
+            <li class="overflow-end"></li>
+        </ul>
+    </div>
+</div>
+{{- end -}}
+{{- end -}}
+

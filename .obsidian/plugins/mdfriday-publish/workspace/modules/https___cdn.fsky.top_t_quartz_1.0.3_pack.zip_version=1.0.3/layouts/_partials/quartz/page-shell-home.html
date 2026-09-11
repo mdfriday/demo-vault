@@ -1,0 +1,34 @@
+{{- /* Quartz home shell */ -}}
+<div class="page">
+    <div id="quartz-body">
+        <aside class="sidebar left">
+            {{- partial "quartz/sidebar-left.html" . -}}
+        </aside>
+        <div class="center">
+            <div class="page-header">
+                <div class="popover-hint">
+                    {{- if not .IsHome -}}
+                    {{- partial "quartz/breadcrumbs.html" . -}}
+                    {{- end -}}
+                </div>
+            </div>
+            <article class="popover-hint">
+                {{- if .Title -}}
+                <header class="article-header">
+                    {{- partial "quartz/article-title.html" . -}}
+                    {{- partial "quartz/content-meta.html" . -}}
+                    {{- partial "quartz/tag-list.html" . -}}
+                </header>
+                {{- end -}}
+                {{- with .WikilinkContent -}}
+                <div class="article-content">{{ . }}</div>
+                {{- end -}}
+                {{- partial "quartz/recent-notes.html" . -}}
+            </article>
+        </div>
+        <aside class="sidebar right">
+            {{- partial "quartz/sidebar-right.html" . -}}
+        </aside>
+        {{- partial "quartz/footer-content.html" . -}}
+    </div>
+</div>

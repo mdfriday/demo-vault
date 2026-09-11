@@ -1,0 +1,8 @@
+{{- /* [CAP:instagram] → see caps/instagram/manifest.json */ -}}
+{{- $id := .Get "id" -}}
+<blockquote class="instagram-media"
+  data-instgrm-permalink="https://www.instagram.com/p/{{ $id }}/"
+  data-instgrm-version="14">
+  <a href="https://www.instagram.com/p/{{ $id }}/">View on Instagram</a>
+</blockquote>
+<script async src="//www.instagram.com/embed.js"></script>

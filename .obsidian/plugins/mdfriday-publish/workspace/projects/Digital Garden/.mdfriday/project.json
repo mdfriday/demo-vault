@@ -1,0 +1,15 @@
+{
+  "id": "digital-garden-mtwa11qf",
+  "name": "Digital Garden",
+  "type": "site",
+  "createdAt": 1789090060553,
+  "updatedAt": 1789090060553,
+  "workspaceId": "workspace-1789088259151-pwqqkkbps",
+  "contentLinks": [
+    {
+      "sourcePath": "/Users/weisun/github/mdfriday/workspace/demo-vault/Digital Garden",
+      "languageCode": "en",
+      "weight": 0
+    }
+  ]
+}

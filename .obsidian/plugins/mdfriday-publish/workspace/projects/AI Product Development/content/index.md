@@ -1,0 +1,1 @@
+/Users/weisun/github/mdfriday/workspace/demo-vault/Share Note/AI Product Development.md

@@ -1,0 +1,10 @@
+{{- /* [CAP:mdf-brand] → see caps/mdf-brand/manifest.json */ -}}
+{{- if .Site.Params.branding -}}
+<link rel="stylesheet" href="{{ partial "base-asset" "caps/mdf-brand/style.css" }}">
+<div class="mdfriday-brand">
+  <a href="https://mdfriday.com" target="_blank" rel="noopener noreferrer"
+     title="Built with MDFriday">
+    Built with MDFriday ❤️
+  </a>
+</div>
+{{- end -}}

@@ -1,0 +1,46 @@
+{
+  "downloadServer": "global",
+  "mdfKey": "MDF_DZqtFaLgP5wjRG_xD5LwlD4sK6q3vPb6",
+  "mdfKeyKind": "user",
+  "mdfKeyPlan": "personal",
+  "mdfStorageBytes": 20210040,
+  "mdfQuotaStorageBytes": 1073741824,
+  "mdfContentExpiresAt": 1791681426094,
+  "mdfProjectCount": 8,
+  "mdfQuotaMaxProjects": null,
+  "mdfQuotaRetentionDays": null,
+  "mdfQuotaMaxCustomDomains": 3,
+  "mdfQuotaFeatures": [
+    "ai",
+    "custom_domain",
+    "rollback",
+    "permanent_retention",
+    "unlimited_projects"
+  ],
+  "mdfAccountEmail": "wsun191@gmail.com",
+  "hasPublishedOnce": true,
+  "pathConfigs": {
+    "Share Note/AI Product Development.md": {
+      "mode": "faithful",
+      "hasPasswordFlag": false,
+      "updatedAt": 1789089453676
+    },
+    "Digital Garden": {
+      "mode": "themed",
+      "themeSlug": "quartz",
+      "hasPasswordFlag": false,
+      "updatedAt": 1789090065006
+    },
+    "Share Note/Markdown Syntax Showcase.md": {
+      "mode": "themed",
+      "themeSlug": "business",
+      "hasPasswordFlag": false,
+      "updatedAt": 1789090736676
+    }
+  },
+  "cloudflareEnv": "staging",
+  "cloudflareResolvedEnv": "staging",
+  "cloudflareApiBaseUrl": "https://api.fsky.top",
+  "cloudflarePublicBaseUrl": "https://share.fsky.top",
+  "cloudflareAccountBaseUrl": "https://fsky.top/account"
+}

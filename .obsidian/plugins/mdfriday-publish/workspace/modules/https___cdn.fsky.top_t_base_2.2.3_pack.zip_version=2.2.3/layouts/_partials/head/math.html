@@ -1,0 +1,22 @@
+{{- /*
+[CAP:math]
+type: global
+entry: partial "head/math.html" .
+trigger: always (Foundry built-in — markdown-it outputs [data-math] elements)
+css: CDN katex.min.css
+js: CDN katex.min.js + static/caps/katex/katex-render.js (locked)
+locked-ids: none
+
+override:
+  ✅ layouts/_partials/head/math.html → 覆盖为空文件可完全禁用（纯展示类主题）
+  ✅ layouts/_partials/head/math.html → 换 URL 可切换 CDN 版本或改用本地文件
+  🔒 static/caps/katex/katex-render.js → 绝对不能修改
+*/ -}}
+<!-- base-math: KaTeX global load — Foundry built-in, always-on -->
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
+      crossorigin="anonymous">
+<script defer
+        src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"
+        crossorigin="anonymous"></script>
+

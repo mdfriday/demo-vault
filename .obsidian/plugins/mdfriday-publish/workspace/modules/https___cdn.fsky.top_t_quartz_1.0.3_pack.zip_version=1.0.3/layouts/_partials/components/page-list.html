@@ -1,0 +1,59 @@
+{{- $pages := .Pages -}}
+{{- if $pages -}}
+<div class="page-listing">
+    {{- if gt (len $pages) 0 -}}
+    <p>
+        {{ len $pages }}&nbsp;
+        {{- if eq (len $pages) 1 -}}
+            {{ i18n "list.itemsUnderFolder" | default "item under this folder" }}
+        {{- else -}}
+            {{ i18n "list.itemsUnderFolderPlural" | default "items under this folder" }}
+        {{- end -}}
+    </p>
+    {{- end -}}
+    
+    <ul class="section-ul">
+        {{- range $pages -}}
+        <li class="section-li">
+            <div class="section">
+                <p class="meta">
+                    <time datetime="{{ .LocalDate }}">
+                        {{ .LocalDate }}
+                    </time>
+                </p>
+
+                <div class="desc">
+                    <h3>
+                        <a href="{{ .RelPermalink }}" class="internal">
+                            {{- $pageTitle := partial "quartz/title" . -}}
+                            {{- if $pageTitle -}}
+                                {{ $pageTitle }}
+                            {{- else -}}
+                                Untitled
+                            {{- end -}}
+                        </a>
+                    </h3>
+                </div>
+                
+                {{- if .Params.tags -}}
+                <ul class="tags">
+                    {{- range .Params.tags -}}
+                    {{- if . -}}
+                    <li>
+                        <a class="internal tag-link" href="{{ printf "/tags/%s/" (. | urlize) }}">
+                            {{ . }}
+                        </a>
+                    </li>
+                    {{- end -}}
+                    {{- end -}}
+                </ul>
+                {{- else -}}
+                <ul class="tags"></ul>
+                {{- end -}}
+            </div>
+        </li>
+        {{- end -}}
+    </ul>
+</div>
+{{- end -}}
+

@@ -1,0 +1,79 @@
+{
+  "$schema": "https://mdfriday.com/schemas/capability-manifest/v1",
+  "name": "mermaid",
+  "version": "2.0.1",
+  "type": "shortcode",
+  "description": "Render diagrams via Mermaid.js. Foundry built-in: markdown-it outputs code.mermaid elements; mermaid shortcode outputs same format. mermaid-render.js is a classic script (no type=module / no CORS issue on theme CDN) that dynamically import()s Mermaid 10 ESM from jsDelivr only when diagrams exist.",
+
+  "entry": "shortcode:mermaid | partial:scripts-body-end/mermaid-auto.html (renderer)",
+
+  "config": {
+    "scope": "shortcode",
+    "params": [
+      {
+        "key": "class",
+        "in": "shortcode-param",
+        "type": "string",
+        "required": false,
+        "description": "Additional CSS class on the <pre class='mermaid'> wrapper",
+        "example": "my-diagram"
+      }
+    ],
+    "usage": {
+      "flowchart": "{{< mermaid >}}graph TD; A-->B; B-->C{{< /mermaid >}}",
+      "sequence": "{{< mermaid >}}sequenceDiagram; Alice->>Bob: Hello{{< /mermaid >}}",
+      "native_markdown": "```mermaid\ngraph TD; A-->B\n```"
+    }
+  },
+
+  "assets": {
+    "css": null,
+    "js": [
+      {
+        "file": "static/caps/mermaid/mermaid-render.js",
+        "published_at": "caps/mermaid/mermaid-render.js",
+        "size": "~1KB",
+        "locked": true,
+        "note": "DOM scanner + classic-script host; Mermaid lib via dynamic import(). Never modify."
+      },
+      {
+        "file": "static/caps/mermaid/mermaid.min.js",
+        "published_at": "caps/mermaid/mermaid.min.js",
+        "size": "~900KB",
+        "locked": true,
+        "cdn": "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs",
+        "note": "Local fallback only. mermaid-render.js loads Mermaid 10 ESM via dynamic import() (jsDelivr has CORS)."
+      }
+    ],
+    "future_lazy_load": false,
+    "size_impact": "~1KB local (mermaid-render.js). Mermaid library (~900KB) loaded from CDN only on pages with diagrams.",
+    "cdn_note": "mermaid-render.js is a classic script; Mermaid lib uses dynamic import() of ESM from jsDelivr. Override mermaid-render.js to switch CDN URL."
+  },
+
+  "locked": {
+    "html_ids": [],
+    "html_data_attrs": [],
+    "js_files": ["static/caps/mermaid/mermaid-render.js"],
+    "reason": "mermaid-render.js implements the zero-cost lazy load contract. Modifying may break lazy loading."
+  },
+
+  "child_override": {
+    "css": null,
+    "css_in_main": {
+      "classes": [".mermaid"],
+      "note": "Add .mermaid styles to main.css for background, border, padding of diagram blocks"
+    },
+    "partials": [
+      {
+        "file": "layouts/_partials/scripts-body-end/mermaid-auto.html",
+        "level": "safe",
+        "note": "Override to empty file to disable Mermaid entirely"
+      },
+      {
+        "file": "layouts/_shortcodes/mermaid.html",
+        "level": "safe",
+        "note": "Override to change the pre.mermaid wrapper output format"
+      }
+    ]
+  }
+}

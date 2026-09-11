@@ -1,0 +1,80 @@
+{{- /*
+  layouts/_partials/scripts-body-end/search-data.html
+  Unified search data injection (Base v2.2+).
+  Shared data layer for: Search, Explorer, Graph capabilities.
+
+  Slug normalization matches legacy Quartz scripts-body.html:
+    strip scheme+host, BaseURL path, .html suffix, /index suffix; empty → "index".
+
+  Titles use partial "page-title.html" (not raw .Title) so section indexes
+  and untitled pages get humanized labels for Explorer/Graph.
+
+  Output: window.__MDF_SEARCH__ = { baseURLPath, pages[], content{} }
+  Legacy aliases: __FOUNDRY_PAGES__, __FOUNDRY_CONTENT_INDEX__, __FOUNDRY_BASE_URL_PATH__
+*/ -}}
+{{- $searchEnabled := false -}}
+{{- $searchContent := false -}}
+{{- with .Site.Params.search -}}
+  {{- if .enable -}}{{- $searchEnabled = true -}}{{- end -}}
+  {{- if .content -}}{{- $searchContent = true -}}{{- end -}}
+{{- end -}}
+{{- $needsData := or $searchEnabled .Site.Params.explorer .Site.Params.graph -}}
+{{- $needsContent := or $searchContent .Site.Params.graph -}}
+{{- if $needsData -}}
+{{- $baseURLPath := partial "base-url-path.html" . -}}
+<script>
+(function() {
+  var pages = [
+    {{- range $i, $p := .Site.Pages -}}
+    {{- if $i -}},{{- end -}}
+    {{- $fullSlug := partial "page-slug.html" $p -}}
+    {{- $pageTitle := partial "page-title.html" $p -}}
+    {"slug":{{ $fullSlug | jsonify }},"displayPath":{{ $fullSlug | jsonify }},"url":{{ $p.RelPermalink | jsonify }},"title":{{ $pageTitle | jsonify }},"section":{{ $p.Section | jsonify }}}
+    {{- end -}}
+  ];
+
+  window.__MDF_SEARCH__ = {
+    baseURLPath: {{ $baseURLPath | jsonify }},
+    pages: pages
+    {{- if $needsContent -}}
+    ,content: {
+      {{- range $i, $p := .Site.Pages -}}
+      {{- if $i -}},{{- end -}}
+      {{- $fullSlug := partial "page-slug.html" $p -}}
+      {{- $pageTitle := partial "page-title.html" $p -}}
+      {{- $tagNames := default (slice) $p.Params.tags -}}
+      {{- if not (reflect.IsSlice $tagNames) -}}
+        {{- $tagNames = slice $tagNames -}}
+      {{- end -}}
+      {{- $links := slice -}}
+      {{- with $p.OutgoingLinks -}}
+        {{- $links = . -}}
+      {{- end -}}
+      {{- $tags := slice -}}
+      {{- with $p.Params.tags -}}
+        {{- if reflect.IsSlice . -}}
+          {{- range . -}}
+            {{- with $.Site.GetPage (printf "tags/%s" .) -}}
+              {{- $tags = $tags | append (partial "page-slug.html" .) -}}
+            {{- end -}}
+          {{- end -}}
+        {{- else -}}
+          {{- with $.Site.GetPage (printf "tags/%s" .) -}}
+            {{- $tags = $tags | append (partial "page-slug.html" .) -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+      {{ $fullSlug | jsonify }}: {"slug":{{ $fullSlug | jsonify }},"url":{{ $p.RelPermalink | jsonify }},"title":{{ $pageTitle | jsonify }},"content":{{ $p.Plain | jsonify }},"tagNames":{{ $tagNames | jsonify }},"links":{{ $links | jsonify }},"tags":{{ $tags | jsonify }}}
+      {{- end -}}
+    }
+    {{- end -}}
+  };
+
+  window.__FOUNDRY_PAGES__ = pages;
+  window.__FOUNDRY_BASE_URL_PATH__ = {{ $baseURLPath | jsonify }};
+  {{- if $needsContent -}}
+  window.__FOUNDRY_CONTENT_INDEX__ = window.__MDF_SEARCH__.content;
+  {{- end -}}
+})();
+</script>
+{{- end -}}

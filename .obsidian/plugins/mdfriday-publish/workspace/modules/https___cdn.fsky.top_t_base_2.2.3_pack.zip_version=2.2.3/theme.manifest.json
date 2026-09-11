@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "family": {
+    "id": "base",
+    "name": "Foundry Base V2",
+    "targets": [],
+    "defaultVariant": "base",
+    "engine": {
+      "foundry": ">=26.5.0 <27.0.0",
+      "base": "^2.2.3"
+    }
+  },
+  "variants": [],
+  "capabilities": {
+    "math": true,
+    "mermaid": true,
+    "darkmode": true,
+    "search": true,
+    "i18n": true
+  },
+  "shortcodes": [],
+  "externalDeps": [
+    {
+      "name": "katex",
+      "url": "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css",
+      "version": "0.16.11"
+    },
+    {
+      "name": "flexsearch",
+      "url": "https://cdn.jsdelivr.net/npm/flexsearch@0.7.31/dist/flexsearch.bundle.js",
+      "version": "0.7.31"
+    },
+    {
+      "name": "d3",
+      "url": "https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js",
+      "version": "7"
+    },
+    {
+      "name": "pixi.js",
+      "url": "https://cdn.jsdelivr.net/npm/pixi.js@8.0.0/dist/pixi.min.js",
+      "version": "8.0.0"
+    }
+  ],
+  "author": {
+    "id": "mdfriday",
+    "name": "MDFriday",
+    "official": true
+  },
+  "license": "MIT",
+  "pack": {
+    "exclude": [
+      "fixtures/**",
+      "screenshots/**",
+      "theme-dna.yaml",
+      "*.md",
+      "LICENSE"
+    ]
+  }
+}

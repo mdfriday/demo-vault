@@ -1,0 +1,9 @@
+{{- /* [CAP:katex] → see caps/katex/manifest.json
+     资源由 head/math.html 全局加载，此处只输出 data-math 标记。
+     输出格式与 Foundry markdown-it 插件完全一致，katex-render.js 统一处理。
+     legacy compatibility: {{< katex >}}...{{< /katex >}} 语法保持不变。
+*/ -}}
+<span data-math="{{ if .Get "display" }}block{{ else }}inline{{ end }}"
+      {{- with .Get "class" }} class="{{ . }}"{{ end -}}>
+  {{- .InnerDeindent -}}
+</span>

@@ -1,0 +1,13 @@
+{{- /* [CAP:utterances] → see caps/utterances/manifest.json */ -}}
+{{- $repo := .Get "repo" | default "owner/repo" -}}
+{{- $theme := .Get "theme" | default "github-light" -}}
+{{- $term := .Get "term" | default "pathname" -}}
+<section id="comments" class="utterances">
+  <script src="https://utteranc.es/client.js"
+    repo="{{ $repo }}"
+    issue-term="{{ $term }}"
+    theme="{{ $theme }}"
+    crossorigin="anonymous"
+    async>
+  </script>
+</section>

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://mdfriday.com/schemas/capability-manifest/v1",
+  "name": "instagram",
+  "version": "1.0.0",
+  "type": "shortcode",
+  "description": "Embed Instagram posts via Instagram oEmbed widget.",
+  "entry": "shortcode:instagram",
+  "config": {
+    "scope": "shortcode",
+    "params": [
+      { "key": "id", "in": "shortcode-param", "type": "string", "required": true, "description": "Instagram post shortcode (from URL: instagram.com/p/[ID])", "example": "CabcDEfghij" }
+    ],
+    "usage": "{{< instagram id=\"CabcDEfghij\" >}}"
+  },
+  "assets": { "css": null, "js": [{ "file": null, "cdn": "https://www.instagram.com/embed.js", "size": "~40KB CDN", "locked": true }], "size_impact": "~0KB local" },
+  "locked": { "html_ids": [], "html_data_attrs": [], "js_files": [], "reason": "No local locked files" },
+  "child_override": { "css": null, "partials": [{ "file": "layouts/_shortcodes/instagram.html", "level": "safe" }] }
+}
+

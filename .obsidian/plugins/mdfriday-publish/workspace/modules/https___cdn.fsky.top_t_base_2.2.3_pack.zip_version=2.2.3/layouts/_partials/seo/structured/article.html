@@ -1,0 +1,18 @@
+{{- /* Article structured data */}}
+{{- if .IsPage -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "url": "{{ .Permalink }}"
+  {{- with .Date -}},
+  "datePublished": "{{ . | time.Format "2006-01-02" }}"
+  {{- end -}}
+  {{- with .Site.Author.Name -}},
+  "author": { "@type": "Person", "name": "{{ . }}" }
+  {{- end -}}
+}
+</script>
+{{- end -}}
+

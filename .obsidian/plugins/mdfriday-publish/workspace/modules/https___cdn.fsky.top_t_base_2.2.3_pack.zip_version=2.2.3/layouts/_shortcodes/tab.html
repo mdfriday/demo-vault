@@ -1,0 +1,19 @@
+{{- /*
+  layouts/_shortcodes/tab.html
+  CAP-04: Individual tab panel — used inside {{< tabs >}}.
+
+  Usage:
+    {{< tab "Tab Label" >}}Tab content here{{< /tab >}}
+
+  Param: positional [0] — tab label (displayed in the tab button)
+  Must be wrapped in {{< tabs >}}...{{< /tabs >}}.
+*/ -}}
+{{- $label := .Get 0 | default "Tab" -}}
+{{- $id    := $label | urlize -}}
+<div class="mdf-tab">
+  <input type="radio" class="mdf-tab-toggle" id="tab-{{ $id }}" name="tabs-{{ .Parent.Ordinal }}"
+         {{- if eq .Ordinal 0 }} checked{{ end }}>
+  <label class="mdf-tab-label" for="tab-{{ $id }}">{{ $label }}</label>
+  <div class="mdf-tab-content">{{ .Inner | safeHTML }}</div>
+</div>
+

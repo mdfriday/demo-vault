@@ -1,0 +1,86 @@
+{{- /*
+  layouts/_partials/pagination/numbered.html
+  Pagination variant: numbered pages with prev/first/next/last.
+  Activate with: params.pagination.variant = "numbered" in config.toml
+
+  Shows up to 5 page number buttons centered around the current page.
+  Designed for Bootstrap-compatible markup — works with or without Bootstrap.
+
+  CSS customization: override --mdf-pagination-* variables in sub-theme main.css.
+  No locked IDs. Feel free to override layouts/_partials/pagination/numbered.html.
+*/ -}}
+{{- with .Paginator -}}
+{{- $currentPage := .PageNumber -}}
+{{- $totalPages  := .TotalPages -}}
+{{- $slots := 5 -}}
+{{- $start := math.Max 1 (sub .PageNumber (math.Floor (div $slots 2))) -}}
+{{- $end   := math.Min $totalPages (sub (add $start $slots) 1) -}}
+{{- if lt (add (sub $end $start) 1) $slots -}}
+  {{- $start = math.Max 1 (add (sub $end $slots) 1) -}}
+{{- end -}}
+<nav class="pagination pagination-numbered" aria-label="{{ i18n "pagination.label" | default "Pagination" }}">
+  <ul class="pagination-list">
+    {{- /* First */}}
+    {{- with .First -}}
+    {{- if ne $currentPage .PageNumber -}}
+    <li class="pagination-item">
+      <a href="{{ .URL }}" class="pagination-link pagination-link--edge" aria-label="{{ i18n "pagination.first" | default "First" }}">&laquo;&laquo;</a>
+    </li>
+    {{- else -}}
+    <li class="pagination-item pagination-item--disabled">
+      <span class="pagination-link pagination-link--edge" aria-disabled="true">&laquo;&laquo;</span>
+    </li>
+    {{- end -}}
+    {{- end -}}
+
+    {{- /* Prev */}}
+    {{- with .Prev -}}
+    <li class="pagination-item">
+      <a href="{{ .URL }}" class="pagination-link pagination-link--edge" rel="prev" aria-label="{{ i18n "pagination.prev" | default "Previous" }}">&laquo;</a>
+    </li>
+    {{- else -}}
+    <li class="pagination-item pagination-item--disabled">
+      <span class="pagination-link pagination-link--edge" aria-disabled="true">&laquo;</span>
+    </li>
+    {{- end -}}
+
+    {{- /* Page numbers */}}
+    {{- range $k := seq $start $end -}}
+    {{- if eq $.Paginator.PageNumber $k -}}
+    <li class="pagination-item pagination-item--active">
+      <span class="pagination-link" aria-current="page" aria-label="{{ i18n "pagination.page" | default "Page" }} {{ $k }}">{{ $k }}</span>
+    </li>
+    {{- else -}}
+    <li class="pagination-item">
+      <a href="{{ (index $.Paginator.Pagers (sub $k 1)).URL }}" class="pagination-link" aria-label="{{ i18n "pagination.page" | default "Page" }} {{ $k }}">{{ $k }}</a>
+    </li>
+    {{- end -}}
+    {{- end -}}
+
+    {{- /* Next */}}
+    {{- with .Next -}}
+    <li class="pagination-item">
+      <a href="{{ .URL }}" class="pagination-link pagination-link--edge" rel="next" aria-label="{{ i18n "pagination.next" | default "Next" }}">&raquo;</a>
+    </li>
+    {{- else -}}
+    <li class="pagination-item pagination-item--disabled">
+      <span class="pagination-link pagination-link--edge" aria-disabled="true">&raquo;</span>
+    </li>
+    {{- end -}}
+
+    {{- /* Last */}}
+    {{- with .Last -}}
+    {{- if ne $currentPage .PageNumber -}}
+    <li class="pagination-item">
+      <a href="{{ .URL }}" class="pagination-link pagination-link--edge" aria-label="{{ i18n "pagination.last" | default "Last" }}">&raquo;&raquo;</a>
+    </li>
+    {{- else -}}
+    <li class="pagination-item pagination-item--disabled">
+      <span class="pagination-link pagination-link--edge" aria-disabled="true">&raquo;&raquo;</span>
+    </li>
+    {{- end -}}
+    {{- end -}}
+  </ul>
+</nav>
+{{- end -}}
+

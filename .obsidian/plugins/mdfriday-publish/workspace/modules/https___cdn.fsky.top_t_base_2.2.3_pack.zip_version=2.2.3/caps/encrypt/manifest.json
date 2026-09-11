@@ -1,0 +1,78 @@
+{
+  "$schema": "https://mdfriday.com/schemas/capability-manifest/v1",
+  "name": "encrypt",
+  "version": "1.0.0",
+  "type": "conditional",
+  "description": "AES-GCM content encryption. Pages with a password param show a decryption modal instead of content. Decryption happens in-browser with zero server involvement.",
+
+  "entry": "partial:encrypt-content.html",
+
+  "config": {
+    "scope": "page",
+    "note": "Password can also be set at site-level via params.password for a site-wide lock.",
+    "params": [
+      {
+        "key": "password",
+        "in": "front-matter",
+        "type": "string",
+        "required": false,
+        "description": "Password to encrypt this page. When set, content is AES-GCM encrypted and replaced by a decryption modal.",
+        "example": "my-secret-password",
+        "effect": "Shows encrypt modal instead of page content. User must enter correct password to decrypt."
+      }
+    ],
+    "example_frontmatter": "---\ntitle: Secret Page\npassword: my-secret-password\n---\n\nThis content will be encrypted."
+  },
+
+  "assets": {
+    "css": {
+      "file": "static/caps/encrypt/style.css",
+      "published_at": "caps/encrypt/style.css",
+      "size": "~2KB",
+      "child_override": true,
+      "note": "Override this file to restyle the modal (colors, fonts, border-radius, etc.)"
+    },
+    "js": [
+      {
+        "file": "static/decrypt.js",
+        "published_at": "decrypt.js",
+        "size": "~8KB",
+        "locked": true,
+        "cdn": null,
+        "note": "AES-GCM decryption logic. Never modify."
+      }
+    ],
+    "future_lazy_load": false,
+    "size_impact": "~10KB — negligible"
+  },
+
+  "locked": {
+    "html_ids": [
+      "mdf-encrypt-modal",
+      "mdf-password-input",
+      "mdf-decrypt-btn",
+      "mdf-error-message",
+      "mdf-encrypt-content"
+    ],
+    "html_data_attrs": ["data-level", "data-path"],
+    "js_files": ["static/decrypt.js"],
+    "reason": "decrypt.js reads these IDs/data-attrs to locate elements and read encrypted data"
+  },
+
+  "child_override": {
+    "css": "static/caps/encrypt/style.css",
+    "partials": [
+      {
+        "file": "layouts/_partials/encrypt-content.html",
+        "level": "safe",
+        "note": "Can freely change how encrypted vs plain content is wrapped"
+      },
+      {
+        "file": "layouts/_partials/encrypt-modal.html",
+        "level": "caution",
+        "note": "Can change visual layout, but must keep ALL locked html_ids"
+      }
+    ]
+  }
+}
+

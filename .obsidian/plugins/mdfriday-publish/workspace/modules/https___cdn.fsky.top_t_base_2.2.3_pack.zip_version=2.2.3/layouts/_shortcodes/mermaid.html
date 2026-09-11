@@ -1,0 +1,8 @@
+{{- /* [CAP:mermaid] → see caps/mermaid/manifest.json
+     资源由 scripts-body-end/mermaid-auto.html 全局按需加载，此处只输出 .mermaid 标记。
+     输出格式与 Foundry markdown-it 插件完全一致，mermaid-render.js 统一处理。
+     legacy compatibility: {{< mermaid >}}...{{< /mermaid >}} 语法保持不变。
+*/ -}}
+<pre class="mermaid{{ with .Get "class" }} {{ . }}{{ end }}">
+  {{- .Inner -}}
+</pre>

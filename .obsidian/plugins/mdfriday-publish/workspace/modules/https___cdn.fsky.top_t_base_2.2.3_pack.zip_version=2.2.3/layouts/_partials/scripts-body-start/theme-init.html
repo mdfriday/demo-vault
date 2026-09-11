@@ -1,0 +1,22 @@
+{{- /*
+  layouts/_partials/scripts-body-start/theme-init.html
+  CAP-01: Dark Mode — always-on, FOUC prevention.
+  Must run BEFORE first paint (no defer, not async).
+
+  Three-value mode: "light" | "dark" | "auto" (follows OS preference).
+  localStorage key: "mdf-theme"  (unified namespace across all sub-themes)
+  Attribute target: <html data-theme="...">  (CSS :root vars cascade from html element)
+
+  Sub-theme override: Cover this file with an empty file to disable dark-mode init
+  entirely (e.g. pure landing pages with no dark mode support).
+*/ -}}
+<script>
+(function() {
+  var saved = localStorage.getItem('mdf-theme') ||
+              '{{ .Site.Params.defaultTheme | default "auto" }}';
+  if (saved === 'auto') {
+    saved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+  document.documentElement.setAttribute('data-theme', saved);
+})();
+</script>

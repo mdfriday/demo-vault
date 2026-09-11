@@ -1,0 +1,67 @@
+{
+  "$schema": "https://mdfriday.com/schemas/capability-manifest/v1",
+  "name": "readermode",
+  "version": "2.1.0",
+  "type": "global",
+  "description": "Reader mode toggle that hides sidebars and non-essential UI. Toggles class 'mdf-reader-mode' on <body>. Sub-themes define what gets hidden via CSS. Persistent via localStorage.",
+
+  "entry": "partial:scripts-body-end/extra.html (load readermode.js) | partial:header/theme-toggle.html or header/extra.html (button)",
+
+  "config": {
+    "scope": "site",
+    "params": [
+      {
+        "key": "readerMode",
+        "in": "site-params",
+        "type": "boolean",
+        "required": false,
+        "description": "Enable reader mode capability (shows toggle button and loads JS)",
+        "example": "true",
+        "effect": "Loads readermode.js and shows the reader mode toggle button"
+      }
+    ]
+  },
+
+  "assets": {
+    "css": {
+      "file": null,
+      "child_override": false,
+      "note": "No standalone CSS. Sub-theme defines what to hide in main.css: .mdf-reader-mode .sidebar { display: none; }"
+    },
+    "js": [
+      {
+        "file": "static/caps/readermode/readermode.js",
+        "published_at": "caps/readermode/readermode.js",
+        "size": "~1KB",
+        "locked": true,
+        "cdn": null,
+        "note": "Toggles body.mdf-reader-mode class and persists to localStorage 'mdf-reader-mode'. Never modify."
+      }
+    ],
+    "future_lazy_load": false,
+    "size_impact": "~1KB (only loaded when readerMode=true)"
+  },
+
+  "locked": {
+    "html_ids": ["mdf-reader-mode-toggle"],
+    "html_data_attrs": [],
+    "js_files": ["static/caps/readermode/readermode.js"],
+    "reason": "readermode.js reads #mdf-reader-mode-toggle and toggles body.mdf-reader-mode"
+  },
+
+  "child_override": {
+    "css": null,
+    "css_in_main": {
+      "selectors": [".mdf-reader-mode .sidebar", ".mdf-reader-mode .toc", ".mdf-reader-mode .header-extra"],
+      "note": "Sub-theme defines which elements to hide in reader mode by targeting .mdf-reader-mode in main.css"
+    },
+    "partials": [
+      {
+        "file": "layouts/_partials/scripts-body-end/extra.html",
+        "level": "safe",
+        "note": "Load readermode.js conditionally: {{ if .Site.Params.readerMode }}<script defer src='caps/readermode/readermode.js'>{{ end }}"
+      }
+    ]
+  }
+}
+

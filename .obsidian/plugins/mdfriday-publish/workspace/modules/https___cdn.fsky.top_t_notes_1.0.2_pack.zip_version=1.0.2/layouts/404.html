@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang | default "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 | {{ .Site.Title }}</title>
+  <style>
+    body { display: flex; align-items: center; justify-content: center;
+           min-height: 100vh; margin: 0;
+           font-family: AvenirNext-Regular, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+           background: #efe7db; color: #222; }
+    .note-not-found { text-align: center; padding: 2rem;
+                      background: white; border-radius: 8px;
+                      max-width: 480px; width: 90%; }
+    .note-404-code  { font-size: 6rem; font-weight: 700; opacity: 0.15; margin: 0; line-height: 1; }
+    .note-404-title { font-size: 1.4rem; margin: 0.5rem 0 1.5rem; }
+    .note-404-link  { color: #007acb; text-decoration: underline; font-weight: 600; }
+    .note-404-link:hover { color: #0056a3; }
+  </style>
+</head>
+<body>
+  <div class="note-not-found">
+    <p class="note-404-code">404</p>
+    <h1 class="note-404-title">Page Not Found</h1>
+    <p>Sorry, the page you were looking for doesn't exist.</p>
+    <a class="note-404-link" href="{{ .Site.Home.RelPermalink }}">← Back to {{ .Site.Title }}</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{{- $pages := where .Site.RegularPages "Type" "in" (slice "posts" "notes" "docs") -}}
+{{- if not $pages -}}
+{{- $pages = .Site.RegularPages -}}
+{{- end -}}
+{{- $recent := first 5 $pages -}}
+
+{{- if $recent -}}
+<div class="recent-notes">
+    <h3>{{ i18n "recent.title" | default "Recent Notes" }}</h3>
+    <ul class="recent-notes-list">
+        {{- range $recent -}}
+        <li class="recent-note-item">
+            <a href="{{ .RelPermalink }}" class="recent-note-link">
+                <h4>{{ .Title }}</h4>
+                {{- with .Description -}}
+                <p class="recent-note-desc">{{ . }}</p>
+                {{- end -}}
+                {{- with .Date -}}
+                <time class="recent-note-date" datetime="{{ time.Format "2006-01-02" . }}">
+                    {{ time.Format "Jan 2, 2006" . }}
+                </time>
+                {{- end -}}
+            </a>
+        </li>
+        {{- end -}}
+    </ul>
+</div>
+{{- end -}}
+

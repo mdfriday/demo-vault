@@ -1,0 +1,21 @@
+{{/* layouts/_partials/scripts-body-end/main-js.html — Quartz theme (SKILL v3.0)
+     SKILL v3.0: Search, clipboard, explorer, graph, toc-interactive → Base caps via config.
+     Only theme-specific JS remains here.
+     Dark mode uses mdf-theme localStorage key (SKILL compliant). */}}
+
+{{/* Theme-specific UI scripts (not available as Base capabilities) */}}
+<script src="{{ partial "asset" "js/darkmode.js" }}" defer></script>
+<script src="{{ partial "asset" "js/readermode.js" }}" defer></script>
+<script src="{{ partial "asset" "js/callout.js" }}" defer></script>
+
+{{/* Floating UI for WikiLink popover positioning */}}
+<script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.5.0/dist/floating-ui.core.umd.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.5.3/dist/floating-ui.dom.umd.min.js" defer></script>
+<script src="{{ partial "asset" "js/popover.js" }}" defer></script>
+
+{{/* NOTE: search, clipboard, explorer, graph, toc-interactive are now Base capabilities.
+     Activated via config.toml [params]:
+       search.enable = true, search.trigger = "sidebar", search.cjk = true, search.content = true
+       clipboard = true, toc.variant = "interactive", explorer = true, graph = true
+     CSS/JS loaded automatically by Base scripts-body-end/extra.html.
+     Data injected by Base scripts-body-end/search-data.html as window.__MDF_SEARCH__. */}}

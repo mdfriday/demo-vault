@@ -1,0 +1,47 @@
+{{- if not .IsHome -}}
+<nav class="breadcrumb-container" aria-label="breadcrumbs">
+    <ul class="breadcrumbs">
+        {{/* Extract baseURL path to filter from breadcrumbs */}}
+        {{- $baseURL := .Site.BaseURL | default "/" -}}
+        {{- $baseURLPath := "" -}}
+        {{- if ne $baseURL "/" -}}
+          {{- $baseURLPath = $baseURL | strings.TrimPrefix "/" | strings.TrimSuffix "/" -}}
+        {{- end -}}
+        
+        {{/* Always show Home as first breadcrumb (matching Quartz behavior) */}}
+        <li class="breadcrumb-element">
+            <a href="{{ .Site.Home.RelPermalink }}">Home</a>
+            <p aria-hidden="true"> ❯ </p>
+        </li>
+        
+        {{/* Parse URL path and filter out baseURL prefix */}}
+        {{- $relPath := .RelPermalink | strings.TrimPrefix "/" | strings.TrimSuffix ".html" -}}
+        {{- if $baseURLPath -}}
+          {{- $relPath = $relPath | strings.TrimPrefix ($baseURLPath | printf "%s/") -}}
+        {{- end -}}
+        
+        {{- $sections := split $relPath "/" -}}
+        {{- $len := len $sections -}}
+        {{- $currentPath := "" -}}
+        
+        {{- range $index, $section := $sections -}}
+            {{- if ne $section "" -}}
+                {{- $currentPath = printf "%s/%s" $currentPath $section -}}
+                {{- if ne $index (sub $len 1) -}}
+                {{/* Intermediate folder */}}
+                <li class="breadcrumb-element">
+                    <a href="{{ $.Site.BaseURL | strings.TrimSuffix "/" }}{{ $currentPath }}/">{{ humanize $section }}</a>
+                    <p aria-hidden="true"> ❯ </p>
+                </li>
+                {{- else -}}
+                {{/* Current page (last element) */}}
+                <li class="breadcrumb-element">
+                    <a href="{{ $.RelPermalink }}">{{ $.Title }}</a>
+                </li>
+                {{- end -}}
+            {{- end -}}
+        {{- end -}}
+    </ul>
+</nav>
+{{- end -}}
+

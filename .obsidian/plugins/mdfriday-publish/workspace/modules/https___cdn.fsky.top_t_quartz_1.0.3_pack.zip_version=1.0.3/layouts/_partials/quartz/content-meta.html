@@ -1,0 +1,14 @@
+<div class="content-meta">
+    <span class="content-meta-date">
+        <time datetime="{{ .LocalDate }}">
+            {{ .LocalDate }}
+        </time>
+    </span>
+
+    {{- if .Plain -}}
+    <span class="content-meta-reading-time">
+        {{ .ReadingTime }} {{ i18n "meta.reading_time" | default "min read" }}
+    </span>
+    {{- end -}}
+</div>
+

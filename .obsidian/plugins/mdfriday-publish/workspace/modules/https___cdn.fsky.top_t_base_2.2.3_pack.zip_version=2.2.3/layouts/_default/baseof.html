@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang | default "en" }}">
+
+{{- block "slot-before-head" . }}{{- end -}}
+
+<head>
+  {{- partial "head.html" . -}}
+  {{- block "slot-head-extra" . }}{{- end -}}
+  {{- partial "custom-head.html" . -}}
+</head>
+
+<body{{- partial "body/attrs.html" . -}}>
+  {{- partial "scripts-body-start.html" . -}}
+
+  {{- block "header" . }}
+    {{- partial "header.html" . -}}
+  {{- end -}}
+
+  {{- block "slot-before-main" . }}{{- end -}}
+
+  <main id="main-content">
+    {{- block "main" . }}{{- end -}}
+  </main>
+
+  {{- block "slot-toc" . }}{{- end -}}
+
+  {{- block "slot-after-main" . }}{{- end -}}
+
+  {{- block "footer" . }}
+    {{- partial "footer.html" . -}}
+  {{- end -}}
+
+  {{- partial "scripts-body-end.html" . -}}
+  {{- partial "custom-body-end.html" . -}}
+</body>
+
+</html>

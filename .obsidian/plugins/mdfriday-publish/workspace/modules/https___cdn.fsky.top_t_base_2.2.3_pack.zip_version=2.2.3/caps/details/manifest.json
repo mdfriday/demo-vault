@@ -1,0 +1,70 @@
+{
+  "$schema": "https://mdfriday.com/schemas/capability-manifest/v1",
+  "name": "details",
+  "version": "2.1.0",
+  "type": "shortcode",
+  "description": "Collapsible details/summary block using the browser-native <details> HTML element. No JavaScript, no custom CSS. Sub-themes style details/summary in main.css.",
+
+  "entry": "shortcode:details",
+
+  "config": {
+    "scope": "shortcode",
+    "params": [
+      {
+        "key": "[0]",
+        "in": "shortcode-param",
+        "type": "string",
+        "required": true,
+        "description": "Summary / title text shown in the clickable header",
+        "example": "Click to expand"
+      },
+      {
+        "key": "open",
+        "in": "shortcode-param",
+        "type": "string",
+        "required": false,
+        "description": "Set to 'true' to render the block initially expanded",
+        "example": "true",
+        "effect": "Adds the open attribute to the <details> element"
+      }
+    ],
+    "usage": {
+      "closed": "{{< details \"Section Title\" >}}Content{{< /details >}}",
+      "open": "{{< details \"Always Open\" open=\"true\" >}}Content{{< /details >}}"
+    }
+  },
+
+  "assets": {
+    "css": {
+      "file": null,
+      "child_override": false,
+      "note": "No custom CSS. Browser renders native <details>/<summary>. Style in main.css: details { } summary { }"
+    },
+    "js": [],
+    "future_lazy_load": false,
+    "size_impact": "0 — uses browser-native element"
+  },
+
+  "locked": {
+    "html_ids": [],
+    "html_data_attrs": [],
+    "js_files": [],
+    "reason": "No locked contracts — pure HTML, fully overridable"
+  },
+
+  "child_override": {
+    "css": null,
+    "css_in_main": {
+      "selectors": ["details", "summary"],
+      "note": "Style native details/summary elements in main.css"
+    },
+    "partials": [
+      {
+        "file": "layouts/_shortcodes/details.html",
+        "level": "safe",
+        "note": "Override to customize the details/summary HTML output"
+      }
+    ]
+  }
+}
+

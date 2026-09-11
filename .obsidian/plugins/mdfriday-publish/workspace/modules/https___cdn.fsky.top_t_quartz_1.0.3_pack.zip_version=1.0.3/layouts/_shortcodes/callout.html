@@ -1,0 +1,44 @@
+{{- $type := .Get "type" | default "note" -}}
+{{- $title := .Get "title" -}}
+{{- $fold := .Get "fold" -}}
+
+<div class="callout callout-{{ $type }}{{ if $fold }} is-collapsible{{ end }}">
+    {{- if $fold -}}
+    <details {{ if eq $fold "open" }}open{{ end }} class="callout-fold">
+        <summary class="callout-title">
+            <span class="callout-icon">
+                {{- if eq $type "note" -}}ⓘ
+                {{- else if eq $type "info" -}}ℹ️
+                {{- else if eq $type "warning" -}}⚠️
+                {{- else if eq $type "error" -}}❌
+                {{- else if eq $type "tip" -}}💡
+                {{- else if eq $type "success" -}}✅
+                {{- else -}}ⓘ
+                {{- end -}}
+            </span>
+            {{ $title | default (humanize $type) }}
+        </summary>
+        <div class="callout-content">
+            {{ .Inner | safeHTML }}
+        </div>
+    </details>
+    {{- else -}}
+    <div class="callout-title">
+        <span class="callout-icon">
+            {{- if eq $type "note" -}}ⓘ
+            {{- else if eq $type "info" -}}ℹ️
+            {{- else if eq $type "warning" -}}⚠️
+            {{- else if eq $type "error" -}}❌
+            {{- else if eq $type "tip" -}}💡
+            {{- else if eq $type "success" -}}✅
+            {{- else -}}ⓘ
+            {{- end -}}
+        </span>
+        {{ $title | default (humanize $type) }}
+    </div>
+    <div class="callout-content">
+        {{ .Inner | safeHTML }}
+    </div>
+    {{- end -}}
+</div>
+

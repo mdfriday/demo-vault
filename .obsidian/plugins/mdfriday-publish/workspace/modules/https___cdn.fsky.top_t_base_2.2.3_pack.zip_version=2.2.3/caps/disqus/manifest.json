@@ -1,0 +1,66 @@
+{
+  "$schema": "https://mdfriday.com/schemas/capability-manifest/v1",
+  "name": "disqus",
+  "version": "1.0.0",
+  "type": "conditional",
+  "description": "Disqus comment system. Requires a Disqus shortname. Rendered via comments.html when .Params.comments = true on a page.",
+
+  "entry": "partial:disqus.html",
+
+  "config": {
+    "scope": "site",
+    "params": [
+      {
+        "key": "disqusShortname",
+        "in": "config.toml",
+        "section": "root",
+        "type": "string",
+        "required": false,
+        "description": "Your Disqus site shortname (from disqus.com dashboard)",
+        "example": "my-site-shortname",
+        "effect": "Enables Disqus comments. Pages also need front-matter comments: true"
+      }
+    ],
+    "example_config": "# config.toml\ndisqusShortname = \"my-site-shortname\"",
+    "also_requires": "Page front-matter: comments: true (via comments.html routing)"
+  },
+
+  "assets": {
+    "css": null,
+    "js": [
+      {
+        "file": null,
+        "cdn": "https://[shortname].disqus.com/embed.js",
+        "size": "~50KB (loaded from Disqus CDN)",
+        "locked": true,
+        "note": "Dynamically loaded from Disqus CDN. No local file."
+      }
+    ],
+    "future_lazy_load": false,
+    "size_impact": "~0KB local — CDN loaded at runtime"
+  },
+
+  "locked": {
+    "html_ids": ["disqus_thread"],
+    "html_data_attrs": [],
+    "js_files": [],
+    "reason": "Disqus embed.js mounts the comment widget into #disqus_thread"
+  },
+
+  "child_override": {
+    "css": null,
+    "partials": [
+      {
+        "file": "layouts/_partials/disqus.html",
+        "level": "caution",
+        "note": "Can modify but must keep <div id='disqus_thread'></div>"
+      },
+      {
+        "file": "layouts/_partials/comments.html",
+        "level": "safe",
+        "note": "Override to switch comment system or add multiple systems"
+      }
+    ]
+  }
+}
+

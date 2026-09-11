@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "family": {
+    "id": "notes",
+    "name": "Notes",
+    "targets": [
+      "note"
+    ],
+    "defaultVariant": "paper",
+    "engine": {
+      "foundry": ">=26.5.0 <27.0.0",
+      "base": "^2.2.3"
+    }
+  },
+  "variants": [
+    {
+      "id": "paper",
+      "name": "Paper",
+      "default": true,
+      "css": "static/css/themes/note.css",
+      "tier": "classic",
+      "kinds": [
+        "note"
+      ],
+      "tags": [
+        "reading",
+        "minimal",
+        "warm"
+      ]
+    },
+    {
+      "id": "news",
+      "name": "News",
+      "css": "static/css/themes/newspaper.css",
+      "tier": "classic",
+      "kinds": [
+        "note",
+        "blog"
+      ],
+      "tags": [
+        "editorial",
+        "writer",
+        "seo"
+      ]
+    },
+    {
+      "id": "card",
+      "name": "Card",
+      "css": "static/css/themes/github.css",
+      "tier": "classic",
+      "kinds": [
+        "note"
+      ],
+      "tags": [
+        "clean",
+        "tech"
+      ]
+    },
+    {
+      "id": "magazine",
+      "name": "Magazine",
+      "css": "static/css/themes/poster.css",
+      "tier": "refined",
+      "kinds": [
+        "note"
+      ],
+      "tags": [
+        "bold",
+        "cover"
+      ]
+    },
+    {
+      "id": "minimal",
+      "name": "Minimal",
+      "css": "static/css/themes/slim.css",
+      "tier": "classic",
+      "kinds": [
+        "note"
+      ],
+      "tags": [
+        "dark",
+        "focus"
+      ]
+    },
+    {
+      "id": "business",
+      "name": "Business",
+      "css": "static/css/themes/business.css",
+      "tier": "professional",
+      "kinds": [
+        "note"
+      ],
+      "tags": [
+        "business",
+        "report"
+      ]
+    }
+  ],
+  "capabilities": {
+    "math": true,
+    "mermaid": true,
+    "darkmode": false,
+    "search": false,
+    "i18n": true
+  },
+  "shortcodes": [],
+  "externalDeps": [],
+  "author": {
+    "id": "mdfriday",
+    "name": "MDFriday",
+    "official": true
+  },
+  "license": "MIT",
+  "pack": {
+    "exclude": [
+      "fixtures/**",
+      "screenshots/**",
+      "theme-dna.yaml",
+      "*.md",
+      "LICENSE"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{{- /* [CAP:google_analytics] → see caps/google_analytics/manifest.json */ -}}
+{{ if .Site.IsGoogleAnalyticsEnabled }}
+  {{ with .Site.GoogleAnalyticsID }}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ . }}');
+    </script>
+  {{ end }}
+{{ end }}

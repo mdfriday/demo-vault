@@ -1,0 +1,80 @@
+{
+  "$schema": "https://mdfriday.com/schemas/capability-manifest/v1",
+  "name": "explorer",
+  "version": "1.0.0",
+  "type": "conditional",
+  "description": "File-tree sidebar navigation reflecting the site's folder structure. Users expand/collapse directories; state persists in sessionStorage. Builds tree from window.__MDF_SEARCH__.pages data.",
+
+  "entry": "partial:explorer.html + static:caps/explorer/explorer.js + static:caps/explorer/explorer.css",
+
+  "config": {
+    "scope": "site",
+    "params": [
+      {
+        "key": "explorer",
+        "in": "site-params",
+        "type": "boolean",
+        "required": false,
+        "description": "Enable file-tree navigation sidebar. Requires params.search.enable = true for page data.",
+        "example": "true",
+        "effect": "Renders collapsible file tree in sidebar. Loads caps/explorer/explorer.js and explorer.css."
+      }
+    ]
+  },
+
+  "dependencies": [
+    {
+      "capability": "search",
+      "reason": "Explorer builds its file tree from window.__MDF_SEARCH__.pages. Set params.search.enable = true."
+    }
+  ],
+
+  "assets": {
+    "css": {
+      "file": "static/caps/explorer/explorer.css",
+      "child_override": true,
+      "note": "Override --mdf-explorer-* CSS variables in sub-theme main.css to match brand colors"
+    },
+    "js": [
+      {
+        "file": "static/caps/explorer/explorer.js",
+        "locked": true,
+        "size": "~12KB"
+      }
+    ],
+    "size_impact": "~14KB total"
+  },
+
+  "locked": {
+    "html_ids": ["explorer-content"],
+    "html_classes": ["explorer"],
+    "js_files": ["static/caps/explorer/explorer.js"],
+    "reason": "explorer.js uses .explorer class to find root and #explorer-content to mount the tree"
+  },
+
+  "child_override": {
+    "css_variables": [
+      "--mdf-explorer-bg",
+      "--mdf-explorer-border",
+      "--mdf-explorer-text",
+      "--mdf-explorer-active-bg",
+      "--mdf-explorer-active-text",
+      "--mdf-explorer-hover-bg",
+      "--mdf-explorer-indent",
+      "--mdf-explorer-icon-color"
+    ],
+    "partials": [
+      {
+        "file": "layouts/_partials/explorer.html",
+        "level": "caution",
+        "note": "Keep .explorer root class and #explorer-content id. explorer.js depends on these."
+      }
+    ]
+  },
+
+  "activation_pattern": {
+    "in": "layouts/_partials/sidebar-left.html (or equivalent)",
+    "template": "{{- if .Site.Params.explorer -}}\n{{- partial \"explorer.html\" . -}}\n{{- end -}}"
+  }
+}
+

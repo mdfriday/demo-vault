@@ -1,0 +1,133 @@
+{
+  "$schema": "https://mdfriday.com/schemas/capability-manifest/v1",
+  "name": "graph",
+  "version": "1.0.0",
+  "type": "conditional",
+  "description": "Force-directed knowledge graph of page relationships based on internal links and WikiLinks. Uses D3.js (force simulation) + PixiJS (GPU canvas). Recommended for Wiki/knowledge-base themes.",
+
+  "entry": "partial:graph.html + static:caps/graph/graph.js + static:caps/graph/graph.css",
+
+  "config": {
+    "scope": "site",
+    "params": [
+      {
+        "key": "graph",
+        "in": "site-params",
+        "type": "boolean",
+        "required": false,
+        "description": "Enable knowledge graph visualization. Requires params.search.content = true.",
+        "example": "true",
+        "effect": "Renders D3+PixiJS knowledge graph in sidebar. Loads D3 CDN + PixiJS CDN + graph.js."
+      },
+      {
+        "key": "graph.depth",
+        "in": "site-params",
+        "type": "number",
+        "required": false,
+        "default": 1,
+        "description": "Degrees of connection to display around the current page.",
+        "example": "2"
+      },
+      {
+        "key": "graph.local",
+        "in": "site-params",
+        "type": "boolean",
+        "required": false,
+        "default": true,
+        "description": "Show per-page local graph (current page + neighbors).",
+        "example": "true"
+      },
+      {
+        "key": "graph.global",
+        "in": "site-params",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Also show full-site overview graph.",
+        "example": "false"
+      },
+      {
+        "key": "graph.repelForce",
+        "in": "site-params",
+        "type": "number",
+        "required": false,
+        "default": 0.5,
+        "description": "D3 force simulation: node repulsion strength.",
+        "example": "0.5"
+      },
+      {
+        "key": "graph.centerForce",
+        "in": "site-params",
+        "type": "number",
+        "required": false,
+        "default": 0.3,
+        "description": "D3 force simulation: pull-to-center strength.",
+        "example": "0.3"
+      },
+      {
+        "key": "graph.linkDistance",
+        "in": "site-params",
+        "type": "number",
+        "required": false,
+        "default": 30,
+        "description": "D3 force simulation: target edge length.",
+        "example": "30"
+      }
+    ]
+  },
+
+  "dependencies": [
+    {
+      "capability": "search",
+      "params": { "search.content": true },
+      "reason": "Graph builds edges from window.__MDF_SEARCH__.content[slug].links[]. Requires search.content = true."
+    }
+  ],
+
+  "assets": {
+    "css": {
+      "file": "static/caps/graph/graph.css",
+      "child_override": true
+    },
+    "js": [
+      {
+        "file": "static/caps/graph/graph.js",
+        "locked": true,
+        "size": "~16KB",
+        "note": "Requires D3.js CDN and PixiJS CDN loaded before this file"
+      }
+    ],
+    "external_cdn": [
+      "https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js",
+      "https://cdn.jsdelivr.net/npm/pixi.js@7/dist/pixi.min.js"
+    ],
+    "size_impact": "~350KB CDN (D3 + PixiJS) + ~16KB JS — only load for wiki themes"
+  },
+
+  "locked": {
+    "html_ids": ["graph-container"],
+    "js_files": ["static/caps/graph/graph.js"],
+    "reason": "D3/PixiJS mount to #graph-container. Renaming breaks graph rendering."
+  },
+
+  "child_override": {
+    "css_variables": [
+      "--mdf-graph-bg",
+      "--mdf-graph-border",
+      "--mdf-graph-node",
+      "--mdf-graph-node-self",
+      "--mdf-graph-link",
+      "--mdf-graph-link-hover",
+      "--mdf-graph-text",
+      "--mdf-graph-height"
+    ],
+    "partials": [
+      {
+        "file": "layouts/_partials/graph.html",
+        "level": "caution",
+        "note": "Keep #graph-container ID and data-* config attributes. graph.js reads these."
+      }
+    ]
+  }
+}
+

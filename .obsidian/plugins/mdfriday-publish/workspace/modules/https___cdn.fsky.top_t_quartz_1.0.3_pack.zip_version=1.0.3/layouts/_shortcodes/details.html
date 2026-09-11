@@ -1,0 +1,10 @@
+{{- $summary := .Get 0 | default "Details" -}}
+{{- $open := .Get "open" | default "false" -}}
+
+<details class="details-component" {{ if eq $open "true" }}open{{ end }}>
+    <summary class="details-summary">{{ $summary }}</summary>
+    <div class="details-content">
+        {{ .Inner | safeHTML }}
+    </div>
+</details>
+

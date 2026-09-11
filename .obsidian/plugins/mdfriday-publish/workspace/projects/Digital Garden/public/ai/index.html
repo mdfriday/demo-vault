@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- base-head -->
+
+<title> | Digital Garden</title>
+
+<meta name="description" content="">
+<meta name="author" content="MDFriday">
+
+<link rel="canonical" href="/ai/index.html"><link rel="icon" href="
+https://cdn.fsky.top/t/quartz/1.0.3/favicon.svg
+">
+<meta property="og:title" content="Digital Garden" />
+<meta property="og:url" content="/ai/index.html" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Digital Garden" />
+
+
+<link rel="stylesheet" href="https://cdn.fsky.top/t/quartz/1.0.3/css/quartz.css">
+<link rel="stylesheet" href="
+https://cdn.fsky.top/t/quartz/1.0.3/css/clipboard.css
+">
+<link rel="stylesheet" href="
+https://cdn.fsky.top/t/quartz/1.0.3/css/callout.css
+">
+<link rel="stylesheet" href="
+https://cdn.fsky.top/t/quartz/1.0.3/css/graph.css
+">
+<meta name="theme-color" content="#faf8f8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#161618" media="(prefers-color-scheme: dark)">
+
+<!-- base-math: KaTeX global load — Foundry built-in, always-on -->
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
+      crossorigin="anonymous">
+<script defer
+        src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"
+        crossorigin="anonymous"></script>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400;1,600&display=swap">
+
+
+
+</head>
+
+<body>
+<script>
+(function() {
+    var saved = localStorage.getItem('mdf-theme');
+    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = saved || (prefersDark ? 'dark' : 'light');
+    document.documentElement.dataset.theme = theme;
+    document.documentElement.setAttribute('data-theme', theme);
+})();
+</script>
+
+
+
+<main id="main-content"><div class="page">
+    <div id="quartz-body">
+        <aside class="sidebar left"><h1 class="page-title">
+    <a href="/index.html">Digital Garden</a>
+</h1>
+
+<div class="spacer mobile-only"></div>
+
+<div class="flex-component" style="display: flex; flex-direction: row; gap: 0.5rem; align-items: center;">
+    <div style="flex-grow: 1; flex-shrink: 1; min-width: 0;">
+<div class="search">
+    <button class="search-button" aria-label="Search" type="button">
+        <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7">
+            <title>Search</title>
+            <g class="search-path" fill="none">
+                <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
+                <circle cx="8" cy="8" r="7" />
+            </g>
+        </svg>
+        <p>Search</p>
+    </button>
+    <div class="search-container">
+        <div class="search-space">
+            <input
+                autocomplete="off"
+                class="search-bar"
+                name="search"
+                type="text"
+                aria-label="Search for something..."
+                placeholder="Search for something..."
+            />
+            <div class="search-layout" data-preview="true"></div>
+        </div>
+    </div>
+</div>
+
+</div>
+    <div style="flex-grow: 0; flex-shrink: 0;"><div class="darkmode">
+    <button 
+        id="darkmode-toggle" 
+        class="darkmode-toggle"
+        aria-label="Toggle dark mode"
+        title="Toggle dark mode">
+        <svg class="sun-icon" width="18" height="18" viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="3" fill="currentColor"/>
+            <line x1="10" y1="2" x2="10" y2="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="10" y1="16" x2="10" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="2" y1="10" x2="4" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="16" y1="10" x2="18" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="4.34" y1="4.34" x2="5.76" y2="5.76" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="14.24" y1="14.24" x2="15.66" y2="15.66" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="4.34" y1="15.66" x2="5.76" y2="14.24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="14.24" y1="5.76" x2="15.66" y2="4.34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <svg class="moon-icon" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display: none;">
+            <path d="M17.5 11.5A7.5 7.5 0 0 1 9 3.5c0-.5.1-1 .2-1.5A8.5 8.5 0 1 0 18.5 11c-.5.1-1 .2-1.5.2-.2 0-.3 0-.5.3z" fill="currentColor"/>
+        </svg>
+    </button>
+</div>
+
+</div><div style="flex-grow: 0; flex-shrink: 0;">
+<button class="readermode" aria-label="Reader Mode" title="Reader Mode">
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+        class="readerIcon"
+        fill="currentColor"
+        stroke="currentColor"
+        stroke-width="0.2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        width="64px"
+        height="64px"
+        viewBox="0 0 24 24">
+        <title>Reader Mode</title>
+        <g transform="translate(-1.8, -1.8) scale(1.15, 1.2)">
+            <path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z" />
+        </g>
+    </svg>
+</button>
+
+</div></div><div class="explorer" 
+     data-behavior="link" 
+     data-collapsed="collapsed" 
+     data-savestate="true">
+    
+    
+    <button type="button" 
+            class="explorer-toggle mobile-explorer hide-until-loaded" 
+            data-mobile="true"
+            aria-controls="explorer-content"
+            aria-label="Toggle Explorer">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+             width="24" 
+             height="24" 
+             viewBox="0 0 24 24" 
+             stroke-width="2" 
+             stroke="currentColor"
+             fill="none"
+             stroke-linecap="round" 
+             stroke-linejoin="round" 
+             class="lucide-menu">
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+        </svg>
+    </button>
+    
+    
+    <button type="button" 
+            class="title-button explorer-toggle desktop-explorer" 
+            data-mobile="false"
+            aria-expanded="true"
+            aria-label="Toggle Explorer">
+        <h2>Explorer</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" 
+             width="14" 
+             height="14" 
+             viewBox="5 8 14 8" 
+             fill="none" 
+             stroke="currentColor" 
+             stroke-width="2" 
+             stroke-linecap="round" 
+             stroke-linejoin="round" 
+             class="fold">
+            <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+    </button>
+    
+    
+    <div id="explorer-content" 
+         class="explorer-content" 
+         aria-expanded="false" 
+         role="group">
+        <ul class="explorer-ul"></ul>
+    </div>
+    
+    
+    <template id="template-file">
+        <li>
+            <a href="#"></a>
+        </li>
+    </template>
+    
+    <template id="template-folder">
+        <li>
+            <div class="folder-container">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                     width="12" 
+                     height="12" 
+                     viewBox="5 8 14 8" 
+                     fill="none" 
+                     stroke="currentColor" 
+                     stroke-width="2" 
+                     stroke-linecap="round" 
+                     stroke-linejoin="round" 
+                     class="folder-icon">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                <div>
+                    <button class="folder-button">
+                        <span class="folder-title"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="folder-outer">
+                <ul class="content"></ul>
+            </div>
+        </li>
+    </template>
+</div>
+
+</aside>
+        <div class="center">
+            <div class="page-header">
+                <div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs">
+    <ul class="breadcrumbs">
+        
+        <li class="breadcrumb-element">
+            <a href="/index.html">Home</a>
+            <p aria-hidden="true"> ❯ </p>
+        </li>
+        
+        
+                <li class="breadcrumb-element">
+                    <a href="/ai/">Ai</a>
+                    <p aria-hidden="true"> ❯ </p>
+                </li>
+                <li class="breadcrumb-element">
+                    <a href="/ai/index.html"></a>
+                </li></ul>
+</nav></div>
+            </div>
+            <article class="popover-hint"><div class="page-listing"><p>
+        4&nbsp;items under this folder</p><ul class="section-ul"><li class="section-li">
+            <div class="section">
+                <p class="meta">
+                    <time datetime="9/11/2026">
+                        9/11/2026
+                    </time>
+                </p>
+
+                <div class="desc">
+                    <h3>
+                        <a href="/ai/ai-agents.html" class="internal">AI Agents</a>
+                    </h3>
+                </div><ul class="tags"><li>
+                        <a class="internal tag-link" href="/tags/ai/">
+                            ai
+                        </a>
+                    </li><li>
+                        <a class="internal tag-link" href="/tags/agents/">
+                            agents
+                        </a>
+                    </li></ul></div>
+        </li><li class="section-li">
+            <div class="section">
+                <p class="meta">
+                    <time datetime="9/11/2026">
+                        9/11/2026
+                    </time>
+                </p>
+
+                <div class="desc">
+                    <h3>
+                        <a href="/ai/claude-code.html" class="internal">Claude Code</a>
+                    </h3>
+                </div><ul class="tags"><li>
+                        <a class="internal tag-link" href="/tags/ai/">
+                            ai
+                        </a>
+                    </li><li>
+                        <a class="internal tag-link" href="/tags/coding/">
+                            coding
+                        </a>
+                    </li><li>
+                        <a class="internal tag-link" href="/tags/tools/">
+                            tools
+                        </a>
+                    </li></ul></div>
+        </li><li class="section-li">
+            <div class="section">
+                <p class="meta">
+                    <time datetime="9/11/2026">
+                        9/11/2026
+                    </time>
+                </p>
+
+                <div class="desc">
+                    <h3>
+                        <a href="/ai/mcp.html" class="internal">MCP</a>
+                    </h3>
+                </div><ul class="tags"><li>
+                        <a class="internal tag-link" href="/tags/ai/">
+                            ai
+                        </a>
+                    </li><li>
+                        <a class="internal tag-link" href="/tags/mcp/">
+                            mcp
+                        </a>
+                    </li><li>
+                        <a class="internal tag-link" href="/tags/tools/">
+                            tools
+                        </a>
+                    </li></ul></div>
+        </li><li class="section-li">
+            <div class="section">
+                <p class="meta">
+                    <time datetime="9/11/2026">
+                        9/11/2026
+                    </time>
+                </p>
+
+                <div class="desc">
+                    <h3>
+                        <a href="/ai/prompt-engineering.html" class="internal">Prompt Engineering</a>
+                    </h3>
+                </div><ul class="tags"><li>
+                        <a class="internal tag-link" href="/tags/ai/">
+                            ai
+                        </a>
+                    </li><li>
+                        <a class="internal tag-link" href="/tags/prompts/">
+                            prompts
+                        </a>
+                    </li></ul></div>
+        </li></ul>
+</div></article>
+        </div>
+        <aside class="sidebar right"><div class="graph">
+  <h3>Graph View</h3>
+  <div class="graph-outer">
+    <div class="graph-container" data-cfg='{"drag":true,"zoom":true,"depth":1,"scale":1.1,"repelForce":0.5,"centerForce":0.3,"linkDistance":30,"fontSize":0.6,"opacityScale":1,"showTags":true,"removeTags":[],"focusOnHover":false,"enableRadial":false}'></div>
+    <button class="global-graph-icon" aria-label="Global Graph" title="Global Graph">
+      <svg
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 55 55"
+        fill="currentColor"
+        xml:space="preserve"
+      >
+        <path
+          d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+          s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+          c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+          C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+          c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+          v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+          s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+          C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+          S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+          s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+          s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div class="global-graph-outer">
+    <div class="global-graph-container" data-cfg='{"drag":true,"zoom":true,"depth":-1,"scale":0.9,"repelForce":0.5,"centerForce":0.2,"linkDistance":30,"fontSize":0.6,"opacityScale":1,"showTags":true,"removeTags":[],"focusOnHover":true,"enableRadial":true}'></div>
+  </div>
+</div>
+
+</aside>
+<footer>
+    <p>
+        Built with
+        <a href="https://github.com/mdfriday">MDFriday</a>
+        <br/>2026 All Rights Reserved.
+    </p></footer>
+
+</div>
+</div>
+</main>
+
+
+  
+
+
+<script defer src="
+https://cdn.fsky.top/t/base/2.2.3/caps/katex/katex-render.js
+"></script>
+
+
+<script defer src="
+https://cdn.fsky.top/t/base/2.2.3/caps/mermaid/mermaid-render.js
+"></script>
+
+
+
+<script src="
+https://cdn.fsky.top/t/quartz/1.0.3/js/darkmode.js
+" defer></script>
+<script src="
+https://cdn.fsky.top/t/quartz/1.0.3/js/readermode.js
+" defer></script>
+<script src="
+https://cdn.fsky.top/t/quartz/1.0.3/js/callout.js
+" defer></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.5.0/dist/floating-ui.core.umd.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.5.3/dist/floating-ui.dom.umd.min.js" defer></script>
+<script src="
+https://cdn.fsky.top/t/quartz/1.0.3/js/popover.js
+" defer></script>
+
+
+<script>
+(function() {
+  var pages = [{"slug":"ai","displayPath":"ai","url":"/ai/index.html","title":"Ai","section":"ai"},{"slug":"business","displayPath":"business","url":"/business/index.html","title":"Business","section":"business"},{"slug":"productivity","displayPath":"productivity","url":"/productivity/index.html","title":"Productivity","section":"productivity"},{"slug":"ai/ai-agents","displayPath":"ai/ai-agents","url":"/ai/ai-agents.html","title":"AI Agents","section":"ai"},{"slug":"business/audience-building","displayPath":"business/audience-building","url":"/business/audience-building.html","title":"Audience Building","section":"business"},{"slug":"business/build-in-public","displayPath":"business/build-in-public","url":"/business/build-in-public.html","title":"Build in Public","section":"business"},{"slug":"ai/claude-code","displayPath":"ai/claude-code","url":"/ai/claude-code.html","title":"Claude Code","section":"ai"},{"slug":"productivity/digital-garden","displayPath":"productivity/digital-garden","url":"/productivity/digital-garden.html","title":"Digital Garden","section":"productivity"},{"slug":"index","displayPath":"index","url":"/index.html","title":"Home","section":""},{"slug":"productivity/knowledge-management","displayPath":"productivity/knowledge-management","url":"/productivity/knowledge-management.html","title":"Knowledge Management","section":"productivity"},{"slug":"ai/mcp","displayPath":"ai/mcp","url":"/ai/mcp.html","title":"MCP","section":"ai"},{"slug":"business/one-person-company","displayPath":"business/one-person-company","url":"/business/one-person-company.html","title":"One Person Company","section":"business"},{"slug":"business/personal-branding","displayPath":"business/personal-branding","url":"/business/personal-branding.html","title":"Personal Branding","section":"business"},{"slug":"ai/prompt-engineering","displayPath":"ai/prompt-engineering","url":"/ai/prompt-engineering.html","title":"Prompt Engineering","section":"ai"},{"slug":"productivity/second-brain","displayPath":"productivity/second-brain","url":"/productivity/second-brain.html","title":"Second Brain","section":"productivity"},{"slug":"tags/agents","displayPath":"tags/agents","url":"/tags/agents/index.html","title":"agents","section":"tags"},{"slug":"tags/ai","displayPath":"tags/ai","url":"/tags/ai/index.html","title":"ai","section":"tags"},{"slug":"tags/audience","displayPath":"tags/audience","url":"/tags/audience/index.html","title":"audience","section":"tags"},{"slug":"tags/brand","displayPath":"tags/brand","url":"/tags/brand/index.html","title":"brand","section":"tags"},{"slug":"tags/business","displayPath":"tags/business","url":"/tags/business/index.html","title":"business","section":"tags"},{"slug":"categories","displayPath":"categories","url":"/categories/index.html","title":"category","section":"categories"},{"slug":"tags/coding","displayPath":"tags/coding","url":"/tags/coding/index.html","title":"coding","section":"tags"},{"slug":"tags/distribution","displayPath":"tags/distribution","url":"/tags/distribution/index.html","title":"distribution","section":"tags"},{"slug":"tags/garden","displayPath":"tags/garden","url":"/tags/garden/index.html","title":"garden","section":"tags"},{"slug":"tags/index","displayPath":"tags/index","url":"/tags/index/index.html","title":"index","section":"tags"},{"slug":"tags/mcp","displayPath":"tags/mcp","url":"/tags/mcp/index.html","title":"mcp","section":"tags"},{"slug":"tags/pkm","displayPath":"tags/pkm","url":"/tags/pkm/index.html","title":"pkm","section":"tags"},{"slug":"tags/productivity","displayPath":"tags/productivity","url":"/tags/productivity/index.html","title":"productivity","section":"tags"},{"slug":"tags/prompts","displayPath":"tags/prompts","url":"/tags/prompts/index.html","title":"prompts","section":"tags"},{"slug":"tags/publish","displayPath":"tags/publish","url":"/tags/publish/index.html","title":"publish","section":"tags"},{"slug":"tags/solo","displayPath":"tags/solo","url":"/tags/solo/index.html","title":"solo","section":"tags"},{"slug":"tags","displayPath":"tags","url":"/tags/index.html","title":"tag","section":"tags"},{"slug":"tags/tools","displayPath":"tags/tools","url":"/tags/tools/index.html","title":"tools","section":"tags"}];
+
+  window.__MDF_SEARCH__ = {
+    baseURLPath: "",
+    pages: pages,content: {"ai": {"slug":"ai","url":"/ai/index.html","title":"Ai","content":"","tagNames":[],"links":[],"tags":[]},"business": {"slug":"business","url":"/business/index.html","title":"Business","content":"","tagNames":[],"links":[],"tags":[]},"productivity": {"slug":"productivity","url":"/productivity/index.html","title":"Productivity","content":"","tagNames":[],"links":[],"tags":[]},"ai/ai-agents": {"slug":"ai/ai-agents","url":"/ai/ai-agents.html","title":"AI Agents","content":"---\ntitle: AI Agents\ntags:\n  - ai\n  - agents\n---\n\n# AI Agents\n\nAn agent is a loop with tools: observe → decide → act → check. The hard part is not the loop — it’s **stopping conditions**.\n\n## Keep agents narrow\n\n| Agent type | Good at | Bad at |\n|------------|---------|--------|\n| Research | Gathering + summarizing | Final taste |\n| Coding | Local edits with tests | Ambiguous product scope |\n| Ops | Repetitive checklists | Novel judgment calls |\n\n\u003e [!danger]\n\u003e Unbounded agents burn tokens and trust. Give them a finish line.\n\n## Connect the dots\n\n- Better instructions → [[Prompt Engineering]]\n- Better tools → [[MCP]]\n- Better coding partner → [[Claude Code]]\n- Why ship thin → [[AI Product Development]]\n\n$$\n\\text{Useful autonomy} \\approx \\frac{\\text{clear goal} \\times \\text{safe tools}}{\\text{open-endedness}}\n$$\n\n## See also\n\n- [[MCP]]\n- [[Build in Public]]\n- [[Second Brain]]\n","tagNames":["ai","agents"],"links":["ai/prompt-engineering","MCP","ai/claude-code","AI-Product-Development","business/build-in-public","productivity/second-brain"],"tags":["tags/agents","tags/ai"]},"business/audience-building": {"slug":"business/audience-building","url":"/business/audience-building.html","title":"Audience Building","content":"---\ntitle: Audience Building\ntags:\n  - business\n  - audience\n---\n\n# Audience Building\n\nAudience is a privilege you earn by being useful on a schedule.\n\n## Useful \u003e frequent\n\n- Solve one recurring problem for one clear person\n- Repeat the promise until it’s boring to you — and still helpful to them\n- Point every post back to a durable home: your [[Digital Garden]] or product\n\n\u003e [!warning]\n\u003e Growth hacks without a promise create an audience that can’t be helped.\n\n## Metrics that matter early\n\n- [ ] 10 conversations with strangers who match the ICP\n- [ ] 1 note that people bookmark\n- [ ] 1 demo that survives without you narrating\n\nRelated: [[Personal Branding]], [[Build in Public]], [[One Person Company]].\n\n## See also\n\n- [[Second Brain]]\n- [[AI Agents]]\n","tagNames":["business","audience"],"links":["productivity/digital-garden","business/personal-branding","business/build-in-public","business/one-person-company","productivity/second-brain","ai/ai-agents"],"tags":["tags/audience","tags/business"]},"business/build-in-public": {"slug":"business/build-in-public","url":"/business/build-in-public.html","title":"Build in Public","content":"---\ntitle: Build in Public\ntags:\n  - business\n  - distribution\n---\n\n# Build in Public\n\nBuilding in public is a distribution habit, not a personality type. Share **progress that teaches**, not every mood.\n\n## What to publish\n\n- Decisions and what you cut\n- Screenshots of real workflows\n- Lessons after shipping — not before\n\n\u003e [!example]\n\u003e “We removed accounts from publish” teaches more than “Excited for the journey 🚀”.\n\n## Cadence that doesn’t burn you out\n\n- Weekly: one artifact (note, clip, changelog)\n- Monthly: one deeper essay in the [[Digital Garden]]\n- Always: link back to a living note like [[AI Product Development]]\n\n```mermaid\nflowchart LR\n  S[Ship] --\u003e P[Post a lesson]\n  P --\u003e F[Feedback]\n  F --\u003e S\n```\n\n## See also\n\n- [[Personal Branding]]\n- [[Audience Building]]\n- [[One Person Company]]\n- [[Prompt Engineering]]\n","tagNames":["business","distribution"],"links":["productivity/digital-garden","AI-Product-Development","business/personal-branding","business/audience-building","business/one-person-company","ai/prompt-engineering"],"tags":["tags/distribution","tags/business"]},"ai/claude-code": {"slug":"ai/claude-code","url":"/ai/claude-code.html","title":"Claude Code","content":"---\ntitle: Claude Code\ntags:\n  - ai\n  - coding\n  - tools\n---\n\n# Claude Code\n\nClaude Code is leverage for people who already know what “done” looks like. It writes and edits; you still own taste and scope.\n\n## Where it shines\n\n- Boilerplate and refactors you can review in minutes\n- Explaining unfamiliar code paths\n- Turning a checklist into a first patch\n\n\u003e [!warning]\n\u003e Don’t outsource product judgment. If you can’t say what “correct” means, the model will invent one.\n\n## Pair with a garden\n\nKeep architecture notes in Obsidian. Link decisions here so future-you (and future agents) can find them:\n\n- Product wedge → [[AI Product Development]]\n- Tooling surface → [[MCP]]\n- Autonomy boundary → [[AI Agents]]\n\n```ts\n// Preference: small diffs, explicit tests, boring names\ntype ChangeBudget = {\n  files: number;\n  mustPass: string[];\n};\n```\n\n## See also\n\n- [[Prompt Engineering]]\n- [[AI Agents]]\n- [[Build in Public]]\n- [[Knowledge Management]]\n","tagNames":["ai","coding","tools"],"links":["AI-Product-Development","MCP","ai/ai-agents","ai/prompt-engineering","business/build-in-public","productivity/knowledge-management"],"tags":["tags/tools","tags/coding","tags/ai"]},"productivity/digital-garden": {"slug":"productivity/digital-garden","url":"/productivity/digital-garden.html","title":"Digital Garden","content":"---\ntitle: Digital Garden\ntags:\n  - pkm\n  - garden\n  - publish\n---\n\n# Digital Garden\n\nA digital garden is a public knowledge space that grows by linking — closer to a wiki than a blog timeline.\n\n## What visitors should feel\n\n- They can enter from [[index]]\n- They can wander via wikilinks\n- They can orient with search, backlinks, and graph\n\n```mermaid\nflowchart TD\n  H[Home] --\u003e AI[AI notes]\n  H --\u003e B[Business notes]\n  H --\u003e P[Productivity notes]\n  AI --\u003e H\n  B --\u003e H\n  P --\u003e H\n```\n\n\u003e [!success]\n\u003e Folder publish turns this structure into a site. Same Markdown — new surface.\n\n## Contrast with a single note\n\n| | Share a note | Digital garden |\n|--|--------------|----------------|\n| Unit | One URL | Many linked pages |\n| Best for | Essays, announcements | Docs, courses, PKM |\n| Demo note | [[AI Product Development]] | This folder |\n\n## See also\n\n- [[Knowledge Management]]\n- [[Second Brain]]\n- [[Build in Public]]\n- [[Audience Building]]\n","tagNames":["pkm","garden","publish"],"links":["/","AI-Product-Development","productivity/knowledge-management","productivity/second-brain","business/build-in-public","business/audience-building"],"tags":["tags/publish","tags/garden","tags/pkm"]},"index": {"slug":"index","url":"/index.html","title":"Home","content":"---\ntitle: Home\ntags:\n  - garden\n  - index\n---\n\n# Digital Garden\n\nWelcome — this folder is a small, living map of how I think about AI, building in public, and personal knowledge.\n\nThis is the page you’d open after **Publish Folder**. From here you can wander by topic, search, or open the graph.\n\n## Start here\n\n| Path | What’s inside |\n|------|----------------|\n| [[Prompt Engineering\\|AI]] | Prompts, agents, tools, Claude Code |\n| [[One Person Company\\|Business]] | Solo company, audience, branding |\n| [[Second Brain\\|Productivity]] | PKM, gardens, knowledge habits |\n\n## How this garden is meant to be used\n\n1. Open a note that matches your current question\n2. Follow `[[wikilinks]]` when something sparks\n3. Use **Backlinks** to see what points here\n4. Open **Graph** when you want the map, not the path\n\n\u003e [!abstract] Why a garden, not a blog\n\u003e A blog is a stream. A garden is a map. Notes grow links over time — see [[Digital Garden]].\n\n```mermaid\nmindmap\n  root((Home))\n    AI\n      Prompt Engineering\n      Claude Code\n      MCP\n      AI Agents\n    Business\n      One Person Company\n      Build in Public\n      Personal Branding\n      Audience Building\n    Productivity\n      Second Brain\n      Knowledge Management\n      Digital Garden\n```\n\n## Featured note for demos\n\nFor single-note publishing and theme comparisons, use [[AI Product Development]] in `Share Note`.\n\n## See also\n\n- [[Knowledge Management]]\n- [[Build in Public]]\n- [[AI Agents]]\n","tagNames":["garden","index"],"links":["ai/prompt-engineering","business/one-person-company","productivity/second-brain","productivity/digital-garden","AI-Product-Development","productivity/knowledge-management","business/build-in-public","ai/ai-agents"],"tags":["tags/index","tags/garden"]},"productivity/knowledge-management": {"slug":"productivity/knowledge-management","url":"/productivity/knowledge-management.html","title":"Knowledge Management","content":"---\ntitle: Knowledge Management\ntags:\n  - pkm\n  - productivity\n---\n\n# Knowledge Management\n\nGood KM is mostly **deletion and linking**.\n\n## Rules that scale\n\n| Rule | Why |\n|------|-----|\n| One idea per note | Easier links |\n| Link outward twice | Graph stays alive |\n| Rewrite when reused | Stale notes rot trust |\n\n\u003e [!note]\n\u003e Tags find clusters. Wikilinks build structure. Use both — don’t worship either.\n\n## From private to public\n\nPrivate notes become public assets when they’re clear enough for a stranger. That’s the bridge to a [[Digital Garden]] and to products like [[AI Product Development]].\n\nTasks for this vault:\n\n- [x] Define folder map\n- [x] Seed AI / Business / Productivity\n- [ ] Add screenshots to Assets as demos grow\n\n## See also\n\n- [[Second Brain]]\n- [[index]]\n- [[Personal Branding]]\n","tagNames":["pkm","productivity"],"links":["productivity/digital-garden","AI-Product-Development","productivity/second-brain","/","business/personal-branding"],"tags":["tags/productivity","tags/pkm"]},"ai/mcp": {"slug":"ai/mcp","url":"/ai/mcp.html","title":"MCP","content":"---\ntitle: MCP\ntags:\n  - ai\n  - mcp\n  - tools\n---\n\n# MCP\n\n**Model Context Protocol** is how assistants stop guessing and start *using* systems — with clear tool boundaries.\n\n## Why it matters for builders\n\nPrompts alone don’t scale. Tools do:\n\n```mermaid\nflowchart TD\n  U[User intent] --\u003e A[Assistant]\n  A --\u003e T[MCP tools]\n  T --\u003e S[Real systems]\n  S --\u003e A\n```\n\n\u003e [!tip]\n\u003e Prefer a boring tool with a clear contract over a clever prompt that sometimes works.\n\n## Design rules I use\n\n1. One tool = one job\n2. Inputs are typed; failures are readable\n3. Mutating tools need human-visible confirmation for risky actions\n\nRelated thinking: [[AI Agents]], [[Prompt Engineering]], [[Claude Code]].\n\n## Demo table\n\n| Capability | Prompt-only | With MCP |\n|------------|-------------|----------|\n| Read calendar | Paste text | Query live |\n| Publish note | Describe steps | Call publish |\n| Audit links | Manual | Tool scan |\n\n## See also\n\n- [[AI Agents]]\n- [[AI Product Development]]\n- [[One Person Company]]\n","tagNames":["ai","mcp","tools"],"links":["ai/ai-agents","ai/prompt-engineering","ai/claude-code","AI-Product-Development","business/one-person-company"],"tags":["tags/tools","tags/mcp","tags/ai"]},"business/one-person-company": {"slug":"business/one-person-company","url":"/business/one-person-company.html","title":"One Person Company","content":"---\ntitle: One Person Company\ntags:\n  - business\n  - solo\n---\n\n# One Person Company\n\nA one-person company is not “do everything alone forever.” It is **own the critical path** until leverage is proven.\n\n## The critical path\n\n1. Find a pain you can feel\n2. Ship a product people pay for (or return to)\n3. Keep distribution close to the product\n4. Automate or hire only after the loop is boring\n\n\u003e [!tip]\n\u003e Your unfair advantage is taste + speed. Protect both.\n\n## Leverage without a team\n\n- Public writing → [[Build in Public]] + [[Personal Branding]]\n- Knowledge base → [[Second Brain]] + [[Digital Garden]]\n- AI leverage → [[Claude Code]] + [[AI Agents]]\n\n| Hire / buy | Only when |\n|------------|-----------|\n| Ads | Organic message already converts |\n| Contractor | Task is repeatable and specified |\n| Full-time | You are the bottleneck weekly |\n\n## See also\n\n- [[Audience Building]]\n- [[AI Product Development]]\n- [[Knowledge Management]]\n","tagNames":["business","solo"],"links":["business/build-in-public","business/personal-branding","productivity/second-brain","productivity/digital-garden","ai/claude-code","ai/ai-agents","business/audience-building","AI-Product-Development","productivity/knowledge-management"],"tags":["tags/solo","tags/business"]},"business/personal-branding": {"slug":"business/personal-branding","url":"/business/personal-branding.html","title":"Personal Branding","content":"---\ntitle: Personal Branding\ntags:\n  - business\n  - brand\n---\n\n# Personal Branding\n\nPersonal brand is the *promise* people remember when your name shows up. For builders, that promise is usually: **clarity + craft**.\n\n## Make the promise visible\n\n| Surface | Job |\n|---------|-----|\n| Bio | One sentence promise |\n| Garden home | Proof you think in public — [[index]] |\n| Product | Promise kept in the UI |\n| Content | Same promise, new examples |\n\n\u003e [!quote]\n\u003e Brand is what people say when you leave the room — and what they click when you publish.\n\n## Practical moves\n\n- Publish evergreen notes, not only announcements — [[Knowledge Management]]\n- Show the work via [[Build in Public]]\n- Grow intentionally with [[Audience Building]]\n\n## See also\n\n- [[One Person Company]]\n- [[Digital Garden]]\n- [[AI Product Development]]\n","tagNames":["business","brand"],"links":["/","productivity/knowledge-management","business/build-in-public","business/audience-building","business/one-person-company","productivity/digital-garden","AI-Product-Development"],"tags":["tags/brand","tags/business"]},"ai/prompt-engineering": {"slug":"ai/prompt-engineering","url":"/ai/prompt-engineering.html","title":"Prompt Engineering","content":"---\ntitle: Prompt Engineering\ntags:\n  - ai\n  - prompts\n---\n\n# Prompt Engineering\n\nPrompting is product design in text form. The goal is not clever wording — it is **reliable behavior**.\n\n## A simple pattern\n\n1. **Role** — who the model is for this task\n2. **Context** — only what changes the answer\n3. **Constraints** — format, length, must / must-not\n4. **Example** — one good output beats three adjectives\n\n\u003e [!example]\n\u003e Bad: “Write a better landing page.”\n\u003e Better: “Rewrite this hero for solo founders. Max 12 words. Emphasize one-click publish. Keep brand voice calm.”\n\n## When prompts become systems\n\nOnce a prompt is reused daily, promote it:\n\n- Save it next to the workflow in your [[Second Brain]]\n- Wire it into [[Claude Code]] or an [[AI Agents|agent]]\n- Expose tools through [[MCP]] instead of stuffing everything into the prompt\n\n| Level | What you maintain | Failure mode |\n|-------|-------------------|--------------|\n| One-off chat | Nothing | Drift |\n| Saved prompt | Text | Stale examples |\n| Tool-using agent | Tools + policy | Silent wrong tool |\n\n## See also\n\n- [[Claude Code]]\n- [[AI Agents]]\n- [[MCP]]\n- [[AI Product Development]]\n","tagNames":["ai","prompts"],"links":["productivity/second-brain","ai/claude-code","ai/ai-agents","MCP","AI-Product-Development"],"tags":["tags/prompts","tags/ai"]},"productivity/second-brain": {"slug":"productivity/second-brain","url":"/productivity/second-brain.html","title":"Second Brain","content":"---\ntitle: Second Brain\ntags:\n  - pkm\n  - productivity\n---\n\n# Second Brain\n\nA second brain is not a second inbox. It is a place where **ideas become reusable**.\n\n## Capture → organize → express\n\n1. Capture fast (don’t format yet)\n2. Organize by how you’ll reuse it\n3. Express as notes you’d be proud to [[AI Product Development|publish]]\n\n\u003e [!tip]\n\u003e If a note never gets linked, it isn’t in the brain yet — it’s in storage. Start with [[Knowledge Management]].\n\n## Tools in this vault’s story\n\n- Obsidian for thinking\n- MDFriday for sharing notes or gardens\n- Agents for draft labor — [[AI Agents]]\n\n## See also\n\n- [[Digital Garden]]\n- [[Prompt Engineering]]\n- [[Build in Public]]\n","tagNames":["pkm","productivity"],"links":["AI-Product-Development","productivity/knowledge-management","ai/ai-agents","productivity/digital-garden","ai/prompt-engineering","business/build-in-public"],"tags":["tags/productivity","tags/pkm"]},"tags/agents": {"slug":"tags/agents","url":"/tags/agents/index.html","title":"agents","content":"","tagNames":[],"links":[],"tags":[]},"tags/ai": {"slug":"tags/ai","url":"/tags/ai/index.html","title":"ai","content":"","tagNames":[],"links":[],"tags":[]},"tags/audience": {"slug":"tags/audience","url":"/tags/audience/index.html","title":"audience","content":"","tagNames":[],"links":[],"tags":[]},"tags/brand": {"slug":"tags/brand","url":"/tags/brand/index.html","title":"brand","content":"","tagNames":[],"links":[],"tags":[]},"tags/business": {"slug":"tags/business","url":"/tags/business/index.html","title":"business","content":"","tagNames":[],"links":[],"tags":[]},"categories": {"slug":"categories","url":"/categories/index.html","title":"category","content":"","tagNames":[],"links":[],"tags":[]},"tags/coding": {"slug":"tags/coding","url":"/tags/coding/index.html","title":"coding","content":"","tagNames":[],"links":[],"tags":[]},"tags/distribution": {"slug":"tags/distribution","url":"/tags/distribution/index.html","title":"distribution","content":"","tagNames":[],"links":[],"tags":[]},"tags/garden": {"slug":"tags/garden","url":"/tags/garden/index.html","title":"garden","content":"","tagNames":[],"links":[],"tags":[]},"tags/index": {"slug":"tags/index","url":"/tags/index/index.html","title":"index","content":"","tagNames":[],"links":[],"tags":[]},"tags/mcp": {"slug":"tags/mcp","url":"/tags/mcp/index.html","title":"mcp","content":"","tagNames":[],"links":[],"tags":[]},"tags/pkm": {"slug":"tags/pkm","url":"/tags/pkm/index.html","title":"pkm","content":"","tagNames":[],"links":[],"tags":[]},"tags/productivity": {"slug":"tags/productivity","url":"/tags/productivity/index.html","title":"productivity","content":"","tagNames":[],"links":[],"tags":[]},"tags/prompts": {"slug":"tags/prompts","url":"/tags/prompts/index.html","title":"prompts","content":"","tagNames":[],"links":[],"tags":[]},"tags/publish": {"slug":"tags/publish","url":"/tags/publish/index.html","title":"publish","content":"","tagNames":[],"links":[],"tags":[]},"tags/solo": {"slug":"tags/solo","url":"/tags/solo/index.html","title":"solo","content":"","tagNames":[],"links":[],"tags":[]},"tags": {"slug":"tags","url":"/tags/index.html","title":"tag","content":"","tagNames":[],"links":[],"tags":[]},"tags/tools": {"slug":"tags/tools","url":"/tags/tools/index.html","title":"tools","content":"","tagNames":[],"links":[],"tags":[]}}};
+
+  window.__FOUNDRY_PAGES__ = pages;
+  window.__FOUNDRY_BASE_URL_PATH__ = "";window.__FOUNDRY_CONTENT_INDEX__ = window.__MDF_SEARCH__.content;})();
+</script><script defer src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.31/dist/flexsearch.bundle.js"></script><script defer src="
+https://cdn.fsky.top/t/base/2.2.3/caps/search/search-inline.js
+"></script><link rel="stylesheet" href="
+https://cdn.fsky.top/t/base/2.2.3/caps/clipboard/clipboard.css
+">
+<script defer src="
+https://cdn.fsky.top/t/base/2.2.3/caps/clipboard/clipboard.js
+"></script><script defer src="
+https://cdn.fsky.top/t/base/2.2.3/caps/toc/toc-interactive.js
+"></script><link rel="stylesheet" href="
+https://cdn.fsky.top/t/base/2.2.3/caps/explorer/explorer.css
+">
+<script defer src="
+https://cdn.fsky.top/t/base/2.2.3/caps/explorer/explorer.js
+"></script><link rel="stylesheet" href="
+https://cdn.fsky.top/t/base/2.2.3/caps/graph/graph.css
+">
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/pixi.js@8.0.0/dist/pixi.min.js"></script>
+<script defer src="
+https://cdn.fsky.top/t/base/2.2.3/caps/graph/graph.js
+"></script>
+
+</body>
+
+</html>

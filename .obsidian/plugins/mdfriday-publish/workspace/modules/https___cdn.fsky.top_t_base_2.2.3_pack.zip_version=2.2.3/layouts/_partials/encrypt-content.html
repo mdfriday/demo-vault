@@ -1,0 +1,52 @@
+{{- /*
+  [CAP:encrypt] → see caps/encrypt/manifest.json
+  Password resolution (page → parent → site), matching Foundry encryptAESGCM + decrypt.js.
+  Site-wide lock: config params.password (plugin sidebar; never frontmatter).
+
+  Call styles:
+    {{ partial "encrypt-content.html" . }}
+    {{ partial "encrypt-content.html" (dict "Page" . "HTML" $html) }}
+*/ -}}
+{{- $page := . -}}
+{{- $html := "" -}}
+{{- if reflect.IsMap . -}}
+  {{- $page = index . "Page" -}}
+  {{- $html = index . "HTML" | default "" -}}
+{{- else -}}
+  {{- $html = .Content -}}
+{{- end -}}
+{{- $password := "" -}}
+{{- $level := "" -}}
+{{- $path := "" -}}
+{{- if $page.Params.password -}}
+  {{- $password = $page.Params.password -}}
+  {{- $level = "page" -}}
+  {{- $path = $page.RelPermalink -}}
+{{- else if $page.Parent -}}
+  {{- if $page.Parent.Params -}}
+    {{- if $page.Parent.Params.password -}}
+      {{- $password = $page.Parent.Params.password -}}
+      {{- $level = "parent" -}}
+      {{- $path = $page.Parent.RelPermalink -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $password -}}
+  {{- if $page.Site.Params.password -}}
+    {{- $password = $page.Site.Params.password -}}
+    {{- $level = "site" -}}
+    {{- $path = "/" -}}
+  {{- end -}}
+{{- end -}}
+{{- if $password -}}
+  {{- if not $html -}}{{- $html = "<!--mdf-unlock-->" -}}{{- end -}}
+<div
+  id="mdf-encrypt-content"
+  data-encrypted="{{ encryptAESGCM $password $html }}"
+  data-level="{{ $level }}"
+  data-path="{{ $path }}"
+></div>
+{{- partial "encrypt-modal.html" $page -}}
+{{- else -}}
+{{- $html | safeHTML -}}
+{{- end -}}

@@ -1,0 +1,69 @@
+# Navigation
+- id: nav.home
+  translation: "Home"
+- id: nav.back
+  translation: "Back"
+
+# Components
+- id: toc.title
+  translation: "Table of Contents"
+- id: tags.title
+  translation: "Tags"
+- id: recent.title
+  translation: "Recent Notes"
+- id: page_title.home
+  translation: "Home"
+- id: explorer.title
+  translation: "Explorer"
+- id: explorer.toggle
+  translation: "Toggle Explorer"
+
+# Metadata
+- id: meta.reading_time
+  translation: "min read"
+- id: meta.words
+  translation: "words"
+- id: meta.published
+  translation: "Published"
+- id: meta.modified
+  translation: "Last modified"
+
+# Placeholders (Coming Soon features)
+- id: search.placeholder
+  translation: "Search for something..."
+- id: search.title
+  translation: "Search"
+
+# Graph View
+- id: graph.title
+  translation: "Graph View"
+- id: graph.globalLabel
+  translation: "Global Graph"
+
+# Backlinks
+- id: backlinks.title
+  translation: "Backlinks"
+- id: backlinks.noBacklinksFound
+  translation: "No backlinks found"
+
+# Folder/List page
+- id: list.itemsUnderFolder
+  translation: "item under this folder"
+- id: list.itemsUnderFolderPlural
+  translation: "items under this folder"
+
+# Taxonomy pages
+- id: taxonomy.itemsWithTag
+  translation: "{{ .count }} items tagged with #{{ .tag }}"
+- id: taxonomy.allTagsDescription
+  translation: "All tags used across the site"
+
+# Footer
+- id: footer.built_with
+  translation: "Built with"
+
+
+# Reader Mode
+- id: readermode.title
+  translation: "Reader Mode"
+

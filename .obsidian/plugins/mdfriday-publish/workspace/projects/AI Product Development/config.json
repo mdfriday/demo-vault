@@ -1,0 +1,40 @@
+{
+  "baseURL": "https://share.fsky.top/s/IlEBaN/",
+  "title": "AI Product Development",
+  "contentDir": "content",
+  "publishDir": "public",
+  "defaultContentLanguage": "en",
+  "taxonomies": {
+    "tag": "tags",
+    "category": "categories"
+  },
+  "module": {
+    "imports": [
+      {
+        "path": "https://cdn.fsky.top/t/notes/1.0.2/pack.zip?version=1.0.2"
+      }
+    ]
+  },
+  "markdown": {
+    "useInternalRenderer": true
+  },
+  "params": {
+    "branding": true,
+    "mdfriday": {
+      "family": "notes",
+      "variant": "paper",
+      "version": "1.0.2"
+    },
+    "password": "",
+    "lastPublishUrl": "https://share.fsky.top/s/IlEBaN/index.html"
+  },
+  "publish": {
+    "method": "cloudflare"
+  },
+  "languages": {
+    "en": {
+      "contentDir": "content",
+      "weight": 1
+    }
+  }
+}

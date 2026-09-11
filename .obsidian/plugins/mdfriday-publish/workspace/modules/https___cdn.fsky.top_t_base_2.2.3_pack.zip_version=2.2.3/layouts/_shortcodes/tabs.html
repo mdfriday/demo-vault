@@ -1,0 +1,17 @@
+{{- /*
+  layouts/_shortcodes/tabs.html
+  CAP-04: CSS-only tab panels (no JavaScript).
+
+  Usage:
+    {{< tabs >}}
+    {{< tab "macOS" >}}macOS content{{< /tab >}}
+    {{< tab "Windows" >}}Windows content{{< /tab >}}
+    {{< /tabs >}}
+
+  CSS: static/caps/tabs/tabs.css (always loaded; sub-theme can override)
+  Implementation: CSS radio-button trick — no JS required.
+*/ -}}
+<div class="mdf-tabs">
+  {{ .Inner | safeHTML }}
+</div>
+

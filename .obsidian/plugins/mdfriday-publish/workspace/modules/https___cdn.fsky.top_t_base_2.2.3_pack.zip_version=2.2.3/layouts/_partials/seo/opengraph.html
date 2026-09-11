@@ -1,0 +1,13 @@
+{{- with .Title | default .Site.Title }}
+<meta property="og:title" content="{{ . }}" />
+{{- end }}
+{{- with .Description | default .Site.Params.description }}
+<meta property="og:description" content="{{ . }}">
+{{- end }}
+{{- with .Params.image | default .Site.Params.logo }}
+<meta property="og:image" content="{{ . | relURL }}" />
+{{- end }}
+<meta property="og:url" content="{{ .RelPermalink }}" />
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+

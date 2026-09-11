@@ -1,0 +1,54 @@
+{
+  "baseURL": "/",
+  "title": "Digital Garden",
+  "contentDir": "content",
+  "publishDir": "public",
+  "defaultContentLanguage": "en",
+  "taxonomies": {
+    "tag": "tags",
+    "category": "categories"
+  },
+  "module": {
+    "imports": [
+      {
+        "path": "https://cdn.fsky.top/t/quartz/1.0.3/pack.zip?version=1.0.3"
+      }
+    ]
+  },
+  "markdown": {
+    "useInternalRenderer": true
+  },
+  "params": {
+    "branding": true,
+    "search": {
+      "enable": true,
+      "variant": "inline",
+      "trigger": "sidebar",
+      "content": true,
+      "cjk": true
+    },
+    "explorer": true,
+    "graph": true,
+    "clipboard": true,
+    "toc": {
+      "variant": "interactive"
+    },
+    "breadcrumbs": true,
+    "readerMode": true,
+    "mdfriday": {
+      "family": "quartz",
+      "variant": "quartz",
+      "version": "1.0.3"
+    },
+    "password": ""
+  },
+  "publish": {
+    "method": "cloudflare"
+  },
+  "languages": {
+    "en": {
+      "contentDir": "content",
+      "weight": 1
+    }
+  }
+}

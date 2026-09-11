@@ -1,0 +1,5 @@
+{{- with .Site.Params.favicon -}}
+  <link rel="icon" href="{{ . | relURL }}">
+{{- else -}}
+  <link rel="icon" href="{{ partial "base-asset" "favicon.svg" }}">
+{{- end -}}

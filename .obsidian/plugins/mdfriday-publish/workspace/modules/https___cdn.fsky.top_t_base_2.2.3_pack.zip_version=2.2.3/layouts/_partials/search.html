@@ -1,0 +1,47 @@
+{{- /*
+  layouts/_partials/search.html
+  CAP-search: Unified FlexSearch modal (v2.2+).
+
+  Renders:
+    1. The full modal overlay HTML (#mdf-search-modal) — injected once before </body>
+    2. FlexSearch CDN + caps/search/search.js loader (in scripts-body-end/extra.html override)
+
+  Activation: set [params] search.enable = true in config.toml
+  Data source: window.__MDF_SEARCH__ injected by scripts-body-end/search-data.html
+
+  Trigger placement — Sub-theme places {{- partial "search-trigger.html" . -}} anywhere:
+    header trigger → header/extra.html (auto when search.trigger = "header")
+    sidebar trigger → inside sidebar partial (when search.trigger = "sidebar")
+
+  Locked IDs: #mdf-search-modal, #mdf-search-input, #mdf-search-results
+  CSS: override --mdf-search-* variables in sub-theme main.css
+*/ -}}
+{{- with .Site.Params.search -}}
+{{- if .enable -}}
+{{- $hotkey := .hotkey | default "/" -}}
+<div id="mdf-search-modal"
+  role="dialog"
+  aria-modal="true"
+  aria-label="{{ i18n "search.label" | default "Search" }}"
+  data-hotkey="{{ $hotkey }}"
+  hidden>
+  <div class="mdf-search-modal-box">
+    <div class="mdf-search-input-row">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+        fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <input type="search"
+        id="mdf-search-input"
+        autocomplete="off"
+        spellcheck="false"
+        placeholder="{{ i18n "search.placeholder" | default "Search..." }}"
+        aria-label="{{ i18n "search.placeholder" | default "Search..." }}"
+        aria-controls="mdf-search-results">
+      <button class="mdf-search-close" type="button" aria-label="Close search">Esc</button>
+    </div>
+    <div id="mdf-search-results" role="listbox" aria-live="polite"></div>
+  </div>
+</div>
+{{- end -}}
+{{- end -}}

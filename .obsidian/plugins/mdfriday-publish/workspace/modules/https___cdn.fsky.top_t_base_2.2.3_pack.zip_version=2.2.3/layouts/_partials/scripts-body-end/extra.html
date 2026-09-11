@@ -1,0 +1,51 @@
+{{- /*
+  layouts/_partials/scripts-body-end/extra.html
+  Auto-injects search modal HTML + FlexSearch CDN + search.js when search.enable = true.
+  Auto-injects clipboard.js when clipboard = true.
+  Sub-theme can override to add more scripts AFTER Base auto-injections.
+*/ -}}
+
+{{- /* ── Search capability ── */ -}}
+{{- with .Site.Params.search -}}
+{{- if .enable -}}
+{{- $variant := .variant | default "modal" -}}
+<script defer src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.31/dist/flexsearch.bundle.js"></script>
+{{- if eq $variant "inline" -}}
+<script defer src="{{ partial "base-asset" "caps/search/search-inline.js" }}"></script>
+{{- else -}}
+<link rel="stylesheet" href="{{ partial "base-asset" "caps/search/search.css" }}">
+{{- partial "search.html" $ -}}
+<script defer src="{{ partial "base-asset" "caps/search/search.js" }}"></script>
+{{- end -}}
+{{- end -}}
+{{- end -}}
+
+{{- /* ── Clipboard capability ── */ -}}
+{{- if .Site.Params.clipboard -}}
+<link rel="stylesheet" href="{{ partial "base-asset" "caps/clipboard/clipboard.css" }}">
+<script defer src="{{ partial "base-asset" "caps/clipboard/clipboard.js" }}"></script>
+{{- end -}}
+
+{{- /* ── TOC interactive ── */ -}}
+{{- $tocVariant := "static" -}}
+{{- with .Site.Params.toc -}}
+{{- $tocVariant = .variant | default "static" -}}
+{{- end -}}
+{{- if eq $tocVariant "interactive" -}}
+<script defer src="{{ partial "base-asset" "caps/toc/toc-interactive.js" }}"></script>
+{{- end -}}
+
+{{- /* ── Explorer capability ── */ -}}
+{{- if .Site.Params.explorer -}}
+<link rel="stylesheet" href="{{ partial "base-asset" "caps/explorer/explorer.css" }}">
+<script defer src="{{ partial "base-asset" "caps/explorer/explorer.js" }}"></script>
+{{- end -}}
+
+{{- /* ── Graph capability ── */ -}}
+{{- if .Site.Params.graph -}}
+<link rel="stylesheet" href="{{ partial "base-asset" "caps/graph/graph.css" }}">
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/pixi.js@8.0.0/dist/pixi.min.js"></script>
+<script defer src="{{ partial "base-asset" "caps/graph/graph.js" }}"></script>
+{{- end -}}
+

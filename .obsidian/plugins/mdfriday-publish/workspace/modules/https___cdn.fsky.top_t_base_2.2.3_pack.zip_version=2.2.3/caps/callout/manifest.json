@@ -1,0 +1,82 @@
+{
+  "$schema": "https://mdfriday.com/schemas/capability-manifest/v1",
+  "name": "callout",
+  "version": "2.1.0",
+  "type": "shortcode",
+  "description": "Rich callout/alert block with 6 types, optional title, and optional fold (collapsible). CSS loaded globally via base. Shortcode outputs only HTML; no Scratch resource injection needed.",
+
+  "entry": "shortcode:callout",
+
+  "config": {
+    "scope": "shortcode",
+    "params": [
+      {
+        "key": "type",
+        "in": "shortcode-param",
+        "type": "string",
+        "required": false,
+        "description": "Callout visual type. Values: note | info | warning | error | tip | success",
+        "example": "warning",
+        "effect": "Sets border color and background color via .mdf-callout-{type} class"
+      },
+      {
+        "key": "title",
+        "in": "shortcode-param",
+        "type": "string",
+        "required": false,
+        "description": "Optional heading text shown above the callout body",
+        "example": "Watch out"
+      },
+      {
+        "key": "fold",
+        "in": "shortcode-param",
+        "type": "string",
+        "required": false,
+        "description": "Set to 'open' to render as an initially-open collapsible <details> block",
+        "example": "open",
+        "effect": "Wraps callout in <details open> with <summary> for the title"
+      }
+    ],
+    "usage": {
+      "basic": "{{< callout type=\"note\" >}}Content{{< /callout >}}",
+      "with_title": "{{< callout type=\"warning\" title=\"Heads up\" >}}Content{{< /callout >}}",
+      "collapsible": "{{< callout type=\"tip\" title=\"Pro tip\" fold=\"open\" >}}Content{{< /callout >}}"
+    }
+  },
+
+  "assets": {
+    "css": {
+      "file": "static/caps/callout/callout.css",
+      "published_at": "caps/callout/callout.css",
+      "size": "~2KB",
+      "child_override": true,
+      "note": "Override to restyle callout types. Or add higher-specificity rules in main.css."
+    },
+    "js": [],
+    "future_lazy_load": false,
+    "size_impact": "~2KB CSS (always loaded)"
+  },
+
+  "locked": {
+    "html_ids": [],
+    "html_data_attrs": [],
+    "js_files": [],
+    "reason": "No locked contracts — CSS classes are the only API and are fully overridable"
+  },
+
+  "child_override": {
+    "css": "static/caps/callout/callout.css",
+    "css_in_main": {
+      "classes": [".mdf-callout", ".mdf-callout-note", ".mdf-callout-warning", ".mdf-callout-error", ".mdf-callout-tip", ".mdf-callout-success", ".mdf-callout-info"],
+      "note": "Override individual type styles via higher-specificity rules in main.css"
+    },
+    "partials": [
+      {
+        "file": "layouts/_shortcodes/callout.html",
+        "level": "safe",
+        "note": "Override to change HTML structure. Keep .mdf-callout and .mdf-callout-{type} classes for CSS compatibility."
+      }
+    ]
+  }
+}
+

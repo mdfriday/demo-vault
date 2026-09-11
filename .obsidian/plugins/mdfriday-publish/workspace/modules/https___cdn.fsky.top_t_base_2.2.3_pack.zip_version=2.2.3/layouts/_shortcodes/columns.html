@@ -1,0 +1,31 @@
+{{- /*
+  layouts/_shortcodes/columns.html
+  CAP-09: Multi-column layout with optional ratio.
+
+  Usage:
+    {{< columns >}}
+    Left column content
+    ===
+    Right column content
+    {{< /columns >}}
+
+    {{< columns ratio="1:2" >}}
+    Narrow left
+    ===
+    Wide right (2×)
+    {{< /columns >}}
+
+  Param:
+    ratio — e.g. "1:2" or "1:1:1" (default: equal columns)
+
+  CSS: sub-theme styles .mdf-columns in main.css
+*/ -}}
+{{- $ratio := .Get "ratio" | default "" -}}
+{{- $cols  := split (.Inner | safeHTML) "===" -}}
+<div class="mdf-columns{{ if $ratio }} mdf-columns--{{ $ratio | replace ":" "-" }}{{ end }}"
+     style="{{ if $ratio }}--mdf-col-ratio: {{ $ratio }};{{ end }}">
+  {{- range $i, $col := $cols -}}
+  <div class="mdf-column">{{ $col | safeHTML }}</div>
+  {{- end -}}
+</div>
+

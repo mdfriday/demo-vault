@@ -1,0 +1,20 @@
+{{ define "main" }}
+<article class="single base-single">
+  <header class="single-header">
+    <h1 class="single-title">{{ .Title }}</h1>
+    {{- with .Date -}}
+    <time datetime="{{ . }}">{{ . | time.Format "2006-01-02" }}</time>
+    {{- end -}}
+  </header>
+
+  {{- partial "toc.html" . -}}
+
+  <div class="single-content">
+    {{- partial "encrypt-content.html" . -}}
+  </div>
+
+  {{- if .Params.comments -}}
+    {{- partial "comments.html" . -}}
+  {{- end -}}
+</article>
+{{ end }}

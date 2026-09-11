@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "family": {
+    "id": "quartz",
+    "name": "Quartz",
+    "targets": [
+      "folder"
+    ],
+    "defaultVariant": "quartz",
+    "engine": {
+      "foundry": ">=26.5.0 <27.0.0",
+      "base": "^2.2.3"
+    }
+  },
+  "variants": [
+    {
+      "id": "quartz",
+      "name": "Quartz",
+      "default": true,
+      "css": "static/css/quartz.css",
+      "tier": "professional",
+      "kinds": [
+        "wiki",
+        "docs"
+      ],
+      "tags": [
+        "knowledge-base",
+        "obsidian",
+        "backlinks"
+      ]
+    }
+  ],
+  "capabilities": {
+    "darkmode": true,
+    "search": true,
+    "i18n": true,
+    "math": true,
+    "mermaid": true,
+    "explorer": true,
+    "graph": true,
+    "clipboard": true,
+    "toc": true,
+    "breadcrumbs": true,
+    "readerMode": true
+  },
+  "capabilityOverrides": {
+    "search": {
+      "variant": "inline",
+      "trigger": "sidebar",
+      "content": true,
+      "cjk": true
+    },
+    "toc": {
+      "variant": "interactive"
+    }
+  },
+  "shortcodes": [
+    "callout",
+    "details"
+  ],
+  "externalDeps": [],
+  "author": {
+    "id": "mdfriday",
+    "name": "MDFriday",
+    "official": true
+  },
+  "license": "MIT",
+  "pack": {
+    "exclude": [
+      "fixtures/**",
+      "screenshots/**",
+      "theme-dna.yaml",
+      "*.md",
+      "LICENSE"
+    ]
+  }
+}

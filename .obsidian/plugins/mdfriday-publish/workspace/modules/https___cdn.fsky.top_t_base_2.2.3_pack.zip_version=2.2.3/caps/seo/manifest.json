@@ -1,0 +1,30 @@
+{
+  "$schema": "https://mdfriday.com/schemas/capability-manifest/v1",
+  "name": "seo",
+  "version": "1.0.0",
+  "type": "global",
+  "description": "SEO meta tags: Open Graph (social sharing) and Schema.org structured data. Always active via head.html. Controlled via page front-matter and site params.",
+  "entry": "partial:seo/main.html",
+  "config": {
+    "scope": "both",
+    "params": [
+      { "key": "description", "in": "front-matter", "type": "string", "required": false, "description": "Page meta description for search engines and OG preview", "example": "Learn how to build Foundry themes step by step" },
+      { "key": "image", "in": "front-matter", "type": "string", "required": false, "description": "OG image URL for social sharing preview", "example": "/images/post-cover.jpg" },
+      { "key": "description", "in": "config.toml", "section": "params", "type": "string", "required": false, "description": "Site-level fallback description when page description is absent", "example": "My awesome blog" },
+      { "key": "logo", "in": "config.toml", "section": "params", "type": "string", "required": false, "description": "Site-level OG image fallback", "example": "/images/logo.png" }
+    ],
+    "example_frontmatter": "---\ntitle: My Post\ndescription: A detailed guide on X\nimage: /images/cover.jpg\n---",
+    "example_config": "# config.toml\n[params]\n  description = \"My awesome blog\"\n  logo = \"/images/logo.png\""
+  },
+  "assets": { "css": null, "js": [], "future_lazy_load": false, "size_impact": "~0KB — meta tags only" },
+  "locked": { "html_ids": [], "html_data_attrs": [], "js_files": [], "reason": "No JS or locked IDs" },
+  "child_override": {
+    "css": null,
+    "partials": [
+      { "file": "layouts/_partials/seo/main.html", "level": "safe", "note": "Can add more SEO systems" },
+      { "file": "layouts/_partials/seo/opengraph.html", "level": "safe", "note": "Can change OG tags" },
+      { "file": "layouts/_partials/seo/schema.html", "level": "safe", "note": "Can add more schema types" }
+    ]
+  }
+}
+

@@ -1,0 +1,5 @@
+{{/* layouts/index.html — Note theme home page */}}
+{{ define "main" }}
+{{- $shell := partial "notes/main-shell.html" . -}}
+{{- partial "encrypt-content.html" (dict "Page" . "HTML" $shell) -}}
+{{ end }}

@@ -1,0 +1,61 @@
+{
+  "$schema": "https://mdfriday.com/schemas/capability-manifest/v1",
+  "name": "google_analytics",
+  "version": "1.0.0",
+  "type": "global",
+  "description": "Google Analytics GA4 page tracking. Injects gtag.js script when a valid Measurement ID is configured. Respects DNT (Do Not Track) headers.",
+
+  "entry": "partial:google_analytics.html",
+
+  "config": {
+    "scope": "site",
+    "params": [
+      {
+        "key": "googleAnalytics",
+        "in": "config.toml",
+        "section": "root",
+        "type": "string",
+        "required": false,
+        "description": "Google Analytics 4 Measurement ID. Enables tracking when set.",
+        "example": "G-XXXXXXXXXX",
+        "pattern": "^G-[A-Z0-9]+$",
+        "effect": "Injects gtag.js and initializes GA4 tracking on all pages"
+      }
+    ],
+    "example_config": "# config.toml\ngoogleAnalytics = \"G-XXXXXXXXXX\""
+  },
+
+  "assets": {
+    "css": null,
+    "js": [
+      {
+        "file": null,
+        "cdn": "https://www.googletagmanager.com/gtag/js",
+        "size": "~30KB (loaded from Google CDN)",
+        "locked": true,
+        "note": "Loaded from Google CDN at runtime. No local file to override."
+      }
+    ],
+    "future_lazy_load": false,
+    "size_impact": "~0KB local — CDN loaded at runtime"
+  },
+
+  "locked": {
+    "html_ids": [],
+    "html_data_attrs": [],
+    "js_files": [],
+    "reason": "No local locked files. The CDN gtag.js is controlled by Google."
+  },
+
+  "child_override": {
+    "css": null,
+    "partials": [
+      {
+        "file": "layouts/_partials/google_analytics.html",
+        "level": "safe",
+        "note": "Can replace entirely to use a different analytics provider (Plausible, Umami, etc.)"
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,16 @@
+name        = "Notes"
+description = "Single-page note publisher with 6 built-in style themes — Foundry sub-theme based on MDFriday Notes"
+license     = "MIT"
+licenselink = "https://github.com/mdfriday/themes/blob/master/LICENSE"
+homepage    = "https://github.com/mdfriday/themes"
+tags        = ["single-page", "minimal", "responsive", "multilingual"]
+features    = ["single-page", "multiple-themes", "multilingual"]
+min_version = "0.41.0"
+
+[author]
+  name     = "MDFriday"
+  homepage = "https://mdfriday.com"
+
+[module]
+  [[module.imports]]
+    path = "https://cdn.fsky.top/t/base/2.2.3/pack.zip?version=2.2.3"

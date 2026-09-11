@@ -1,0 +1,20 @@
+{{/* layouts/_partials/quartz/footer-content.html — Quartz footer (inside #quartz-body)
+     SKILL: Analytics/Brand removed — handled by config (googleAnalytics, params.branding).
+     This partial renders inside the 3-column layout, NOT via Base's footer slot. */}}
+<footer>
+    <p>
+        {{ i18n "footer.built_with" | default "Built with" }}
+        <a href="https://github.com/mdfriday">MDFriday</a>
+        <br/>{{ time.Format "2006" now }} All Rights Reserved.
+    </p>
+    {{- with .Site.Params.footer -}}
+    {{- with .links -}}
+    <ul class="footer-links">
+        {{- range $name, $url := . -}}
+        <li><a href="{{ $url }}">{{ $name }}</a></li>
+        {{- end -}}
+    </ul>
+    {{- end -}}
+    {{- end -}}
+</footer>
+

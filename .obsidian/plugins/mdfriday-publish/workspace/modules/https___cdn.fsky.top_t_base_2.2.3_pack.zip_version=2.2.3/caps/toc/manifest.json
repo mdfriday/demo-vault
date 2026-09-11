@@ -1,0 +1,86 @@
+{
+  "$schema": "https://mdfriday.com/schemas/capability-manifest/v1",
+  "name": "toc",
+  "version": "2.0.0",
+  "type": "conditional",
+  "description": "Table of Contents generated from Markdown headings. Three variants: static (inline, front-matter triggered), sticky (fixed sidebar via slot-toc block), interactive (sticky + IntersectionObserver scroll highlighting).",
+
+  "entry": "partial:toc.html (static) | partial:toc-sticky.html via slot-toc block (sticky/interactive)",
+
+  "config": {
+    "scope": "page+site",
+    "params": [
+      {
+        "key": "toc",
+        "in": "front-matter",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Enable static inline Table of Contents for this page (toc.variant = 'static')",
+        "example": true,
+        "effect": "Renders a <nav class='toc'> with links to all headings on the page"
+      },
+      {
+        "key": "toc.variant",
+        "in": "site-params",
+        "type": "string",
+        "required": false,
+        "default": "static",
+        "description": "TOC rendering variant: 'static' (inline, front-matter triggered) | 'sticky' (fixed right sidebar, slot-toc block) | 'interactive' (sticky + IntersectionObserver scroll highlighting)",
+        "example": "interactive",
+        "effect": "static: uses toc.html partial inside define 'main'. sticky/interactive: uses toc-sticky.html partial inside define 'slot-toc' in layout files."
+      }
+    ]
+  },
+
+  "assets": {
+    "css": null,
+    "js": [
+      {
+        "file": "static/caps/toc/toc-interactive.js",
+        "locked": true,
+        "size": "~2KB",
+        "note": "Only loaded when toc.variant = 'interactive'. Requires .toc and .toc-header classes in HTML."
+      }
+    ],
+    "size_impact": "~0KB (static/sticky) | ~2KB (interactive)"
+  },
+
+  "locked": {
+    "html_ids": [],
+    "html_classes": ["toc", "toc-header", "toc-content"],
+    "js_files": ["static/caps/toc/toc-interactive.js"],
+    "reason": "toc-interactive.js reads .toc, .toc-header, .toc-content classes and adds data-for attributes to links. Renaming breaks IntersectionObserver highlighting."
+  },
+
+  "child_override": {
+    "css_variables": [
+      "--mdf-toc-bg",
+      "--mdf-toc-border",
+      "--mdf-toc-text",
+      "--mdf-toc-active",
+      "--mdf-toc-hover",
+      "--mdf-toc-width",
+      "--mdf-toc-top"
+    ],
+    "partials": [
+      {
+        "file": "layouts/_partials/toc.html",
+        "level": "safe",
+        "note": "Override to customize inline static TOC HTML"
+      },
+      {
+        "file": "layouts/_partials/toc-sticky.html",
+        "level": "caution",
+        "note": "Override to customize sticky TOC HTML. Keep .toc, .toc-header, .toc-content classes (required by toc-interactive.js)"
+      }
+    ]
+  },
+
+  "variant_usage": {
+    "static": "Add toc: true to page front-matter. Call {{- partial 'toc.html' . -}} inside {{ define 'main' }}.",
+    "sticky": "Set params.toc.variant = 'sticky'. In layout file: {{ define 'slot-toc' }}{{- partial 'toc-sticky.html' . -}}{{ end }}",
+    "interactive": "Set params.toc.variant = 'interactive'. Same as sticky. Also load toc-interactive.js in scripts-body-end/extra.html: {{- if eq .Site.Params.toc.variant 'interactive' -}}<script defer src='{{ \"caps/toc/toc-interactive.js\" | relURL }}'></script>{{- end -}}"
+  }
+}
+

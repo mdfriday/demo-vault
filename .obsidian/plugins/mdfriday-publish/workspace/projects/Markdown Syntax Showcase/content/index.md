@@ -1,0 +1,1 @@
+/Users/weisun/github/mdfriday/workspace/demo-vault/Share Note/Markdown Syntax Showcase.md

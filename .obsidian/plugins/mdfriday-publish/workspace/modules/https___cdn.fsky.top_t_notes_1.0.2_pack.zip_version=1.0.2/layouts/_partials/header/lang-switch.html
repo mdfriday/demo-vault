@@ -1,0 +1,22 @@
+{{/* layouts/_partials/header/lang-switch.html — Note theme language switcher
+     Shown only when multiple languages are configured (gt (len .Site.Languages) 1).
+     Uses styles from static/css/lang.css (absolute-positioned dropdown at top-right).
+     SKILL: .Site.IsMultilingual → gt (len .Site.Languages) 1 */}}
+{{- if gt (len .Site.Languages) 1 -}}
+<div class="language-switcher">
+  <div class="language-dropdown">
+    <div class="language-dropdown-button">
+      <span>{{ .Language.LanguageName }}</span>
+      <span class="language-dropdown-arrow"></span>
+    </div>
+    <div class="language-dropdown-content">
+      {{- /* Current language — highlighted */ -}}
+      <a href="{{ .RelPermalink }}" class="current-language">{{ .Language.LanguageName }}</a>
+      {{- /* Other language versions of this page */ -}}
+      {{- range .Translations -}}
+      <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
+      {{- end -}}
+    </div>
+  </div>
+</div>
+{{- end -}}

@@ -1,0 +1,14 @@
+{{/* layouts/_partials/scripts-body-start/theme-init.html — Quartz theme
+     SKILL: Override Base's FOUC prevention script.
+     Quartz uses mdf-theme (Base's contract) for dark mode persistence.
+     Sets html[data-theme] attribute before first paint. */}}
+<script>
+(function() {
+    var saved = localStorage.getItem('mdf-theme');
+    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = saved || (prefersDark ? 'dark' : 'light');
+    document.documentElement.dataset.theme = theme;
+    document.documentElement.setAttribute('data-theme', theme);
+})();
+</script>
+

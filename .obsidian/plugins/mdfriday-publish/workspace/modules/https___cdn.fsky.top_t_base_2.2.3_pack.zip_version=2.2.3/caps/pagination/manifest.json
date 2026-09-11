@@ -1,0 +1,56 @@
+{
+  "$schema": "https://mdfriday.com/schemas/capability-manifest/v1",
+  "name": "pagination",
+  "version": "1.0.0",
+  "type": "conditional",
+  "description": "Pagination navigation for list pages. Renders prev/next links when a paginator has multiple pages.",
+  "entry": "partial:pagination.html",
+  "config": {
+    "scope": "site",
+    "params": [
+      {
+        "key": "paginate",
+        "in": "config.toml",
+        "section": "root",
+        "type": "number",
+        "required": false,
+        "default": 10,
+        "description": "Number of posts per page",
+        "example": 10,
+        "effect": "Controls how many items appear before pagination kicks in"
+      }
+    ],
+    "example_config": "# config.toml\npaginate = 10"
+  },
+  "assets": {
+    "css": null,
+    "js": [],
+    "future_lazy_load": false,
+    "size_impact": "~0KB — no assets, HTML only",
+    "css_in_main": {
+      "classes": [".pagination", ".pagination-prev", ".pagination-next", ".pagination-info"],
+      "note": "Add these classes to child theme static/css/main.css"
+    }
+  },
+  "locked": {
+    "html_ids": [],
+    "html_data_attrs": [],
+    "js_files": [],
+    "reason": "No JS dependency."
+  },
+  "child_override": {
+    "css": null,
+    "css_in_main": {
+      "classes": [".pagination", ".pagination-prev", ".pagination-next", ".pagination-info"],
+      "note": "Style in child theme main.css"
+    },
+    "partials": [
+      {
+        "file": "layouts/_partials/pagination.html",
+        "level": "safe",
+        "note": "Can freely replace with any pagination layout"
+      }
+    ]
+  }
+}
+

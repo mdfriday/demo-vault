@@ -10,8 +10,12 @@ tags:
 author: 孙伟
 lang: zh
 translationOf: "Best Obsidian Publish Alternatives in 2026.md"
+cover: ../Assets/obsidian-publish-alternatives-cover.png
+
 ---
 # 2026 年最佳 Obsidian Publish 替代方案：把笔记发布成网站
+
+![Cover](../Assets/obsidian-publish-alternatives-cover.png)
 
 打开 Obsidian 后，你想做一件很简单的事情：
 

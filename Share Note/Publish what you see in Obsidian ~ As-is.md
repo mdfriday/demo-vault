@@ -4,19 +4,13 @@ tags:
   - ai
   - product
   - build-in-public
-created: 2026-09-11
+created: 2026-09-10
 ---
 # AI Product Development
 
 > A working note on shipping AI products as a solo founder — from idea to first users.
 
-![Cover](../Assets/cover-3d.jpg)
-
-## How publishing fits
-
-![Workflow](../Assets/workflow.png)
-
-
+![[ai-dev.jpg]]
 ## The real loop
 
 Most AI products fail the same way: a clever demo, then silence. The loop that actually works is shorter and less romantic:
@@ -55,11 +49,11 @@ flowchart TD
 
 ## What “good enough” looks like
 
-| Stage | Signal | Don’t wait for |
-|-------|--------|----------------|
-| Idea | One sentence a stranger understands | Perfect positioning |
-| MVP | Someone finishes the job without you | Feature parity |
-| Growth | Users invite others | Viral loops |
+| Stage  | Signal                               | Don’t wait for      |
+| ------ | ------------------------------------ | ------------------- |
+| Idea   | One sentence a stranger understands  | Perfect positioning |
+| MVP    | Someone finishes the job without you | Feature parity      |
+| Growth | Users invite others                  | Viral loops         |
 
 ## A practical stack for solo builders
 

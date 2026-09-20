@@ -1,0 +1,23 @@
+{
+  "name": "atelier-ui",
+  "owner": {
+    "name": "heyman333",
+    "email": "heyman333@github.com"
+  },
+  "metadata": {
+    "description": "Editorial-driven UI design skills for premium digital products"
+  },
+  "plugins": [
+    {
+      "name": "heyman333",
+      "source": "./",
+      "description": "A collection of UI design skills: editorial-designer (fashion/magazine aesthetic) and apple-ui-designer (iOS HIG native feel)",
+      "version": "1.1.0",
+      "author": {
+        "name": "heyman333"
+      },
+      "keywords": ["ui", "design", "frontend", "editorial", "fashion", "ios", "apple", "hig", "native"],
+      "category": "design"
+    }
+  ]
+}

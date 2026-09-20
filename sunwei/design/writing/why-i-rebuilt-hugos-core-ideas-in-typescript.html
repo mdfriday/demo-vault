@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Why I rebuilt Hugo's core ideas in TypeScript while shaping MDFriday's publishing engine.">
+  <meta name="author" content="Sun Wei">
+  <meta name="theme-color" content="#FAFAF8">
+  <title>Why I Rebuilt Hugo's Core Ideas in TypeScript — Sun Wei</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../" aria-label="Sun Wei home">
+        <img class="brand__avatar" src="../me.png" alt="" width="32" height="32" decoding="async">
+        <span>Sun Wei</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="is-active" href="./">Writing</a></li>
+          <li><a href="../projects/">Projects</a></li>
+          <li><a href="../#about-timeline">About</a></li>
+          <li><a href="https://youtube.com/@sunwei" rel="noopener noreferrer" target="_blank">YouTube</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile" hidden>
+      <ul class="mobile-nav__list">
+        <li><a class="is-active" href="./">Writing</a></li>
+        <li><a href="../projects/">Projects</a></li>
+        <li><a href="../#about-timeline">About</a></li>
+        <li><a href="https://youtube.com/@sunwei" rel="noopener noreferrer" target="_blank">YouTube</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <article class="article">
+      <header class="article__header">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb">
+            <li><a href="../">Home</a></li>
+            <li class="breadcrumb__sep" aria-hidden="true">/</li>
+            <li><a href="./">Writing</a></li>
+            <li class="breadcrumb__sep" aria-hidden="true">/</li>
+            <li aria-current="page">Hugo in TypeScript</li>
+          </ol>
+        </nav>
+        <h1>Why I Rebuilt Hugo's Core Ideas in TypeScript</h1>
+        <p class="article__dek">
+          How studying a mature static site generator shaped MDFriday's engine —
+          and why “rebuild” meant learning the ideas, not cloning the codebase.
+        </p>
+        <p class="article__meta">
+          <span>Technology</span>
+          <span aria-hidden="true">·</span>
+          <time datetime="2025-12-03">Dec 3, 2025</time>
+          <span aria-hidden="true">·</span>
+          <span>12 min read</span>
+        </p>
+      </header>
+
+      <div class="article__body">
+        <p>
+          After reading Hugo's source, I had a clearer map of publishing systems.
+          The next question was practical: what does MDFriday need that a classic
+          static generator doesn't fully cover?
+        </p>
+        <p>
+          People already write in Obsidian. They already have graphs, folders,
+          and habits. The product problem wasn't “another SSG.” It was:
+          how do you publish what you already know without rebuilding your workflow?
+        </p>
+
+        <h2>Ideas worth keeping</h2>
+        <ul>
+          <li>Content as the source of truth</li>
+          <li>A deterministic build pipeline</li>
+          <li>Templates as the presentation boundary</li>
+          <li>Fast feedback when something changes</li>
+        </ul>
+
+        <h2>What had to change</h2>
+        <p>
+          TypeScript put the engine closer to the rest of the product: UI, AI helpers,
+          and browser tooling. It also forced clearer types around content models —
+          pages, notes, gardens, and publish targets.
+        </p>
+        <p>
+          I wasn't trying to replace Hugo for everyone. I was trying to own the
+          intermediate representation that MDFriday needs: from personal knowledge
+          to a public site people can maintain.
+        </p>
+
+        <blockquote>
+          <p>Don't copy a system. Extract the decisions that made it work.</p>
+        </blockquote>
+
+        <h2>Still learning</h2>
+        <p>
+          The engine is part of an experiment, not a finished proof.
+          Some choices will change after talking to users. That's the point of building
+          in public: the architecture has to survive contact with real problems.
+        </p>
+        <p>
+          Related:
+          <a href="../projects/mdfriday.html">MDFriday project</a>,
+          <a href="../projects/foundry.html">Foundry</a>.
+        </p>
+      </div>
+
+      <footer class="article__footer">
+        <a href="what-i-learned-from-reading-hugos-source-code.html">← Previous</a>
+        <a href="what-17-years-of-software-development-taught-me.html">Next article →</a>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <p class="site-footer__name">Sun Wei</p>
+        <p class="site-footer__tagline">Building a business around knowledge, software and AI.</p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Footer">
+        <a href="./">Writing</a>
+        <a href="../projects/">Projects</a>
+        <a href="https://youtube.com/@sunwei" rel="noopener noreferrer" target="_blank">YouTube</a>
+        <a href="https://mdfriday.com" rel="noopener noreferrer" target="_blank">MDFriday</a>
+      </nav>
+      <p class="site-footer__meta">
+        <span>© <span id="year">2026</span> Sun Wei</span>
+        <span aria-hidden="true">·</span>
+        <span>Built with Markdown and code.</span>
+      </p>
+    </div>
+  </footer>
+  <script src="../script.js" defer></script>
+</body>
+</html>

@@ -70,4 +70,28 @@
   } else {
     reveals.forEach((el) => el.classList.add("is-visible"));
   }
+  /* Category filters on list pages */
+  const filterBar = document.querySelector("[data-filter-bar]");
+  if (filterBar) {
+    const buttons = filterBar.querySelectorAll("[data-filter]");
+    const items = document.querySelectorAll("[data-category]");
+
+    filterBar.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-filter]");
+      if (!button) return;
+
+      const filter = button.getAttribute("data-filter");
+      buttons.forEach((btn) => {
+        const active = btn === button;
+        btn.classList.toggle("is-active", active);
+        btn.setAttribute("aria-pressed", String(active));
+      });
+
+      items.forEach((item) => {
+        const category = item.getAttribute("data-category");
+        const show = filter === "all" || category === filter;
+        item.classList.toggle("is-hidden", !show);
+      });
+    });
+  }
 })();

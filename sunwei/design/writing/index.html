@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Writing by Sun Wei — notes on technology, building products, and turning knowledge into something useful.">
+  <meta name="author" content="Sun Wei">
+  <meta name="theme-color" content="#FAFAF8">
+  <title>Writing — Sun Wei</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../" aria-label="Sun Wei home">
+        <img class="brand__avatar" src="../me.png" alt="" width="32" height="32" decoding="async">
+        <span>Sun Wei</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="is-active" href="./" aria-current="page">Writing</a></li>
+          <li><a href="../projects/">Projects</a></li>
+          <li><a href="../#about-timeline">About</a></li>
+          <li><a href="https://youtube.com/@sunwei" rel="noopener noreferrer" target="_blank">YouTube</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile" hidden>
+      <ul class="mobile-nav__list">
+        <li><a class="is-active" href="./" aria-current="page">Writing</a></li>
+        <li><a href="../projects/">Projects</a></li>
+        <li><a href="../#about-timeline">About</a></li>
+        <li><a href="https://youtube.com/@sunwei" rel="noopener noreferrer" target="_blank">YouTube</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="page-hero__inner">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb">
+            <li><a href="../">Home</a></li>
+            <li class="breadcrumb__sep" aria-hidden="true">/</li>
+            <li aria-current="page">Writing</li>
+          </ol>
+        </nav>
+        <p class="eyebrow">Writing</p>
+        <h1>Notes from building</h1>
+        <p class="page-hero__lead">
+          Thinking and practice around technology, products, and turning knowledge
+          into something useful — not a media site, just a record of the work.
+        </p>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="writing-list-title" style="padding-top: 0;">
+      <div class="section__inner section__inner--narrow">
+        <h2 id="writing-list-title" class="visually-hidden">All writing</h2>
+
+        <div class="filter-bar" data-filter-bar role="group" aria-label="Filter by category">
+          <button type="button" class="filter-bar__btn is-active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter-bar__btn" data-filter="technology" aria-pressed="false">Technology</button>
+          <button type="button" class="filter-bar__btn" data-filter="building" aria-pressed="false">Building</button>
+          <button type="button" class="filter-bar__btn" data-filter="thinking" aria-pressed="false">Thinking</button>
+          <button type="button" class="filter-bar__btn" data-filter="tools" aria-pressed="false">Tools</button>
+        </div>
+
+        <ul class="writing-list">
+          <li class="writing-item reveal" data-category="technology">
+            <a class="writing-item__link" href="what-i-learned-from-reading-hugos-source-code.html">
+              <h3 class="writing-item__title">What I Learned From Reading Hugo's Source Code</h3>
+              <p class="writing-item__desc">
+                A deep dive into what I learned from studying Hugo's architecture.
+              </p>
+              <p class="writing-item__meta">
+                <span>Technology</span>
+                <span aria-hidden="true">·</span>
+                <time datetime="2025-11-12">Nov 12, 2025</time>
+                <span aria-hidden="true">·</span>
+                <span>15 min</span>
+              </p>
+            </a>
+          </li>
+          <li class="writing-item reveal" data-category="technology">
+            <a class="writing-item__link" href="why-i-rebuilt-hugos-core-ideas-in-typescript.html">
+              <h3 class="writing-item__title">Why I Rebuilt Hugo's Core Ideas in TypeScript</h3>
+              <p class="writing-item__desc">
+                How studying a mature static site generator shaped MDFriday's engine.
+              </p>
+              <p class="writing-item__meta">
+                <span>Technology</span>
+                <span aria-hidden="true">·</span>
+                <time datetime="2025-12-03">Dec 3, 2025</time>
+                <span aria-hidden="true">·</span>
+                <span>12 min</span>
+              </p>
+            </a>
+          </li>
+          <li class="writing-item reveal" data-category="thinking">
+            <a class="writing-item__link" href="what-17-years-of-software-development-taught-me.html">
+              <h3 class="writing-item__title">What 17 Years of Software Development Taught Me</h3>
+              <p class="writing-item__desc">
+                Lessons that stayed with me from engineering, delivery and strategy.
+              </p>
+              <p class="writing-item__meta">
+                <span>Thinking</span>
+                <span aria-hidden="true">·</span>
+                <time datetime="2026-01-18">Jan 18, 2026</time>
+                <span aria-hidden="true">·</span>
+                <span>10 min</span>
+              </p>
+            </a>
+          </li>
+          <li class="writing-item reveal" data-category="building">
+            <a class="writing-item__link" href="how-im-building-a-business-from-my-knowledge.html">
+              <h3 class="writing-item__title">How I'm Building a Business From My Knowledge</h3>
+              <p class="writing-item__desc">
+                The experiment of turning expertise into products, users and revenue.
+              </p>
+              <p class="writing-item__meta">
+                <span>Building</span>
+                <span aria-hidden="true">·</span>
+                <time datetime="2026-02-09">Feb 9, 2026</time>
+                <span aria-hidden="true">·</span>
+                <span>8 min</span>
+              </p>
+            </a>
+          </li>
+          <li class="writing-item reveal" data-category="tools">
+            <a class="writing-item__link" href="why-obsidian-notes-should-become-public-assets.html">
+              <h3 class="writing-item__title">Why Obsidian Notes Should Become Public Assets</h3>
+              <p class="writing-item__desc">
+                Personal knowledge is valuable — but only if it can leave your vault.
+              </p>
+              <p class="writing-item__meta">
+                <span>Tools</span>
+                <span aria-hidden="true">·</span>
+                <time datetime="2026-03-02">Mar 2, 2026</time>
+                <span aria-hidden="true">·</span>
+                <span>7 min</span>
+              </p>
+            </a>
+          </li>
+          <li class="writing-item reveal" data-category="building">
+            <a class="writing-item__link" href="building-in-public-without-performing.html">
+              <h3 class="writing-item__title">Building in Public Without Performing</h3>
+              <p class="writing-item__desc">
+                How I'm documenting the journey without turning it into a highlight reel.
+              </p>
+              <p class="writing-item__meta">
+                <span>Building</span>
+                <span aria-hidden="true">·</span>
+                <time datetime="2026-03-21">Mar 21, 2026</time>
+                <span aria-hidden="true">·</span>
+                <span>6 min</span>
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <p class="site-footer__name">Sun Wei</p>
+        <p class="site-footer__tagline">
+          Building a business around knowledge, software and AI.
+        </p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Footer">
+        <a href="./">Writing</a>
+        <a href="../projects/">Projects</a>
+        <a href="https://youtube.com/@sunwei" rel="noopener noreferrer" target="_blank">YouTube</a>
+        <a href="https://github.com/sunwei" rel="noopener noreferrer" target="_blank">GitHub</a>
+        <a href="https://mdfriday.com" rel="noopener noreferrer" target="_blank">MDFriday</a>
+      </nav>
+      <p class="site-footer__meta">
+        <span>© <span id="year">2026</span> Sun Wei</span>
+        <span aria-hidden="true">·</span>
+        <span>Built with Markdown and code.</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../script.js" defer></script>
+</body>
+</html>

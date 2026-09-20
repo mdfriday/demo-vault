@@ -1,0 +1,1 @@
+- So, step one, finding video ideas your buyers already want to watch

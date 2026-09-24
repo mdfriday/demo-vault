@@ -1,443 +1,113 @@
-# MDFriday Demo Vault Design Specification
+# MDFriday Demo Vault
 
-## Overview
+A **safe sandbox** vault so you can download, open, and try **[MDFriday Publish](https://mdfriday.com/products/obsidian-publish/)** without risking notes in your real Obsidian vault.
 
-The MDFriday Demo Vault is the official demonstration vault used across:
+Experiment freely here — publish, unpublish, switch themes, try Guest vs Free. When you are ready, use the same steps in your own vault.
 
-- MDFriday Website
-    
-- Product Documentation
-    
-- GitHub Repository
-    
-- YouTube Videos
-    
-- Bilibili Videos
-    
-- Screenshots
-    
-- Marketing Materials
-    
-- Automated Compatibility Testing
-    
-
-The vault serves as a single source of truth for demonstrating MDFriday capabilities.
-
-Its purpose is not to provide useful knowledge content.
-
-Its purpose is to clearly demonstrate:
-
-1. Obsidian compatibility
-    
-2. Publishing workflow
-    
-3. Theme capabilities
-    
-4. Digital Garden capabilities
-    
-5. Real-world usage scenarios
-    
-
-The same vault should be reusable across all product demonstrations.
+Full online docs: **<https://help.mdfriday.com>**
 
 ---
 
-# Design Principles
+## What this vault is for
 
-## 1. Content Must Feel Real
+| You can… | Using… |
+| --- | --- |
+| Publish **one note** as a shareable page | [[How to publish a single note]] |
+| Publish a **folder** as a Wiki / digital garden | [[How to publish a folder]] |
+| See Obsidian features that survive publish | Notes under `Digital Garden/`, plus [[Publish what you see in Obsidian ~ As-is]] |
+| Compare looks | [[Same note - Different themes]] |
 
-Avoid placeholder content such as:
-
-```markdown
-# My Note
-
-Hello World
-
-This is a demo note.
-```
-
-The vault should feel like a real knowledge base maintained by a real creator.
-
-Preferred topics:
-
-- AI
-    
-- Personal Knowledge Management
-    
-- Build in Public
-    
-- One Person Company
-    
-- Personal Branding
-    
-- Product Development
-    
-- Digital Garden
-    
-- Content Creation
-    
-
-These topics align closely with MDFriday's target audience.
+This is a **product demo + practice vault**, not a permanent knowledge base. Content is sample material so screenshots and first publishes look real.
 
 ---
 
-## 2. Content Must Showcase Obsidian Features
+## Open this vault in Obsidian
 
-Every major Obsidian feature should appear somewhere inside the vault.
+1. Download / clone this vault to your computer
+2. Obsidian → **Open folder as vault** → choose this folder
+3. If prompted, enable community plugins (Restricted Mode off)
 
-Examples:
+This vault already includes **MDFriday Publish** (`mdfriday-publish`) in Community plugins. Enable it if it is not on yet.
 
-- Headings
-    
-- Lists
-    
-- Tables
-    
-- Callouts
-    
-- Images
-    
-- Wikilinks
-    
-- Tags
-    
-- Code Blocks
-    
-- Mermaid
-    
-- LaTeX
-    
-- Task Lists
-    
-- Quotes
-    
-- Frontmatter
-    
+### Install / update the plugin (high level)
 
-The vault should function as a compatibility showcase.
+If you need a fresh install in another vault:
+
+1. **Settings → Community plugins** → turn off Restricted Mode
+2. Browse → search **MDFriday Publish** (id: `mdfriday-publish`)
+3. Install and **Enable**
+
+Plugin search: <https://obsidian.md/plugins?search=mdfriday-publish>
+
+Step-by-step install + first publish: [Install and first publish](https://help.mdfriday.com) (Help site).
+
+> [!info] Desktop only
+> MDFriday Publish requires Obsidian desktop (`minAppVersion` 1.8.7+). Mobile is not supported.
 
 ---
 
-## 3. Content Must Support Video Recording
+## How to try publishing (start here)
 
-The vault should be optimized for product videos.
+1. **Single note** → follow [[How to publish a single note]]  
+   Practice note: [[Publish what you see in Obsidian ~ As-is]]
+2. **Folder (Wiki)** → follow [[How to publish a folder]]  
+   Practice folder: `Digital Garden/`
 
-A viewer should immediately understand:
+### Entry points in the plugin (current UI)
 
-- What is being published
-    
-- Why it is useful
-    
-- What result is generated
-    
+- **Right-click** a note or folder → **Open in MDFriday** (configure) or **Publish to MDFriday** (publish-oriented)
+- Command palette → **Quick Share** or **Publish to MDFriday** (current Markdown note)
+- Right sidebar: **MDFriday Publish** panel (**Publish** | **History**), sticky **Preview** + **Publish**
 
-Avoid overly technical notes that require extensive reading.
+### What to expect (current plugin)
 
-Notes should be visually rich and easy to scan.
-
----
-
-## 4. Content Must Support Theme Demonstration
-
-The same note should look good under multiple themes.
-
-Avoid notes that rely only on plain text.
-
-Include:
-
-- Images
-    
-- Tables
-    
-- Callouts
-    
-- Quotes
-    
-- Code
-    
-- Diagrams
-    
-
-This allows theme differences to become obvious.
+- **Guest (no account):** first publish **auto-requests a guest key** — **no Turnstile gate** in the plugin. Guest: **1 site**, **5 MB**, clears at next **UTC 00:00** (claim Free to keep the URL).
+- **Free (sign up / claim):** **unlimited sites**, **50 MB permanent** storage.
+- **Personal:** custom domain, more storage, publish history & rollback.
+- **Advanced:** title, logo, access password, custom domain (domain = Personal). Nav links are not user-editable in the panel yet (default empty).
+- Publishing creates or updates a **project site** bound to that note or folder path.
 
 ---
 
-## 5. Content Must Support Digital Garden Demonstration
-
-The folder structure should naturally demonstrate:
-
-- Navigation
-    
-- Wikilinks
-    
-- Backlinks
-    
-- Search
-    
-- Graph View
-    
-
-Relationships between notes should be intentionally designed.
-
----
-
-# Primary Demo Scenarios
-
-The vault must support three core demonstrations.
-
-## Scenario 1: Share a Note
-
-Purpose:
-
-Show how a single note can be published instantly.
-
-Workflow:
+## Vault map
 
 ```text
-Open Note
-→ Right Click
-→ Publish
-→ Open URL
-```
-
-The note should demonstrate:
-
-- Rich formatting
-    
-- Images
-    
-- Code
-    
-- Tables
-    
-- Callouts
-    
-- Mermaid
-    
-- LaTeX
-    
-
-Recommended note:
-
-```text
-AI Product Development.md
+demo-vault/
+├── README.md                          ← you are here
+├── How to publish a single note.md
+├── How to publish a folder.md
+├── Publish what you see in Obsidian ~ As-is.md   ← good single-note demo
+├── Same note - Different themes.md
+├── Welcome to MDFriday.md
+├── Digital Garden/                    ← good folder / Wiki demo
+│   ├── index.md
+│   ├── AI/
+│   ├── Business/
+│   └── Productivity/
+└── Assets/
 ```
 
 ---
 
-## Scenario 2: Note Themes
+## Safety tips
 
-Purpose:
-
-Show how the same content can be rendered using different themes.
-
-Workflow:
-
-```text
-Same Note
-→ Theme A
-→ Theme B
-→ Theme C
-```
-
-The note used in Scenario 1 should also be used here.
-
-This allows users to focus on visual differences.
+- Keep this vault **separate** from your personal vault
+- Only publish folders you are OK making public (or password-protect under Advanced)
+- Guest is for a quick try; claim **Free** if you want the same URL to stick
+- You can **Unpublish** from the publish result to take a site offline
 
 ---
 
-## Scenario 3: Digital Garden
+## More help
 
-Purpose:
+| Topic | Where |
+| --- | --- |
+| These how-tos | [[How to publish a single note]] · [[How to publish a folder]] |
+| Full docs | <https://help.mdfriday.com> |
+| Product | <https://mdfriday.com/products/obsidian-publish/> |
+| Share a note | <https://mdfriday.com/solutions/share-a-note/> |
+| Digital garden | <https://mdfriday.com/solutions/digital-garden/> |
+| Pricing | <https://mdfriday.com/pricing/> |
+| Discord | <https://discord.gg/t7FHJ6qNzT> |
 
-Show how a folder becomes a navigable website.
-
-Workflow:
-
-```text
-Folder
-→ Publish Folder
-→ Quartz Site
-→ Navigation
-→ Search
-→ Graph
-```
-
-The folder structure should contain meaningful relationships between notes.
-
----
-
-# Recommended Vault Structure
-
-```text
-MDFriday Demo Vault
-
-├── Share Note
-│   └── AI Product Development.md
-│
-├── Digital Garden
-│   │
-│   ├── Home.md
-│   │
-│   ├── AI
-│   │   ├── Prompt Engineering.md
-│   │   ├── Claude Code.md
-│   │   ├── MCP.md
-│   │   └── AI Agents.md
-│   │
-│   ├── Business
-│   │   ├── One Person Company.md
-│   │   ├── Build in Public.md
-│   │   ├── Personal Branding.md
-│   │   └── Audience Building.md
-│   │
-│   └── Productivity
-│       ├── Second Brain.md
-│       ├── Knowledge Management.md
-│       └── Digital Garden.md
-│
-├── Assets
-│   ├── cover.png
-│   ├── architecture.png
-│   └── workflow.png
-│
-└── Templates
-    └── Article Template.md
-```
-
----
-
-# Required Internal Linking
-
-Notes should contain extensive wikilinks.
-
-Example:
-
-```markdown
-See also:
-
-- [[Prompt Engineering]]
-- [[Claude Code]]
-- [[AI Agents]]
-```
-
-The graph should look connected.
-
-Avoid isolated notes.
-
-Every note should link to at least two other notes.
-
----
-
-# Required Demonstration Features
-
-The vault must include examples of:
-
-## Frontmatter
-
-```yaml
----
-title: Example Note
-tags:
-  - ai
-  - knowledge
----
-```
-
-## Callouts
-
-```markdown
-> [!tip]
-> Ship before you feel ready.
-```
-
-## Tasks
-
-```markdown
-- [x] Launch MVP
-- [ ] Get first 100 users
-```
-
-## Tables
-
-```markdown
-| Tool | Purpose |
-|------|---------|
-| Obsidian | Writing |
-| MDFriday | Publishing |
-```
-
-## Code Blocks
-
-```ts
-export function publish() {
-  return true
-}
-```
-
-## Mermaid
-
-```mermaid
-flowchart LR
-A --> B
-B --> C
-```
-
-## LaTeX
-
-$$
-ROI = \frac{Revenue - Cost}{Cost}
-$$
-
-## Images
-
-At least one image should be included.
-
----
-
-# Content Style
-
-Preferred writing style:
-
-- Practical
-    
-- Creator-focused
-    
-- Easy to read
-    
-- Evergreen
-    
-
-Avoid:
-
-- Academic writing
-    
-- Fiction
-    
-- Lorem Ipsum
-    
-- Placeholder text
-    
-- Empty notes
-    
-
-Every note should feel publishable.
-
----
-
-# Success Criteria
-
-The Demo Vault is successful if a new user can:
-
-1. Understand what MDFriday does within 30 seconds.
-    
-2. Understand the difference between Note Publishing and Digital Garden Publishing.
-    
-3. See Obsidian compatibility immediately.
-    
-4. See the value of themes.
-    
-5. Understand how knowledge becomes a website.
-    
-
-The Demo Vault should function as both a product showcase and a realistic example knowledge base.
+Have fun — break things here, not in your real vault.

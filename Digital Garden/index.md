@@ -13,6 +13,7 @@ Welcome — this folder is a small, living map of how I think about AI, building
 
 This is the page you’d open after **Publish Folder**. From here you can wander by topic, search, or open the graph.
 
+![[obsidian+mdfriday.png]]
 ## Start here
 
 | Path | What’s inside |

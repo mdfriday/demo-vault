@@ -3,6 +3,7 @@ title: Build in Public
 tags:
   - business
   - distribution
+featured: "true"
 ---
 
 # Build in Public

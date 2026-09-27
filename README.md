@@ -42,7 +42,7 @@ Plugin search: <https://obsidian.md/plugins?search=mdfriday-publish>
 Step-by-step install + first publish: [Install and first publish](https://help.mdfriday.com) (Help site).
 
 > [!info] Desktop only
-> MDFriday Publish requires Obsidian desktop (`minAppVersion` 1.8.7+). Mobile is not supported.
+> MDFriday Publish requires Obsidian desktop (`minAppVersion` 1.13.0+). Mobile is not supported.
 
 ---
 

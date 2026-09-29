@@ -33,5 +33,5 @@ Tasks for this vault:
 ## See also
 
 - [[Second Brain]]
-- [[index]]
+- [[sunwei.xyz/index]]
 - [[Personal Branding]]

@@ -14,7 +14,7 @@ Personal brand is the *promise* people remember when your name shows up. For bui
 | Surface | Job |
 |---------|-----|
 | Bio | One sentence promise |
-| Garden home | Proof you think in public — [[index]] |
+| Garden home | Proof you think in public — [[sunwei.xyz/index]] |
 | Product | Promise kept in the UI |
 | Content | Same promise, new examples |
 

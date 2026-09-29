@@ -12,7 +12,7 @@ A digital garden is a public knowledge space that grows by linking — closer to
 
 ## What visitors should feel
 
-- They can enter from [[index]]
+- They can enter from [[sunwei.xyz/index]]
 - They can wander via wikilinks
 - They can orient with search, backlinks, and graph
 

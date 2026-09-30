@@ -1,0 +1,17 @@
+{
+  "setup-and-deploy": "\\bgit\\b|github|\\bnpx\\b|\\bnpm\\b|\\bcli\\b|command line|terminal|deploy|netlify|vercel|\\bci\\b|too technical|non-technical|\\b404\\b|build fail",
+  "price-and-lock-in": "\\$\\s?\\d|price|pricing|expensive|subscription|afford|lock-?in|ownership|self-?host|vendor",
+  "rendering-fidelity": "dataview|\\bbases?\\b|canvas|excalidraw|plugins? (don.t|do not|doesn.t) render|latex|math|callout|footnote|embed|iframe",
+  "themes-and-css": "theme|\\bcss\\b|font|appearance|favicon|watermark|branding|look(s)? (awful|bad|ugly)",
+  "selective-publish-privacy": "selective|only (some|part)|part of (my|the) vault|whole vault|private|leak|exclude|unpublished|hide",
+  "access-control": "password|\\bsso\\b|login|member|paywall|access control|restrict",
+  "custom-domain": "custom domain|\\bdns\\b|cname|proxy|\\bssl\\b",
+  "seo-and-discovery": "\\bseo\\b|sitemap|robots|crawler|google|search console|open graph|canonical|indexed",
+  "knowledge-structure": "wikilink|\\[\\[|backlink|graph|navigation|sidebar|table of contents|\\btoc\\b|permalink",
+  "blog-features": "comment section|comments on posts|\\brss\\b|newsletter|recent posts|monetiz",
+  "sync-mobile-update": "mobile|\\bios\\b|android|auto(-| )?(update|publish)|out of sync|drift|republish|copy-paste",
+  "maintenance-burden": "unmaintained|archived|abandon|no longer (being )?updated|breaking change|upgrade broke|merge conflict",
+  "export": "export|\\bpdf\\b|epub|offline|print",
+  "choice-overload": "which (one|tool|should)|too many options|confus|best way|\\bvs\\b|compare",
+  "single-note-share": "single note|one note|share a note|individual note|temporary|expir"
+}

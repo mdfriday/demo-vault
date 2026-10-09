@@ -3,6 +3,8 @@ title: Unpublish
 weight: 40
 tags: [unpublish]
 date: 2026-09-19
+lastmod: 2026-10-09
+description: Take a live site offline so the public link stops working until you publish again.
 ---
 
 # Unpublish

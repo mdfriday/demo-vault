@@ -1,6 +1,8 @@
 ---
 title: Placeholder · publish demo video
 date: 2026-09-19
+lastmod: 2026-10-09
+description: Where the one-click publish demo video will go. The recording is not here yet.
 ---
 
 # Placeholder: one-click publish demo

@@ -3,6 +3,8 @@ title: How it differs from Obsidian Publish / Quartz
 weight: 20
 tags: [concepts, comparison]
 date: 2026-09-19
+lastmod: 2026-10-09
+description: How MDFriday Publish differs from Obsidian Publish and self-hosted Quartz: a local build, no account required, and what you still run yourself.
 ---
 
 # How it differs from Obsidian Publish / Quartz
@@ -31,7 +33,7 @@ Sources: product comparison table on the website + plugin behavior (Cloudflare p
 | No-account trial | ✓ **Guest** | Usually needs an Obsidian account and subscription | “Account trial” does not apply |
 | Look and feel | **Faithful publish** (close to in-vault reading) or **Notes / Quartz themes** | Official reader look | Theme ecosystem you maintain |
 | Wiki capability | Folder → Quartz-family Wiki themes (graph, backlinks, etc.) | Official feature set | Upstream Quartz you operate yourself |
-| Custom domain | **Personal** plan (up to 3, automatic HTTPS) | Supported on the official stack | DIY |
+| Custom domain | **Personal**: **$5/month** or **$50/year** includes 1 domain; **$60/year** includes 3. Automatic HTTPS | Supported on the official stack | DIY |
 | History / rollback | **Personal** | Limited / product-specific | Git DIY |
 | Ops burden | Done inside the plugin; no DIY CLI | Low (official hosting) | High (toolchain + config) |
 
@@ -49,14 +51,14 @@ See [[publish/modes|Publish modes]] and [[mdfriday/help/themes/index|Themes]].
 
 ## Difference from older “Friday” help
 
-Older **Friday Help** often mixed **Sync + Publish** and mentioned Netlify / FTP / large Hugo theme exports.
+Older **Friday Help** mixed **Sync + Publish** and described Netlify, FTP, and bulk Hugo exports. Those publish paths are not in MDFriday Publish.
 
 Current **MDFriday Publish**:
 
-- Publish path is primarily **Cloudflare V2** (`PublishMethod = 'cloudflare'`)
-- Guest → share link is the default trial path
-- The README still mentions Netlify / FTP as **legacy paths**; **this help does not treat them as the main path**, so you are not guided into weakened flows
-- For Sync, use the separate Sync product — do not look for “whole-vault live sync” tutorials inside this plugin
+- Publish goes to MDFriday hosting. A share link is the default; Personal can add a custom domain
+- Guest → share link is the trial path. Guest content clears at the next **UTC 00:00**
+- To keep a copy of the built files, preview locally and [[publish/export|export a ZIP]]. That ZIP is static files only
+- For Sync, use the separate Sync product — do not look for whole-vault sync inside this plugin
 
 ## Related
 

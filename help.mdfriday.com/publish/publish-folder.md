@@ -3,6 +3,8 @@ title: Publish a folder (Wiki)
 weight: 32
 tags: [publish, Wiki, folder]
 date: 2026-09-19
+lastmod: 2026-10-09
+description: Publish one folder as a Wiki with a Quartz-style theme. Folders cannot use faithful single-note mode.
 ---
 
 # Publish a folder (Wiki)

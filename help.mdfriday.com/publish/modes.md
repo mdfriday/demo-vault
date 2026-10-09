@@ -3,6 +3,8 @@ title: Publish modes
 weight: 33
 tags: [concepts, modes]
 date: 2026-09-19
+lastmod: 2026-10-09
+description: When the panel offers faithful publish, a single-page theme, or a Wiki, and which mode is the default.
 ---
 
 # Publish modes

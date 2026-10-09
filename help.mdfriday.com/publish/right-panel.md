@@ -3,6 +3,8 @@ title: Right panel
 weight: 36
 tags: [UI, panel]
 date: 2026-09-19
+lastmod: 2026-10-09
+description: What each part of the Publish sidebar does: plan, target, mode, theme, Advanced, Preview, and Publish.
 ---
 
 # Right panel

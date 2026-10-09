@@ -3,6 +3,8 @@ title: Custom domain
 weight: 38
 tags: [domain, Personal]
 date: 2026-09-19
+lastmod: 2026-10-09
+description: Bind a published Personal site to your own domain with automatic HTTPS. $5/month and $50/year include 1 domain; $60/year includes 3.
 ---
 
 # Custom domain
@@ -16,7 +18,7 @@ Bind a published site to your own domain (e.g. `www.example.com`) with HTTPS.
 - **Personal** plan (Guest / Free are locked in the UI)
 - Account authenticated, and the project has **published successfully at least once**
 - You can edit DNS for that domain
-- Personal quota: **up to 3** custom domains (product copy)
+- Personal quota: **1** custom domain on monthly ($5) and on the $50/year plan; **3** on the $60/year plan. Automatic HTTPS
 
 ## Steps (panel wizard)
 

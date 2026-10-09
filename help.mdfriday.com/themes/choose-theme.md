@@ -3,6 +3,8 @@ title: How to choose a theme
 weight: 51
 tags: [themes]
 date: 2026-09-19
+lastmod: 2026-10-09
+description: Pick a theme in the right panel and check the look with Live demo before you publish.
 ---
 
 # How to choose a theme

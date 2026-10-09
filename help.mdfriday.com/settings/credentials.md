@@ -3,6 +3,8 @@ title: Credential (mdf key)
 weight: 71
 tags: [settings, credentials]
 date: 2026-09-19
+lastmod: 2026-10-09
+description: Find the mdf key the plugin issued, and copy it when you claim an account or move to another computer.
 ---
 
 # Credential (mdf key)

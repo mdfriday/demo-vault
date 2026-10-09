@@ -15,8 +15,8 @@ The product knowledge base, and MDFriday's long-term asset. MDFriday's vision is
 
 - [[vision|MDFriday Vision]]: vision, product positioning, and what MDFriday Publish is.
 - [[mdfriday/voice-of-custom/index|Voice of the Customer]]: user research. 25 pain-point themes from 567 VOC cards, 592 YouTube comments and 117 web pages, with 153 verified quotes.
-- [[mdfriday/blog/index|MDFriday Blog]]: 14 English guides for international users on publishing Obsidian notes as a website.
-- [[mdfriday/help/index|MDFriday Publish Help]]: help docs for the plugin: install and first publish, publishing, themes, plans and quotas, settings, FAQ and troubleshooting.
+- [[blog/index|Where the guides are]]: the how-to pages are on mdfriday.com. This garden does not keep a second copy.
+- [MDFriday Publish Help](https://help.mdfriday.com/index.html): help docs for the plugin: install and first publish, publishing, themes, plans and quotas, settings, FAQ and troubleshooting.
 - Product Map (coming soon)
 - Roadmap (coming soon)
 - Decisions (coming soon)

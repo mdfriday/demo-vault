@@ -21,4 +21,4 @@ Books I've written: technical books, books on one-person companies, and other bo
 - One note per book, or one subfolder per book (for longer books, one note per chapter).
 - In each book's note: why I wrote it, who it's for, the table of contents, and where to get it.
 
-Related: [[02.about|About Me]] · [[03.operating-system|SunWei Operating System]]
+Related: [[about|About Me]] · [[03.operating-system|SunWei Operating System]]

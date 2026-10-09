@@ -3,6 +3,8 @@ title: MDFriday Publish Help
 weight: 1
 tags: [navigation, getting-started]
 date: 2026-09-19
+lastmod: 2026-10-09
+description: Find the page for installing MDFriday Publish, publishing a note or folder, checking plans, or fixing a failed publish.
 ---
 
 # Welcome to MDFriday Publish
@@ -12,7 +14,7 @@ date: 2026-09-19
 **MDFriday Publish** (plugin id: `mdfriday-publish`) turns **one note** or **one folder** in Obsidian into a shareable static site. The build runs locally; the cloud only hosts the build output and serves it through a global CDN.
 
 > [!info] Version and platform
-> This docs set matches plugin **v26.8.25** (check `manifest.json` in your vault). **Desktop only** (`isDesktopOnly: true`); mobile is not supported.
+> This docs set matches plugin **v26.10.2** (check `manifest.json` in your vault). **Desktop only** (`isDesktopOnly: true`); mobile is not supported.
 
 ## What you can do
 
@@ -21,10 +23,12 @@ date: 2026-09-19
 | Share **one note** as a link | [[publish/publish-note\|Publish a note]] |
 | Turn a folder into a **Wiki / digital garden** | [[publish/publish-folder\|Publish a folder (Wiki)]] |
 | Preview before going live | [[publish/local-preview\|Local preview]] |
+| Save the built site as a ZIP | [[publish/export\|Export a ZIP]] |
 | Share as fast as possible | [[publish/quick-share\|Quick share]] |
 | Pick the look (faithful / single-page theme / Quartz) | [[mdfriday/help/themes/index\|Themes]] · [[publish/modes\|Publish modes]] |
 | Add an access password / custom domain | [[publish/password\|Access password]] · [[publish/custom-domain\|Custom domain]] |
 | Understand free vs paid limits | [[mdfriday/help/plans/index\|Plans and quotas]] |
+| Move from the original Friday plugin | [[migrate/from-friday\|Move from the Friday plugin]] |
 | Fix a problem | [[troubleshooting\|Troubleshooting]] · [[faq\|FAQ]] |
 
 ## 30-second navigation

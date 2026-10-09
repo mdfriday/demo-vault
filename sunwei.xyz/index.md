@@ -29,16 +29,15 @@ The question I'm optimizing for:
 ## What I'm building now
 
 - **[[mdfriday/index|MDFriday]]**: I'm the founder. MDFriday Publish is an Obsidian plugin: right-click a note or a folder, build it locally, and publish it to the Cloudflare CDN, with no Git, terminal or tokens. This site is published with it. See [[vision|MDFriday Vision]].
-- **This week's Building Note**: [[2026-w39-this-week-building-mdfriday|This Week Building MDFriday · 2026 W39]]
-- (TODO: anything else in progress)
+- **Building notes**: [[building/001.Switched to Storage-Based Pricing|001. Why We Switched to Storage-Based Pricing]] and [[building/002.Speed Is the Feature|002. Speed Is the Feature]]
 
 ## New in the garden
 
 - [[mdfriday/voice-of-custom/index|Voice of the Customer]]: 25 pain-point themes from the whole "Obsidian → website" market, backed by 153 verified quotes.
-- [[mdfriday/blog/index|MDFriday Blog]]: 14 honest guides to publishing Obsidian notes as a website.
+- [[mdfriday/blog/index|Where the guides are]]: publishing how-tos live on mdfriday.com, not in this garden.
 - [[knowledge/Digital Marketing/index|Digital Marketing]]: 16 knowledge articles on market research, AI-assisted writing and copywriting.
 - [[skills/digital-marketing/index|Digital Marketing Skills]]: 9 reusable agent skills, from customer research to headlines, blog posts and community leads.
-- [[mdfriday/help/index|MDFriday Publish Help]]: install, publish, themes, plans and troubleshooting.
+- [MDFriday Publish Help](https://help.mdfriday.com/index.html): install, publish, themes, plans and troubleshooting.
 
 ## Explore the garden
 
@@ -49,21 +48,21 @@ The question I'm optimizing for:
 | [[skills/index\|Skills]] | Reusable capabilities distilled from Knowledge, for AI and my future self: [[user-interview\|User Interview]] and [[skills/digital-marketing/index\|Digital Marketing Skills]]. |
 | [[books/index\|Books]] | Books I've written: technical books, one-person-company books and more (pages coming soon). |
 | [[one-person-company/index\|One Person Company]] | Entrepreneurship in practice: pricing, customer acquisition, sales, business models, freelancing. |
-| [[mdfriday/index\|MDFriday]] | The product knowledge base: [[vision\|Vision]], [[mdfriday/voice-of-custom/index\|Voice of the Customer]], [[mdfriday/blog/index\|Blog]] and [[mdfriday/help/index\|Help]]. |
+| [[mdfriday/index\|MDFriday]] | The product knowledge base: [[vision\|Vision]], [[mdfriday/voice-of-custom/index\|Voice of the Customer]], [[mdfriday/blog/index\|Blog]], and [MDFriday Publish Help](https://help.mdfriday.com/index.html). |
 
 ## HQ
 
 The three core documents behind this site:
 
 - [[01.strategy|01 · Strategy]]: self-positioning, altruistic mindset, platform positioning, core idea
-- [[02.about|02 · About Me]]: who I am, what I'm doing, how to reach me
+- [[about|About Me]]: who I am, what I'm doing, how to reach me
 - [[03.operating-system|03 · SunWei Operating System]]: current stage, the three-layer system, content flow, weekly rhythm
 
 ## Elsewhere
 
 - **mdfriday.com**: products and services → <https://mdfriday.com>
-- **YouTube**: the emotional ups and downs, fun moments and product videos (TODO: channel link)
-- **Reddit**: talking with users (TODO: username / profile link)
+- **YouTube**: [sunwei-mdfriday](https://www.youtube.com/@sunwei-mdfriday)
+- **X**: [szm_tech](https://x.com/szm_tech)
 
 ---
 

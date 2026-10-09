@@ -3,6 +3,8 @@ title: Quick share
 weight: 35
 tags: [commands, share]
 date: 2026-09-19
+lastmod: 2026-10-09
+description: Open the current note from the command palette, preview it locally, then publish after you confirm.
 ---
 
 # Quick share

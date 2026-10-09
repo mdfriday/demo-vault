@@ -3,6 +3,8 @@ title: Wiki / Quartz themes
 weight: 53
 tags: [themes, Wiki, Quartz]
 date: 2026-09-19
+lastmod: 2026-10-09
+description: Folder Wiki themes, default slug quartz: wikilinks, graph, search, and backlinks, without running Quartz yourself.
 ---
 
 # Wiki / Quartz themes

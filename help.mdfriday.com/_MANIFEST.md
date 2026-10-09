@@ -1,12 +1,14 @@
 ---
 title: MDFriday Help · Manifest
 date: 2026-09-19
+lastmod: 2026-10-09
+description: Internal inventory of help pages and the screenshot placeholders still to replace. Not a user guide.
 ---
 
 # MDFriday Help — page inventory and MEDIA TODO
 
 Generated: 2026-09-19 (Asia/Shanghai)  
-Aligned plugin: `mdfriday-publish` **v26.8.25** (mirrored at `/workspace/mdfriday-src/obsidian-publish`; on Mac use `…/obsidian-publish/manifest.json`)
+Aligned plugin: `mdfriday-publish` **v26.10.2** (mirrored at `/workspace/mdfriday-src/obsidian-publish`; on Mac use `…/obsidian-publish/manifest.json`)
 
 ## File tree
 
@@ -27,6 +29,7 @@ MDFriday Help/
 │   ├── publish-folder.md
 │   ├── modes.md
 │   ├── local-preview.md
+│   ├── export.md
 │   ├── quick-share.md
 │   ├── right-panel.md
 │   ├── password.md
@@ -42,6 +45,8 @@ MDFriday Help/
 │   ├── index.md
 │   ├── guest-free-personal.md
 │   └── claim-and-upgrade.md
+├── migrate/
+│   └── from-friday.md
 └── settings/
     ├── index.md
     └── credentials.md
@@ -57,6 +62,7 @@ MDFriday Help/
 | `images/placeholder-note-modes.png` | Note: faithful / single-page theme switch | publish-note |
 | `images/placeholder-wiki-publish.png` | Folder Wiki skin list | publish-folder |
 | `images/placeholder-preview-success.png` | Local preview success result | local-preview |
+| `images/placeholder-export.png` | Export under a local preview result | export |
 | `images/placeholder-right-panel.png` | Full right panel | right-panel |
 | `images/placeholder-password.png` | Advanced · access password | password |
 | `images/placeholder-custom-domain.png` | Domain wizard DNS table | custom-domain |
@@ -73,15 +79,15 @@ Sources: `manifest.json`, `README.md`, `src/main.ts`, `setting.ts`, `types/publi
 - Modes: note faithful/themed; folder themed-only (Wiki); defaults paper / quartz
 - Publish: Cloudflare V2; Guest without account; Turnstile; mdf key
 - Preview: local webserver; does not enter history
-- Plans: Guest/Free/Personal (quotas on plans pages; plugin vs website site-count copy conflict noted)
+- Plans: Guest/Free/Personal. Sites are not counted. Storage is 5 MB / 200 MB / 5 GB. Guest clears at the next UTC 00:00. Free stays while active (about 6 months inactive may archive)
 - Domain / history rollback: Personal
 - Settings: Credentials only
-- **Not written as main paths**: Sync, Netlify/FTP, legacy bulk Hugo export
+- **Not written as main paths**: Sync. Netlify / FTP are not a publish path. A ZIP of the built site is [[publish/export]] after local preview
 
 ## Known gaps / ambiguities
 
-1. **Site count**: plugin UI vs website pricing “unlimited sites” disagree → docs state plugin wins.
+1. **Site count**: No plan counts sites. Guest, Free, and Personal are limited by storage (5 MB / 200 MB / 5 GB). Guest’s 5 MB is meant for trying one note.
 2. **Friday Help reference tree**: this environment could not read Mac `Friday Help`; help.mdfriday.com fetch failed; structure rebuilt from the brief + current plugin IA; Sync chapters not copied.
 3. **Website source repo**: GitHub clone needed credentials and failed; used live pages via WebFetch instead.
-4. **Export static package / site-path UI**: new Publish panel has no user-facing primary “Export” / “Site path” buttons; sitePath/baseURL are mostly CF-internal. No invented export tutorial.
-5. **Personal monthly price**: \$5 annualized vs \$6 monthly — from website pricing; checkout page wins.
+4. **Export**: after a successful local preview, **Export** saves a ZIP of the static site (`publish/export.md`). It is not a Markdown backup and does not include hosting features.
+5. **Personal price**: $5/month (1 domain), $50/year (1 domain), $60/year (3 domains). Checkout page wins if they ever diverge.

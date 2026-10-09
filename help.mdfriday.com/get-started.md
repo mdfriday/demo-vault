@@ -3,6 +3,8 @@ title: Install and first publish
 weight: 10
 tags: [getting-started, install, Guest]
 date: 2026-09-19
+lastmod: 2026-10-09
+description: Install MDFriday Publish on Obsidian desktop and publish one note with no account. Guest content clears at the next UTC 00:00.
 ---
 
 # Install and first publish
@@ -77,5 +79,5 @@ The **MDFriday** sidebar appears on the right (Publish | History).
 | --- | --- | --- |
 | No plugin capability on mobile | Desktop only | [[faq\|FAQ · desktop]] |
 | Stuck on “Verify and publish” | Turnstile not finished or you did not return to Obsidian | [[troubleshooting\|Troubleshooting]] |
-| Publish failed · site limit | Guest allows **1** site (plugin copy wins) | [[plans/guest-free-personal\|Plans]] |
+| Publish failed · storage | Guest is **5 MB** total, shared across sites | [[plans/guest-free-personal\|Plans]] |
 | Blank preview / build failed | Attachment paths, theme, port in use, etc. | [[faq\|FAQ]] · [[troubleshooting\|Troubleshooting]] |

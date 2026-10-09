@@ -2,7 +2,9 @@
 title: Plans and quotas
 weight: 60
 tags: [plans, pricing]
-date: 2026-09-19
+date: 2026-10-09
+lastmod: 2026-10-09
+description: Where Guest (clears at the next UTC 00:00), Free, and Personal quotas are documented, and how claiming and upgrading work.
 ---
 
 # Plans and quotas
@@ -19,5 +21,5 @@ MDFriday Publish’s sidebar expresses capability as **Guest → Free → Person
 Website pricing (English page, includes annual billing notes): <https://mdfriday.com/pricing/>  
 Account: <https://mdfriday.com/account/>
 
-> [!warning] One place where docs follow plugin copy
-> Website pricing says each tier has unlimited sites/builds/exports; the **plugin UI (zh-CN)** is explicit: Guest **1** site, Free **up to 3**, Personal **unlimited**. On site count, this help follows **plugin errors and plan-card copy** so you do not assume “unlimited sites” from the website and then hit Guest/Free caps. If product policy later aligns, trust the panel at that time.
+> [!note] Sites are not counted
+> Guest, Free, and Personal can all publish as many sites as the storage allows. Guest is **5 MB** total (cleared at the next UTC 00:00), which is enough to try publishing one note.

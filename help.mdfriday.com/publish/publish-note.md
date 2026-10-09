@@ -3,6 +3,8 @@ title: Publish a note
 weight: 31
 tags: [publish, single-note]
 date: 2026-09-19
+lastmod: 2026-10-09
+description: Publish one Markdown note as a public link. The rest of the vault stays on your device.
 ---
 
 # Publish a note
@@ -49,4 +51,4 @@ Turn **this one** Markdown note into a public (or password-protected) web link w
 | --- | --- |
 | Wanted a folder but stayed in single-note UI | Right-click the folder; see [[publish-folder\|Publish a folder]] |
 | Faithful look differs from the vault | Community plugins / custom syntax may not all staticize; try a single-page theme or simplify the note |
-| Guest site limit reached | Claim Free or unpublish an old site; see [[../plans/guest-free-personal\|Plans]] |
+| Storage full | Guest is **5 MB** total, shared across sites. Claim Free (**200 MB**) or unpublish an old site; see [[../plans/guest-free-personal\|Plans]] |

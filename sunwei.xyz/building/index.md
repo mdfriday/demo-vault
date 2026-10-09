@@ -18,7 +18,9 @@ The Build in Public log, and the entry point of the whole system. Every Saturday
 
 ## Log
 
-- [[2026-w39-this-week-building-mdfriday|This Week Building MDFriday · 2026 W39]]: sample note showing the weekly format.
+- [[001.Switched to Storage-Based Pricing|001. Why We Switched to Storage-Based Pricing]]
+- [[002.Speed Is the Feature|002. Speed Is the Feature]]
+- [[003-help-center-missing-from-google|Why Our Help Center Was Missing from Google]]
 
 ## Conventions
 

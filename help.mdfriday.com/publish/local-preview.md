@@ -3,6 +3,8 @@ title: Local preview
 weight: 34
 tags: [preview]
 date: 2026-09-19
+lastmod: 2026-10-09
+description: Open the built site in a local browser before it goes live. Preview does not publish and does not write history.
 ---
 
 # Local preview
@@ -34,6 +36,7 @@ View the build result in a local browser **without going live**.
 
 ## Related
 
+- [[export|Export a ZIP]] (only after this preview succeeds)
 - [[quick-share|Quick share]] (opens the panel and prepares a preview)
 - [[history|Publish history]] (only a real **Publish** enters history)
 

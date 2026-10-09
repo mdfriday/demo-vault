@@ -3,6 +3,8 @@ title: Publish history and rollback
 weight: 39
 tags: [history, Personal]
 date: 2026-09-19
+lastmod: 2026-10-09
+description: On Personal, open the last 10 published versions and roll one back. Preview does not create a history entry.
 ---
 
 # Publish history and rollback

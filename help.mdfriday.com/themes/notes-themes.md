@@ -3,6 +3,8 @@ title: Notes (single-page) themes
 weight: 52
 tags: [themes, Notes]
 date: 2026-09-19
+lastmod: 2026-10-09
+description: Single-page Notes themes, default slug paper. Use one when a note should read as its own page, not the vault view.
 ---
 
 # Notes (single-page) themes

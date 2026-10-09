@@ -3,6 +3,8 @@ title: Troubleshooting checklist
 weight: 90
 tags: [troubleshooting]
 date: 2026-09-19
+lastmod: 2026-10-09
+description: A checklist when publish fails: desktop setup, local preview, Guest verification, storage quotas, retention, and custom domains.
 ---
 
 # Troubleshooting checklist
@@ -35,9 +37,9 @@ Work top to bottom; most issues surface in the first few steps.
 
 ## E. Quotas
 
-- [ ] Site count: Guest 1 / Free 3 / Personal unlimited (plugin copy)
-- [ ] Storage: 5 MB / 50 MB / 1 GB — overage blocks new publishes
-- [ ] Wipe policy: Guest daily (UTC); Free on the 1st of each month — do not mistake this for a “lost data” bug
+- [ ] Sites are not counted. Guest, Free, and Personal are limited by storage only
+- [ ] Storage: Guest **5 MB** (enough to try one note) / Free **200 MB** / Personal **5 GB** — over quota blocks new publishes; live sites stay up
+- [ ] Retention: Guest clears at the next UTC 00:00. Free is not wiped on the 1st of the month. A Free site that disappears after about 6 months of inactivity was archived, not lost — sign in to restore it. About 30 days after archive, it may be deleted
 
 ## F. Domain (Personal)
 

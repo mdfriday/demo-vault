@@ -3,6 +3,8 @@ title: Settings
 weight: 70
 tags: [settings]
 date: 2026-09-19
+lastmod: 2026-10-09
+description: Where MDFriday Publish settings live. The main item today is the publish credential, the mdf key.
 ---
 
 # Settings

@@ -3,6 +3,8 @@ title: Themes
 weight: 50
 tags: [themes]
 date: 2026-09-19
+lastmod: 2026-10-09
+description: How the theme catalog is filtered: Notes themes for a single note, Quartz-style Wiki themes for a folder.
 ---
 
 # Themes

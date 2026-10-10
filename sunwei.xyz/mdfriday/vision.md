@@ -2,13 +2,10 @@
 title: MDFriday Vision
 date: 2026-09-28
 tags:
-  - mdfriday
-  - product
+  - budding
 description: Help people turn knowledge into businesses.
-featured: "true"
+featured: true
 ---
-
-# MDFriday Vision
 
 ## Vision
 
@@ -44,7 +41,7 @@ MDFriday Publish has just entered the international market. This is not the grow
 
 > Why would someone choose MDFriday instead of their current publishing workflow?
 
-Current hypothesis: (TODO)
+Current hypothesis: someone switches when their current workflow needs Git or a host they have to run, and they want to publish the note or folder they choose from inside Obsidian. The first try does not need an account.
 
 ## Place in the system
 

@@ -1,4 +1,12 @@
-# Quora Marketing
+---
+title: "Quora Marketing"
+description: "This knowledge base organizes Quora Marketing into a system covering account optimization, question selection, answer structure, soft promotion, business."
+date: 2026-10-02
+tags:
+  - seedling
+---
+
+This folder is only this path. The twelve principles are on [[digital-marketing|the digital marketing map]].
 
 > This knowledge base organizes Quora Marketing into a system covering **account optimization, question selection, answer structure, soft promotion, business pages, and analytics**.
 
@@ -23,4 +31,4 @@ Quora marketing's core isn't hard selling—it's:
 
 ---
 
-**← Back to [[../index|Main Knowledge Base]]**
+**← Back to [[../index|Knowledge]]**

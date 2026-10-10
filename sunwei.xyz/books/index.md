@@ -1,24 +1,13 @@
 ---
 title: Books
-date: 2026-09-28
-tags:
-  - books
-  - index
-description: "Books I've written: a digital asset for my personal books."
+description: Books I am writing. A page here is only a book once the title and where to read it are real.
+date: 2026-10-10
+weight: 5
 ---
 
-# Books
+These are books I write, so someone else can learn what is in them. I will not put a title, a summary, or a buy link on a book until those are true.
 
-Books I've written: technical books, books on one-person companies, and other books. This section is a digital asset for my personal books, and it also builds authority.
+- [[Hugo/index|Hugo]] — draft notes. The source-code tree is not part of this garden.
+- [[BuildKit/index|BuildKit]] — draft notes. Title not set.
 
-## Books
-
-- [[books/BuildKit/index|BuildKit]]: (TODO: book title · one-line summary · link)
-- [[books/Hugo/index|Hugo]]: (TODO: book title · one-line summary · link)
-
-## Conventions
-
-- One note per book, or one subfolder per book (for longer books, one note per chapter).
-- In each book's note: why I wrote it, who it's for, the table of contents, and where to get it.
-
-Related: [[about|About Me]] · [[03.operating-system|SunWei Operating System]]
+One folder per book. Chapters, when they exist, are notes inside that folder.

@@ -1,4 +1,12 @@
-# Instagram Marketing
+---
+title: "Instagram Marketing"
+description: "This knowledge base organizes the Instagram Marketing course into a system covering account setup, content & visuals, hashtags, Stories, follower growth."
+date: 2026-10-02
+tags:
+  - seedling
+---
+
+This folder is only this path. The twelve principles are on [[digital-marketing|the digital marketing map]].
 
 > This knowledge base organizes the Instagram Marketing course into a system covering **account setup, content & visuals, hashtags, Stories, follower growth, and e-commerce**.
 
@@ -21,4 +29,4 @@ Instagram marketing success means combining visual content, personal/brand ident
 
 ---
 
-**← Back to [[../index|Main Knowledge Base]]**
+**← Back to [[../index|Knowledge]]**

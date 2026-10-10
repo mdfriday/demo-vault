@@ -1,4 +1,10 @@
-# Website Fundamentals
+---
+title: "Website Fundamentals"
+description: "Your website is the hub of all marketing efforts."
+date: 2026-10-02
+tags:
+  - seedling
+---
 
 ## Overview
 
@@ -298,23 +304,25 @@ Fills form / Makes purchase
 
 ## Assignment: Website Launch
 
-> [!TODO]
-> Build professional website foundation:
-> 
-> - [ ] Choose platform and register domain
-> - [ ] Install SSL certificate (HTTPS)
-> - [ ] Create homepage with value proposition
-> - [ ] Create About page with social proof
-> - [ ] Create Services/Products page
-> - [ ] Create Contact page
-> - [ ] Create Thank You page
-> - [ ] Create Privacy Policy page
-> - [ ] Design professional branding
-> - [ ] Optimize for mobile
-> - [ ] Set up lead capture form
-> - [ ] Optimize page speed
-> - [ ] Install analytics
-> - [ ] A/B test headlines
+## Practice
+
+Build professional website foundation:
+
+- [ ] Choose platform and register domain
+- [ ] Install SSL certificate (HTTPS)
+- [ ] Create homepage with value proposition
+- [ ] Create About page with social proof
+- [ ] Create Services/Products page
+- [ ] Create Contact page
+- [ ] Create Thank You page
+- [ ] Create Privacy Policy page
+- [ ] Design professional branding
+- [ ] Optimize for mobile
+- [ ] Set up lead capture form
+- [ ] Optimize page speed
+- [ ] Install analytics
+- [ ] A/B test headlines
+
 
 ## Quick Reference: Knowledge Checklist
 
@@ -339,9 +347,8 @@ Fills form / Makes purchase
 
 **For Complete System**: See [[Digital Marketing/index|Digital Marketing Knowledge Base]] (18 articles covering full strategy)
 
-**Back to Main Index**: [[index|Digital Marketing Knowledge Base]]
+**Back to Main Index**: [[digital-marketing|Digital marketing map]]
 
 ---
 
 **Key Takeaway**: Your website is your most important marketing asset. Invest in professional design, optimize for conversions, and let analytics guide improvements.
-

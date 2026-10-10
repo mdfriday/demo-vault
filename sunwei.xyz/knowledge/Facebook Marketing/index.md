@@ -1,4 +1,12 @@
-# Facebook Marketing
+---
+title: "Facebook Marketing"
+description: "这组笔记把 `Facebook Marketing` 课程整理成一套围绕 Facebook 页面、有机增长、社区互动、用户反馈与数据优化 的知识体系。它的重点不是投广告，而是先建立一个能持续积累受众的 Facebook 基础盘。"
+date: 2026-10-02
+tags:
+  - seedling
+---
+
+This folder is only this path. The twelve principles are on [[digital-marketing|the digital marketing map]].
 
 > 这组笔记把 `Facebook Marketing` 课程整理成一套围绕 **Facebook 页面、有机增长、社区互动、用户反馈与数据优化** 的知识体系。它的重点不是投广告，而是先建立一个能持续积累受众的 Facebook 基础盘。
 
@@ -171,4 +179,4 @@ Facebook 的传播机制依赖互动信号。评论、点赞、分享、标记�
 
 ---
 
-**← Back to [[../index|Main Knowledge Base]]**
+**← Back to [[../index|Knowledge]]**

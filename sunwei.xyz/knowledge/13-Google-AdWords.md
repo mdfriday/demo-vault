@@ -1,4 +1,10 @@
-# Google AdWords (Google Ads)
+---
+title: "Google AdWords (Google Ads)"
+description: "Google Ads is a self-serve paid advertising platform that allows businesses to reach customers at the exact moment they search for solutions."
+date: 2026-10-02
+tags:
+  - seedling
+---
 
 ## Overview
 
@@ -512,22 +518,24 @@ Secondary CTA
 
 ## Assignment: Set Up Your First Google Ads Campaign
 
-> [!TODO]
-> Create a profitable Google Ads campaign:
-> 
-> - [ ] Research and list 20 high-intent keywords
-> - [ ] Analyze top 3 competitors in your space
-> - [ ] Identify 30+ negative keywords
-> - [ ] Create 3 keyword match types (exact, phrase, broad)
-> - [ ] Write 4 compelling ad headlines
-> - [ ] Write 2 descriptions using proven formulas
-> - [ ] Design high-converting landing page
-> - [ ] Set up conversion tracking
-> - [ ] Create 3 ad groups with proper structure
-> - [ ] Set daily budget and bidding strategy
-> - [ ] Apply all 10 profitable settings
-> - [ ] Launch campaign and monitor daily
-> - [ ] Optimize based on performance data
+## Practice
+
+Create a profitable Google Ads campaign:
+
+- [ ] Research and list 20 high-intent keywords
+- [ ] Analyze top 3 competitors in your space
+- [ ] Identify 30+ negative keywords
+- [ ] Create 3 keyword match types (exact, phrase, broad)
+- [ ] Write 4 compelling ad headlines
+- [ ] Write 2 descriptions using proven formulas
+- [ ] Design high-converting landing page
+- [ ] Set up conversion tracking
+- [ ] Create 3 ad groups with proper structure
+- [ ] Set daily budget and bidding strategy
+- [ ] Apply all 10 profitable settings
+- [ ] Launch campaign and monitor daily
+- [ ] Optimize based on performance data
+
 
 ## Quick Reference: Knowledge Checklist
 
@@ -561,4 +569,3 @@ Secondary CTA
 ---
 
 **Key Takeaway**: Don't follow Google's suggestions blindly. Understand the system, apply the 10 profitable settings, and measure everything.
-

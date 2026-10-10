@@ -1,4 +1,5 @@
 ---
+date: 2026-10-02
 name: headline-swipe-file
 title: Headline Swipe File
 description: Builds an evidence-based headline swipe file from high-performing titles (e.g. top YouTube videos by views, community post titles, search queries), ranks title patterns with view counts, and generates keyword-first, 50–60 character title variations logged with the chosen pick and its pattern. Use when writing titles for blog posts, videos or landing pages, when asked for "magnetic headlines", "SEO titles", "title ideas" or a "swipe file", or before a batch of content so every title is grounded in proven patterns and real search language.

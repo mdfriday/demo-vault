@@ -1,4 +1,10 @@
-# Facebook Marketing
+---
+title: "Facebook Marketing"
+description: "Facebook has 3 billion monthly active users."
+date: 2026-10-02
+tags:
+  - seedling
+---
 
 ## Platform Overview
 
@@ -260,21 +266,23 @@ Generate Leads/Sales
 
 ## Assignment: Facebook Strategy
 
-> [!TODO]
-> Build your Facebook marketing foundation:
-> 
-> - [ ] Create professional Business Page
-> - [ ] Complete all business information
-> - [ ] Upload profile picture and cover image
-> - [ ] Set up call-to-action button
-> - [ ] Create content calendar (12 weeks)
-> - [ ] Develop 5 content pillar themes
-> - [ ] Plan and run engagement competition
-> - [ ] Post 4 weeks of consistent content
-> - [ ] Create engagement-focused posts (ask questions)
-> - [ ] Set up Facebook Pixel on website
-> - [ ] Create first Facebook Ads campaign
-> - [ ] Track analytics and optimize
+## Practice
+
+Build your Facebook marketing foundation:
+
+- [ ] Create professional Business Page
+- [ ] Complete all business information
+- [ ] Upload profile picture and cover image
+- [ ] Set up call-to-action button
+- [ ] Create content calendar (12 weeks)
+- [ ] Develop 5 content pillar themes
+- [ ] Plan and run engagement competition
+- [ ] Post 4 weeks of consistent content
+- [ ] Create engagement-focused posts (ask questions)
+- [ ] Set up Facebook Pixel on website
+- [ ] Create first Facebook Ads campaign
+- [ ] Track analytics and optimize
+
 
 ## Quick Reference: Knowledge Checklist
 
@@ -308,4 +316,3 @@ Generate Leads/Sales
 ---
 
 **Key Takeaway**: Facebook is about leveraging others' social networks. Create content people want to share with friends, and you'll reach exponentially more people.
-

@@ -1,4 +1,12 @@
-# Google Analytics
+---
+title: "Google Analytics"
+description: "This knowledge base organizes Google Analytics into a system covering setup/configuration, goals/events, traffic reports, segmentation, data quality."
+date: 2026-10-02
+tags:
+  - seedling
+---
+
+This folder is only this path. The twelve principles are on [[digital-marketing|the digital marketing map]].
 
 > This knowledge base organizes Google Analytics into a system covering **setup/configuration, goals/events, traffic reports, segmentation, data quality, and platform integration**.
 
@@ -24,4 +32,4 @@ Google Analytics value isn't just "viewing reports"—it's:
 
 ---
 
-**← Back to [[../index|Main Knowledge Base]]**
+**← Back to [[../index|Knowledge]]**

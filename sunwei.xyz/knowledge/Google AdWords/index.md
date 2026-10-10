@@ -1,4 +1,12 @@
-# Google AdWords
+---
+title: "Google AdWords"
+description: "This knowledge base organizes Google AdWords into a system covering PPC fundamentals, competition analysis, campaign structure, targeting."
+date: 2026-10-02
+tags:
+  - seedling
+---
+
+This folder is only this path. The twelve principles are on [[digital-marketing|the digital marketing map]].
 
 > This knowledge base organizes Google AdWords into a system covering **PPC fundamentals, competition analysis, campaign structure, targeting, budgets/bidding, keywords, and ad copy**.
 
@@ -24,4 +32,4 @@ Google Ads success isn't simply buying clicks—it's:
 
 ---
 
-**← Back to [[../index|Main Knowledge Base]]**
+**← Back to [[../index|Knowledge]]**

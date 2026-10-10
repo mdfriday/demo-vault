@@ -1,4 +1,5 @@
 ---
+date: 2026-10-02
 name: community-lead-discovery
 title: Community Lead Discovery
 description: Runs a recurring (e.g. every 8 hours) scan of communities such as Reddit, Discourse forums, Hacker News, Dev.to, Medium and Product Hunt for high-intent posts where a product genuinely helps. It scores each post 0–100 (URGENT / HIGH / MEDIUM ≥50, weak signals below), carries, cools and drops leads across windows, writes a digest with per-source coverage, and drafts help-first replies with founder disclosure for the human to post. Use when asked for a lead digest, community monitoring, "find people asking for X", social listening for buying intent, or drafting a reply to a community thread.

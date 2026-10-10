@@ -1,4 +1,10 @@
-# Additional Knowledge Points Summary
+---
+title: "Additional Knowledge Points Summary"
+description: "This document serves as a quick reference for all marketing channels covered in the Digital Marketing Knowledge Base."
+date: 2026-10-02
+tags:
+  - seedling
+---
 
 ## Quick Reference: All Marketing Channels
 
@@ -298,38 +304,40 @@ For **Every Channel**, follow this framework:
 
 ## Final Checklist: Complete Digital Marketing Setup
 
-> [!TODO]
-> Your 90-Day Digital Marketing Foundation:
->
-> **Month 1**:
-> - [ ] Create buyer persona (documented)
-> - [ ] Conduct market research (50+ responses)
-> - [ ] Set up website with premium theme
-> - [ ] Create lead magnet (PDF, resource)
-> - [ ] Set up email platform (Mailchimp)
-> - [ ] Build welcome series (5 emails)
-> - [ ] Install Google Analytics
-> - [ ] Publish 4 SEO-optimized blog posts
->
-> **Month 2**:
-> - [ ] Publish 4 more blog posts
-> - [ ] Optimize existing content for SEO
-> - [ ] Launch email promotion campaign
-> - [ ] Start YouTube channel (3 videos)
-> - [ ] Set up Google Ads test campaign
-> - [ ] Create Facebook business page
-> - [ ] Answer 10 Quora questions
-> - [ ] Complete Facebook Ads campaign
->
-> **Month 3**:
-> - [ ] Publish 4 more blog posts
-> - [ ] Optimize YouTube videos (tags, descriptions)
-> - [ ] Launch second YouTube strategy
-> - [ ] Run email list building campaign
-> - [ ] Analyze Google Analytics data
-> - [ ] Optimize highest ROI channel
-> - [ ] Scale successful campaigns
-> - [ ] Document processes for automation
+## Practice
+
+Your 90-Day Digital Marketing Foundation:
+
+**Month 1**:
+- [ ] Create buyer persona (documented)
+- [ ] Conduct market research (50+ responses)
+- [ ] Set up website with premium theme
+- [ ] Create lead magnet (PDF, resource)
+- [ ] Set up email platform (Mailchimp)
+- [ ] Build welcome series (5 emails)
+- [ ] Install Google Analytics
+- [ ] Publish 4 SEO-optimized blog posts
+
+**Month 2**:
+- [ ] Publish 4 more blog posts
+- [ ] Optimize existing content for SEO
+- [ ] Launch email promotion campaign
+- [ ] Start YouTube channel (3 videos)
+- [ ] Set up Google Ads test campaign
+- [ ] Create Facebook business page
+- [ ] Answer 10 Quora questions
+- [ ] Complete Facebook Ads campaign
+
+**Month 3**:
+- [ ] Publish 4 more blog posts
+- [ ] Optimize YouTube videos (tags, descriptions)
+- [ ] Launch second YouTube strategy
+- [ ] Run email list building campaign
+- [ ] Analyze Google Analytics data
+- [ ] Optimize highest ROI channel
+- [ ] Scale successful campaigns
+- [ ] Document processes for automation
+
 
 ---
 
@@ -353,4 +361,3 @@ For **Every Channel**, follow this framework:
 **Total Knowledge Points**: 200+  
 **Expected Study Time**: 80-100 hours  
 **Recommended Implementation**: 3-6 months
-

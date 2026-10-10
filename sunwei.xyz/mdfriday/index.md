@@ -1,42 +1,16 @@
 ---
 title: MDFriday
-date: 2026-09-28
-tags:
-  - mdfriday
-  - index
-description: "The MDFriday product knowledge base: MDFriday's long-term asset."
+description: Positioning, decisions, and research for the product. Tutorials live on mdfriday.com.
+date: 2026-10-10
+weight: 4
+icon: cube
 ---
 
-# MDFriday
+MDFriday is a product I own. This folder is the thinking around it: who it is for, what I refuse to claim, and what users actually said. It is not the manual.
 
-The product knowledge base, and MDFriday's long-term asset. MDFriday's vision is *Help people turn knowledge into businesses*; right now the focus is MDFriday Publish, an Obsidian plugin that publishes a note or a folder as a website with a right-click.
+- [[vision|Vision]]
+- [[voice-of-custom/index|Voice of the Customer]] — research pages, with method, sample, and date. They do not carry a buy button.
+- [[blog/index|Guides]] — the how-to pages are on mdfriday.com. This garden does not keep a second copy.
+- [MDFriday Publish Help](https://help.mdfriday.com/index.html)
 
-## Contents
-
-- [[vision|MDFriday Vision]]: vision, product positioning, and what MDFriday Publish is.
-- [[mdfriday/voice-of-custom/index|Voice of the Customer]]: user research. 25 pain-point themes from 567 VOC cards, 592 YouTube comments and 117 web pages, with 153 verified quotes.
-- [[blog/index|Where the guides are]]: the how-to pages are on mdfriday.com. This garden does not keep a second copy.
-- [MDFriday Publish Help](https://help.mdfriday.com/index.html): help docs for the plugin: install and first publish, publishing, themes, plans and quotas, settings, FAQ and troubleshooting.
-- Product Map (coming soon)
-- Roadmap (coming soon)
-- Decisions (coming soon)
-
-## North Star
-
-> Why do people choose MDFriday instead of their current workflow?
-
-## Success Metric
-
-Not Revenue or MRR, but:
-
-- Active users
-- First publish completed
-- Repeat publishing
-- User conversations
-
-## Links
-
-- Website: <https://mdfriday.com>
-- MDFriday Publish: <https://mdfriday.com/products/obsidian-publish/>
-
-Related: [[03.operating-system|SunWei Operating System]] · [[skills/digital-marketing/index|Digital Marketing Skills]]
+The product site is [mdfriday.com](https://mdfriday.com/products/obsidian-publish/). The weekly record of building it is [[building/index|Now]].

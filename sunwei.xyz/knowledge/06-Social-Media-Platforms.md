@@ -1,4 +1,10 @@
-# Social Media Platforms Comparison
+---
+title: "Social Media Platforms Comparison"
+description: "Reference: See Main Knowledge Base for complete system overview."
+date: 2026-10-02
+tags:
+  - seedling
+---
 
 **Reference**: See [[index|Main Knowledge Base]] for complete system overview.
 
@@ -257,23 +263,25 @@ Same message, different format:
 
 ## Assignment: Social Media Foundation
 
-> [!TODO]
-> Build your social media presence:
-> 
-> - [ ] Choose 2-3 primary platforms
-> - [ ] Complete all profile information
-> - [ ] Design professional profile images
-> - [ ] Write compelling bios
-> - [ ] Post profile links to website
-> - [ ] Create 8-week content calendar
-> - [ ] Develop 5 content pillars
-> - [ ] Schedule content weekly
-> - [ ] Engage with 10 accounts daily (likes, comments)
-> - [ ] Track key metrics
-> - [ ] Test different post types
-> - [ ] Analyze top-performing content
-> - [ ] Create content upgrade strategy
-> - [ ] Set up link tracking
+## Practice
+
+Build your social media presence:
+
+- [ ] Choose 2-3 primary platforms
+- [ ] Complete all profile information
+- [ ] Design professional profile images
+- [ ] Write compelling bios
+- [ ] Post profile links to website
+- [ ] Create 8-week content calendar
+- [ ] Develop 5 content pillars
+- [ ] Schedule content weekly
+- [ ] Engage with 10 accounts daily (likes, comments)
+- [ ] Track key metrics
+- [ ] Test different post types
+- [ ] Analyze top-performing content
+- [ ] Create content upgrade strategy
+- [ ] Set up link tracking
+
 
 ## Quick Reference: Knowledge Checklist
 
@@ -314,4 +322,3 @@ Same message, different format:
 **Core Principle**: Each platform serves different purposes. Master 2-3 platforms, repurpose content strategically, and focus on building your email list as the ultimate goal.
 
 **Strategy**: Start with [[index|Digital Marketing Strategy]] to understand buyer personas, then choose 1-2 social platforms that align with where your audience spends time.
-

@@ -1,4 +1,10 @@
-# Quora Marketing
+---
+title: "Quora Marketing"
+description: "Quora is the world's largest Q&A platform where millions of people ask and answer questions, providing an opportunity to build authority while driving."
+date: 2026-10-02
+tags:
+  - seedling
+---
 
 ## Platform Overview
 
@@ -232,23 +238,25 @@ Create a Space (similar to Facebook Group) for:
 
 ## Assignment: Quora Authority Building
 
-> [!TODO]
-> Build your Quora presence:
-> 
-> - [ ] Create professional Quora profile
-> - [ ] Add headshot and bio
-> - [ ] Follow 10 core topics
-> - [ ] Research 50 target questions
-> - [ ] Create spreadsheet of questions
-> - [ ] Prioritize top 20 questions
-> - [ ] Write 5 high-quality answers (with formatting)
-> - [ ] Include real examples in answers
-> - [ ] Add CTAs and links to lead magnet
-> - [ ] Monitor answer performance
-> - [ ] Respond to comments daily
-> - [ ] Answer 2-3 new questions per week
-> - [ ] Track traffic driven to website
-> - [ ] Update top answers with new information
+## Practice
+
+Build your Quora presence:
+
+- [ ] Create professional Quora profile
+- [ ] Add headshot and bio
+- [ ] Follow 10 core topics
+- [ ] Research 50 target questions
+- [ ] Create spreadsheet of questions
+- [ ] Prioritize top 20 questions
+- [ ] Write 5 high-quality answers (with formatting)
+- [ ] Include real examples in answers
+- [ ] Add CTAs and links to lead magnet
+- [ ] Monitor answer performance
+- [ ] Respond to comments daily
+- [ ] Answer 2-3 new questions per week
+- [ ] Track traffic driven to website
+- [ ] Update top answers with new information
+
 
 ## Quick Reference: Knowledge Checklist
 
@@ -281,4 +289,3 @@ Create a Space (similar to Facebook Group) for:
 ---
 
 **Key Takeaway**: Quora is about building authority by helping people. Answer the questions your ideal customers ask, and traffic/leads will follow naturally.
-

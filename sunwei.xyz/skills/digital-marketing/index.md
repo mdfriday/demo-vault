@@ -1,10 +1,9 @@
 ---
 title: Digital Marketing Skills
 date: 2026-09-28
+weight: 2
 tags:
-  - skills
-  - digital-marketing
-  - index
+  - budding
 description: Nine reusable agent skills for research-first marketing, covering customer research, pain-point analysis, YouTube research, headlines, blog posts and community leads.
 ---
 

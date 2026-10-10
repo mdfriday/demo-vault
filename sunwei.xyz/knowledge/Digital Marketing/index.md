@@ -1,4 +1,12 @@
-# Digital Marketing
+---
+title: "Digital Marketing"
+description: "The essence of digital marketing is not 'publishing content' or 'running promotions'."
+date: 2026-10-02
+tags:
+  - seedling
+---
+
+The twelve principles are listed on [[digital-marketing|the digital marketing map]]. This note is the path through the system.
 
 > This knowledge base consolidates a comprehensive website marketing course into a practical, actionable, sustainable personal knowledge system. It's not scattered tactics—it's a complete pathway from "understanding users" to "acquiring traffic" to "continuous optimization."
 
@@ -236,7 +244,6 @@ This spans all pages, headlines, emails, and promotional materials.
 
 ---
 
-**← Back to [[../index|Main Knowledge Base]]**
+**← Back to [[../index|Knowledge]]**
 
 This Digital Marketing knowledge system (18 articles) forms the foundation. For complete marketing infrastructure including all channels, see the [[../index|main knowledge base]].
-

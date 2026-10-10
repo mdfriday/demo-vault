@@ -1,73 +1,38 @@
 ---
-title: About Me
-date: 2026-09-28
-lastmod: 2026-10-09
+title: About Sun Wei
+date: 2026-10-9
+lastmod: 2026-10-10
+weight: 3
 tags:
-  - about
-  - hq
-description: "Wei Sun (Wayde), founder of MDFriday. A programmer building a one-person company in public."
+  - evergreen
+description: "Sun Wei (Wayde), a software engineer building MDFriday and a one-person company in public."
 ---
 
-# About Me
+I'm a software engineer, an independent builder, and a curious explorer.
 
-> Technologist + Builder + Entrepreneur
+I've spent 18 years in the software industry. The first 20 years of my life were about learning and building a foundation. The next 20 were about working hard, building a career, and providing security for my family.
 
-I'm Sun Wei (Wayde), a programmer who loves technology, building my own business with the help of AI.
+Now, at 41, I'm ready for a new chapter.
 
-I want to use technology and AI to build assets, so that my work gradually shifts from trading time for income to assets creating income.
+For the next 20 years, I want to explore more, follow my curiosity, and rediscover the joy of learning and creating.
 
-This site honestly shows that work. I let doing replace talking, and through the doing, people can get to know me little by little.
+My first step is to turn my knowledge into assets — things I can build, share, and grow beyond the hours I work. What I study lives in [[knowledge/index|Knowledge]]. The procedures I want an AI to follow live in [[skills/index|Skills]].
 
-## What I'm doing now
+I'm building [[mdfriday/index|MDFriday]], writing about what I learn, and experimenting with how AI and technology can help people turn their knowledge into something valuable. The weekly record is [[building/index|Now]]. The practice of the company is [[one-person-company/index|One Person Company]].
 
-- **MDFriday**: I'm the founder of MDFriday. The vision is *Help people turn knowledge into businesses.* Right now I'm focused on MDFriday Publish, a plugin that publishes Obsidian notes as a website. → [[mdfriday/index|MDFriday product knowledge base]]
-- **AI agent team**: I run this one-person company together with several AI agents, each taking a role: PM, COO, engineer, designer, marketing. How the week is organized is in [[03.operating-system|SunWei Operating System]]. The reusable skills are in [[skills/index|Skills]].
+My first goal is simple: **help as many people as I can with what I know.** I believe that when we share what we learn, we create opportunities for others — and for ourselves.
 
-For my more specific current focus, see [[03.operating-system|SunWei Operating System]].
+This website is my digital garden, where I document my ideas, experiments, and journey toward a more independent life. [[why-a-digital-garden|Why it is a garden, not a blog]].
 
-## Background
+**Own your knowledge. Build your business. Enjoy your life.**
 
-I'm a programmer, and I founded MDFriday. This garden is the public record of that company. A dated career timeline is not written here.
+That's the vision for my next 20 years. I'm just getting started.
 
-Book pages are started in [[books/index|Books]]. The titles and where to get them are not filled in yet.
+## Connect with me
 
-## Why a Digital Garden
+I'm building in public. Here's where you can follow my journey or get in touch.
 
-→ [[why-a-digital-garden|Why I Turned My Personal Website into a Digital Garden]]
-
-## Where to find me
-
-| Platform | Role |
-| --- | --- |
-| [sunwei.xyz](https://sunwei.xyz/about.html) | Knowledge: how knowledge grows while building a one-person company |
-| [mdfriday.com](https://mdfriday.com/about/) | Products and services |
-| [YouTube](https://www.youtube.com/@sunwei-mdfriday) | Product videos and the build in public |
-| [X](https://x.com/szm_tech) | Short updates |
-| [GitHub](https://github.com/mdfriday) | MDFriday source |
-
-## Contact
-
-- Email: [support@mdfriday.com](mailto:support@mdfriday.com)
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Wei Sun",
-  "alternateName": "Wayde Sun",
-  "url": "https://sunwei.xyz/about.html",
-  "email": "support@mdfriday.com",
-  "jobTitle": "Founder",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "MDFriday",
-    "url": "https://mdfriday.com"
-  },
-  "sameAs": [
-    "https://github.com/mdfriday",
-    "https://www.youtube.com/@sunwei-mdfriday",
-    "https://x.com/szm_tech",
-    "https://mdfriday.com/about/"
-  ]
-}
-</script>
+- [LinkedIn](https://www.linkedin.com/in/wayde-sun-aab70b23/) — My professional background.
+- [X](https://x.com/szm_tech) — Short updates and ideas.
+- [YouTube](https://www.youtube.com/@sunwei-mdfriday) — Stories, lessons, and behind-the-scenes from building my own business.
+- Email: [me@sunwei.xyz](mailto:me@sunwei.xyz)

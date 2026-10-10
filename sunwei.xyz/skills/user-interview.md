@@ -2,12 +2,9 @@
 title: User Interview
 date: 2026-09-28
 tags:
-  - skills
-  - user-research
+  - budding
 description: "Find and understand the users who genuinely need MDFriday."
 ---
-
-# User Interview
 
 ## When to use
 
@@ -34,7 +31,7 @@ Answer this question:
    - How are you publishing today?
    - What is frustrating?
    - Why this workflow?
-4. Record users' own words and file them in the user research library (TODO: research library location).
+4. Record users' own words and file them in [[mdfriday/voice-of-custom/index|Voice of the Customer]].
 5. Bring the findings into Wednesday's Build and Saturday's [[building/index|Building Note]].
 
 ## Output
@@ -51,9 +48,7 @@ The measure isn't Views, but:
 - [ ] DM
 - [ ] Follow-up discussions
 
-## Using it with an AI agent
-
-(TODO: the corresponding agent instructions or file location)
+This note is the procedure. There is no separate agent file.
 
 ---
 

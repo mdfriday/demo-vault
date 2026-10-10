@@ -1,4 +1,5 @@
 ---
+date: 2026-10-02
 name: voc-research
 title: VOC Research
 description: Collects voice-of-customer (VOC) evidence from public communities (Reddit, Discourse forums, Hacker News, Dev.to, Medium, personal blogs) into one markdown card per post, filed under a small set of themes and deduplicated by normalized URL. Use when starting customer research for a product or market, building or extending a VOC library, "listening" before building, or when asked to find what people complain about, ask for, or compare. Produces the raw corpus that pain-point-analysis, voc-to-theme-articles and voc-to-blog-post consume.

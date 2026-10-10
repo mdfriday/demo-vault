@@ -1,4 +1,5 @@
 ---
+date: 2026-10-02
 name: web-pain-point-discovery
 title: Web Pain Point Discovery
 description: Searches the open web for NEW customer pain points that an existing pain-point summary does not cover, archives every source page, verifies each quote verbatim against the archive, dedupes against all previously used URLs, scores signal strength by distinct sources, and adds a dedicated section for non-English communities (e.g. Chinese forums, V2EX). Use when a first pain-point report already exists and you need a gap-filling supplement, fresh 2025+ evidence, competitor GitHub-issue mining, or when your customers speak a language your evidence does not.

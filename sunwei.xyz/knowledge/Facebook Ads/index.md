@@ -1,4 +1,12 @@
-# Facebook Ads
+---
+title: "Facebook Ads"
+description: "This knowledge base organizes Facebook Ads into a system covering account strategy, campaign structure, objectives, audience targeting, creative, pixels."
+date: 2026-10-02
+tags:
+  - seedling
+---
+
+This folder is only this path. The twelve principles are on [[digital-marketing|the digital marketing map]].
 
 > This knowledge base organizes Facebook Ads into a system covering **account strategy, campaign structure, objectives, audience targeting, creative, pixels, ad formats, retargeting, and optimization**.
 
@@ -27,4 +35,4 @@ Facebook Ads success isn't just "launching ads"—it's:
 
 ---
 
-**← Back to [[../index|Main Knowledge Base]]**
+**← Back to [[../index|Knowledge]]**

@@ -1,4 +1,10 @@
-# Email Marketing
+---
+title: "Email Marketing"
+description: "Email is the one marketing channel you own. Social media platforms can change algorithms or shut down."
+date: 2026-10-02
+tags:
+  - seedling
+---
 
 ## Foundation
 
@@ -465,21 +471,23 @@ Automation allows you to:
 
 ## Assignment: Build Your Email Marketing System
 
-> [!TODO]
-> Set up complete email infrastructure:
-> 
-> - [ ] Choose email platform (recommend Mailchimp)
-> - [ ] Create business email address
-> - [ ] Set up domain verification (SPF/DKIM)
-> - [ ] Create first lead magnet (PDF checklist)
-> - [ ] Set up lead capture landing page
-> - [ ] Create welcome email sequence (4 emails)
-> - [ ] Build content upgrade for 3 blog posts
-> - [ ] Write 10 subject line variations
-> - [ ] Design email template
-> - [ ] Set up automation sequences
-> - [ ] Create segmentation strategy
-> - [ ] Schedule 4 weeks of email content
+## Practice
+
+Set up complete email infrastructure:
+
+- [ ] Choose email platform (recommend Mailchimp)
+- [ ] Create business email address
+- [ ] Set up domain verification (SPF/DKIM)
+- [ ] Create first lead magnet (PDF checklist)
+- [ ] Set up lead capture landing page
+- [ ] Create welcome email sequence (4 emails)
+- [ ] Build content upgrade for 3 blog posts
+- [ ] Write 10 subject line variations
+- [ ] Design email template
+- [ ] Set up automation sequences
+- [ ] Create segmentation strategy
+- [ ] Schedule 4 weeks of email content
+
 
 ## Quick Reference: Knowledge Checklist
 
@@ -504,9 +512,8 @@ Automation allows you to:
 
 **For Complete System**: See [[Digital Marketing/index|Digital Marketing Knowledge Base]] (18 articles covering full strategy)
 
-**Back to Main Index**: [[index|Digital Marketing Knowledge Base]]
+**Back to Main Index**: [[digital-marketing|Digital marketing map]]
 
 ---
 
 **Key Takeaway**: Build your email list first - it's your most valuable asset and only owned marketing channel.
-

@@ -1,4 +1,10 @@
-# YouTube Marketing
+---
+title: "YouTube Marketing"
+description: "YouTube is the second-largest search engine in the world after Google, with over 70% of searches being 'how to' queries."
+date: 2026-10-02
+tags:
+  - seedling
+---
 
 ## Overview
 
@@ -429,21 +435,23 @@ Sales
 
 ## Assignment: YouTube Marketing Plan
 
-> [!TODO]
-> Complete your YouTube channel setup and plan:
-> 
-> - [ ] Create/Audit YouTube channel design (banner, logo, description)
-> - [ ] Set up VidIQ extension and free account
-> - [ ] Identify 10 video topic ideas using competitor analysis
-> - [ ] Perform keyword research for top 3 topics
-> - [ ] Write 3 video titles using SEO + engagement formulas
-> - [ ] Design 3 custom thumbnails
-> - [ ] Record and edit your first video
-> - [ ] Optimize video with VidIQ recommendations
-> - [ ] Create 5 YouTube cards for video
-> - [ ] Add YouTube end screens
-> - [ ] Set up YouTube channel playlists
-> - [ ] Plan first 30 days of content (30 videos or 1 per day)
+## Practice
+
+Complete your YouTube channel setup and plan:
+
+- [ ] Create/Audit YouTube channel design (banner, logo, description)
+- [ ] Set up VidIQ extension and free account
+- [ ] Identify 10 video topic ideas using competitor analysis
+- [ ] Perform keyword research for top 3 topics
+- [ ] Write 3 video titles using SEO + engagement formulas
+- [ ] Design 3 custom thumbnails
+- [ ] Record and edit your first video
+- [ ] Optimize video with VidIQ recommendations
+- [ ] Create 5 YouTube cards for video
+- [ ] Add YouTube end screens
+- [ ] Set up YouTube channel playlists
+- [ ] Plan first 30 days of content (30 videos or 1 per day)
+
 
 ## Quick Reference: Knowledge Checklist
 
@@ -475,4 +483,3 @@ Sales
 ---
 
 **Key Takeaway**: YouTube is a long-term traffic asset that compounds over time. Consistency and optimization matter more than perfection.
-

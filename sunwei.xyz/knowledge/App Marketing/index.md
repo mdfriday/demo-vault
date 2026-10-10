@@ -1,4 +1,12 @@
-# App Marketing
+---
+title: "App Marketing"
+description: "This knowledge base organizes the App Marketing course into a system focusing on market research, promotion channels, and paid app advertising."
+date: 2026-10-02
+tags:
+  - seedling
+---
+
+This folder is only this path. The twelve principles are on [[digital-marketing|the digital marketing map]].
 
 > This knowledge base organizes the App Marketing course into a system focusing on **market research, promotion channels, and paid app advertising**.
 
@@ -19,4 +27,4 @@ App marketing success starts by confirming the market opportunity and competitiv
 
 ---
 
-**← Back to [[../index|Main Knowledge Base]]**
+**← Back to [[../index|Knowledge]]**

@@ -1,4 +1,10 @@
-# Copywriting
+---
+title: "Copywriting"
+description: "Copywriters are among the highest-paid writers in the world because good copy directly impacts revenue."
+date: 2026-10-02
+tags:
+  - seedling
+---
 
 ## Definition
 
@@ -442,19 +448,21 @@ CTA: "Claim Your Spot Now - Limited to 50 Seats: [link]"
 
 ## Assignment: Master Copywriting
 
-> [!TODO]
-> Improve your copywriting skills:
-> 
-> - [ ] Write 25 headlines for one product
-> - [ ] Rewrite 5 headlines focusing on benefits not features
-> - [ ] Identify power words and rebuild 3 sentences
-> - [ ] Write one complete sales page using full formula
-> - [ ] Create 10 email variations for same offer
-> - [ ] Take one weak product description and rewrite using formula
-> - [ ] Study 5 successful sales pages (competitors, examples)
-> - [ ] Create FAQ addressing 10 common objections
-> - [ ] A/B test headlines on your website/emails
-> - [ ] Track which headlines get most clicks/conversions
+## Practice
+
+Improve your copywriting skills:
+
+- [ ] Write 25 headlines for one product
+- [ ] Rewrite 5 headlines focusing on benefits not features
+- [ ] Identify power words and rebuild 3 sentences
+- [ ] Write one complete sales page using full formula
+- [ ] Create 10 email variations for same offer
+- [ ] Take one weak product description and rewrite using formula
+- [ ] Study 5 successful sales pages (competitors, examples)
+- [ ] Create FAQ addressing 10 common objections
+- [ ] A/B test headlines on your website/emails
+- [ ] Track which headlines get most clicks/conversions
+
 
 ## Quick Reference: Knowledge Checklist
 
@@ -479,9 +487,8 @@ CTA: "Claim Your Spot Now - Limited to 50 Seats: [link]"
 
 **For Complete System**: See [[Digital Marketing/index|Digital Marketing Knowledge Base]] (18 articles covering full strategy)
 
-**Back to Main Index**: [[index|Digital Marketing Knowledge Base]]
+**Back to Main Index**: [[digital-marketing|Digital marketing map]]
 
 ---
 
 **Key Takeaway**: Great copy is a learned skill. The more you write and test, the better you become. Start with the formulas and iterate.
-

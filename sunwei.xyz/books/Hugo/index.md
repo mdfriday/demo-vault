@@ -1,18 +1,11 @@
 ---
 title: Hugo
+description: Draft notes for a book about Hugo. The title and where to read it are not set.
 date: 2026-09-28
 tags:
-  - books
-  - index
-description: "Book page for Hugo (coming soon)."
+  - seedling
 ---
-
-# Hugo
 
 ← [[books/index|Books]]
 
-This folder holds the book page for *Hugo*. (TODO: book title, one-line summary, who it's for, and where to get it.)
-
-## Contents
-
-- (coming soon: table of contents / chapter notes)
+The public title, who it is for, and where to read it are not written yet. `how/` and `what/` are draft notes. The source-code tree has been moved out of this garden so it is not published as chapters.

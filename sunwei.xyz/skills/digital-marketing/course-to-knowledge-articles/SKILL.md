@@ -1,4 +1,5 @@
 ---
+date: 2026-10-02
 name: course-to-knowledge-articles
 title: Course to Knowledge Articles
 description: Turns course material (lecture notes, transcripts, slides) into a set of mastery-level knowledge articles, one idea per article, each covering what it is, why it matters, how to use it, how to verify it worked, how to keep optimizing, common mistakes and a checklist, plus a learning-order index with coverage notes. Use when studying a course or book and wanting reusable, linkable notes for a digital garden or second brain, when asked to "turn this course into knowledge points", or before distilling knowledge into skills.

@@ -1,4 +1,5 @@
 ---
+date: 2026-10-02
 name: pain-point-analysis
 title: Pain Point Analysis
 description: Clusters and ranks customer pain points across a VOC corpus (cards, forum threads, YouTube comments) into a sourced report with per-cluster counts, verbatim-verified quotes, audience and competitor views, top marketing messages and product gaps. Use when you have collected customer evidence and need to answer "what hurts most, for whom, and what should we say or build?", when asked to summarize, rank, cluster or prioritize pain points, or before writing positioning, VOC articles or blog posts.

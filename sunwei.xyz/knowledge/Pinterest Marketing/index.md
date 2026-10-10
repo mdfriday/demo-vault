@@ -1,4 +1,12 @@
-# Pinterest Marketing
+---
+title: "Pinterest Marketing"
+description: "This knowledge base organizes Pinterest Marketing into a system covering account setup, website verification, board structure, pin design, follower."
+date: 2026-10-02
+tags:
+  - seedling
+---
+
+This folder is only this path. The twelve principles are on [[digital-marketing|the digital marketing map]].
 
 > This knowledge base organizes Pinterest Marketing into a system covering **account setup, website verification, board structure, pin design, follower growth, and tool usage**.
 
@@ -21,4 +29,4 @@ Pinterest marketing treats it as a "visual search engine" rather than a typical 
 
 ---
 
-**← Back to [[../index|Main Knowledge Base]]**
+**← Back to [[../index|Knowledge]]**

@@ -1,4 +1,12 @@
-# LinkedIn Marketing
+---
+title: "LinkedIn Marketing"
+description: "This knowledge base organizes LinkedIn Marketing into a system covering profile optimization, connection growth, content distribution, groups, company."
+date: 2026-10-02
+tags:
+  - seedling
+---
+
+This folder is only this path. The twelve principles are on [[digital-marketing|the digital marketing map]].
 
 > This knowledge base organizes LinkedIn Marketing into a system covering **profile optimization, connection growth, content distribution, groups, company pages, and commercial opportunities**.
 
@@ -20,4 +28,4 @@ LinkedIn marketing starts by establishing clear professional identity, then buil
 
 ---
 
-**← Back to [[../index|Main Knowledge Base]]**
+**← Back to [[../index|Knowledge]]**

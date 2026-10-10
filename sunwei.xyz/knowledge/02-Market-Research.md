@@ -1,4 +1,10 @@
-# Market Research
+---
+title: "Market Research"
+description: "Market Research is the systematic process of gathering customer insights to guide business and marketing decisions."
+date: 2026-10-02
+tags:
+  - seedling
+---
 
 ## Definition
 
@@ -270,23 +276,25 @@ If you don't have email list, find where your audience hangs out:
 
 ## Assignment: Complete Market Research
 
-> [!TODO]
-> Conduct comprehensive market research:
-> 
-> - [ ] Create Google Form with 3 magic questions
-> - [ ] Identify distribution channels
-> - [ ] Craft compelling survey invitation message
-> - [ ] Distribute survey (target 100 responses)
-> - [ ] Collect responses for 2+ weeks
-> - [ ] Analyze all three questions
-> - [ ] Extract top 20 customer quotes
-> - [ ] Identify top 5 pain points
-> - [ ] Document desired outcomes
-> - [ ] Create buyer personas (updated)
-> - [ ] Find audience on 7 platforms
-> - [ ] Document keywords (search volume)
-> - [ ] Create market research report
-> - [ ] Use insights for product/marketing planning
+## Practice
+
+Conduct comprehensive market research:
+
+- [ ] Create Google Form with 3 magic questions
+- [ ] Identify distribution channels
+- [ ] Craft compelling survey invitation message
+- [ ] Distribute survey (target 100 responses)
+- [ ] Collect responses for 2+ weeks
+- [ ] Analyze all three questions
+- [ ] Extract top 20 customer quotes
+- [ ] Identify top 5 pain points
+- [ ] Document desired outcomes
+- [ ] Create buyer personas (updated)
+- [ ] Find audience on 7 platforms
+- [ ] Document keywords (search volume)
+- [ ] Create market research report
+- [ ] Use insights for product/marketing planning
+
 
 ## Quick Reference: Knowledge Checklist
 
@@ -311,9 +319,8 @@ If you don't have email list, find where your audience hangs out:
 
 **For Complete System**: See [[Digital Marketing/index|Digital Marketing Knowledge Base]] (18 articles covering full strategy)
 
-**Back to Main Index**: [[index|Digital Marketing Knowledge Base]]
+**Back to Main Index**: [[digital-marketing|Digital marketing map]]
 
 ---
 
 **Key Takeaway**: Every dollar spent on market research saves ten dollars in product development. Research first, create second. Let customers guide your business.
-

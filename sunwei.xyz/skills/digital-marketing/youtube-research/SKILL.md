@@ -1,4 +1,5 @@
 ---
+date: 2026-10-02
 name: youtube-research
 title: YouTube Research
 description: Researches a topic on YouTube by searching many customer-language queries, keeping the most-viewed relevant videos, collecting metadata and top comments with yt-dlp, tagging comment pains, and extracting title patterns, promises and video structures into a content-strategy report. Use when planning video or blog topics, checking what content already wins in a niche, mining YouTube comments for pain points and verbatim quotes, or when asked to analyze or learn from top YouTube videos.

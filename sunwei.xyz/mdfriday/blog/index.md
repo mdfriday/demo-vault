@@ -3,8 +3,7 @@ title: Guides live on mdfriday.com
 date: 2026-10-09
 lastmod: 2026-10-09
 tags:
-  - blog
-  - index
+  - seedling
 description: "Obsidian publishing guides are on mdfriday.com, one page per topic. This garden does not publish a second copy."
 ---
 

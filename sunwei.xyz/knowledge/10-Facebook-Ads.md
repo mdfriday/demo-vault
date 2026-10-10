@@ -1,4 +1,10 @@
-# Facebook Ads
+---
+title: "Facebook Ads"
+description: "Facebook Ads is a paid advertising platform where you pay per click/impression to reach Facebook's 3 billion users with laser-targeted ads."
+date: 2026-10-02
+tags:
+  - seedling
+---
 
 ## Overview
 
@@ -313,24 +319,26 @@ Test different offers:
 
 ## Assignment: Facebook Ads Campaign
 
-> [!TODO]
-> Launch your first Facebook Ads campaign:
-> 
-> - [ ] Create Facebook Ads account
-> - [ ] Install Facebook Pixel on website
-> - [ ] Define campaign objective (conversions or lead gen)
-> - [ ] Create audience (interests OR lookalike)
-> - [ ] Design ad creative (image or video)
-> - [ ] Write compelling copy
-> - [ ] Create landing page or lead form
-> - [ ] Set daily budget ($10-20/day)
-> - [ ] Set campaign duration (minimum 2 weeks)
-> - [ ] Launch campaign
-> - [ ] Monitor daily for 1 week
-> - [ ] Pause low-performing ad sets
-> - [ ] Scale winning ad sets
-> - [ ] Track conversions and ROI
-> - [ ] Test new audience segments
+## Practice
+
+Launch your first Facebook Ads campaign:
+
+- [ ] Create Facebook Ads account
+- [ ] Install Facebook Pixel on website
+- [ ] Define campaign objective (conversions or lead gen)
+- [ ] Create audience (interests OR lookalike)
+- [ ] Design ad creative (image or video)
+- [ ] Write compelling copy
+- [ ] Create landing page or lead form
+- [ ] Set daily budget ($10-20/day)
+- [ ] Set campaign duration (minimum 2 weeks)
+- [ ] Launch campaign
+- [ ] Monitor daily for 1 week
+- [ ] Pause low-performing ad sets
+- [ ] Scale winning ad sets
+- [ ] Track conversions and ROI
+- [ ] Test new audience segments
+
 
 ## Quick Reference: Knowledge Checklist
 
@@ -367,4 +375,3 @@ Test different offers:
 ---
 
 **Key Takeaway**: Facebook Ads excels at lead generation with tight targeting. Master the basics (audience + creative + landing page), then optimize based on data.
-

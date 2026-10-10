@@ -1,4 +1,10 @@
-# Search Engine Optimization (SEO)
+---
+title: "Search Engine Optimization (SEO)"
+description: "Search engine optimization: how people find pages, and what has to be true on the page before promotion works."
+date: 2026-10-02
+tags:
+  - seedling
+---
 
 ## Definition
 
@@ -472,21 +478,23 @@ H1: How to Write Email Subject Lines That Get Opened
 
 ## Assignment: SEO Strategy
 
-> [!TODO]
-> Build your SEO foundation:
-> 
-> - [ ] Conduct keyword research (50 keywords)
-> - [ ] Prioritize 20 target keywords (high intent, low competition)
-> - [ ] Audit site technical setup
-> - [ ] Install Google Search Console
-> - [ ] Create XML sitemap
-> - [ ] Optimize 5 existing pages (title, description, H1)
-> - [ ] Create content roadmap (12 blog posts)
-> - [ ] Write and publish first SEO article
-> - [ ] Set up internal linking structure
-> - [ ] Identify 10 backlink opportunities
-> - [ ] Reach out for 5 guest posting opportunities
-> - [ ] Set up monthly ranking tracking
+## Practice
+
+Build your SEO foundation:
+
+- [ ] Conduct keyword research (50 keywords)
+- [ ] Prioritize 20 target keywords (high intent, low competition)
+- [ ] Audit site technical setup
+- [ ] Install Google Search Console
+- [ ] Create XML sitemap
+- [ ] Optimize 5 existing pages (title, description, H1)
+- [ ] Create content roadmap (12 blog posts)
+- [ ] Write and publish first SEO article
+- [ ] Set up internal linking structure
+- [ ] Identify 10 backlink opportunities
+- [ ] Reach out for 5 guest posting opportunities
+- [ ] Set up monthly ranking tracking
+
 
 ## Quick Reference: Knowledge Checklist
 
@@ -518,4 +526,3 @@ H1: How to Write Email Subject Lines That Get Opened
 ---
 
 **Key Takeaway**: SEO is a compound interest investment. The earlier you start, the more traffic you'll generate over time, completely free.
-

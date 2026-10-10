@@ -1,4 +1,12 @@
-# YouTube Marketing
+---
+title: "YouTube Marketing"
+description: "This knowledge base organizes YouTube Marketing into a system covering channel setup, content production, video SEO, thumbnails/metadata optimization."
+date: 2026-10-02
+tags:
+  - seedling
+---
+
+This folder is only this path. The twelve principles are on [[digital-marketing|the digital marketing map]].
 
 > This knowledge base organizes YouTube Marketing into a system covering **channel setup, content production, video SEO, thumbnails/metadata optimization, analytics, and monetization**.
 
@@ -44,4 +52,4 @@ YouTube marketing isn't mechanically posting videos—it's:
 
 ---
 
-**← Back to [[../index|Main Knowledge Base]]**
+**← Back to [[../index|Knowledge]]**

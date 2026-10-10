@@ -1,4 +1,5 @@
 ---
+date: 2026-10-02
 name: voc-to-theme-articles
 title: VOC to Theme Articles
 description: Turns voice-of-customer research (clustered pain points, YouTube comments, web supplements) into a public set of per-theme articles plus a ranked index. Each article has signal counts, 4–8 verbatim verified quotes without usernames, why it hurts, how people cope today, the product's response with unconfirmed items marked "(unconfirmed)", and open questions. Use when publishing user research to a digital garden or wiki, when asked to "write up the pain points as articles", "make a voice-of-customer section", or when merging several research reports into one theme list.

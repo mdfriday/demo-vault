@@ -1,4 +1,5 @@
 ---
+date: 2026-10-02
 name: voc-to-blog-post
 title: VOC to Blog Post
 description: Writes SEO blog posts driven by real customer demand, using voice-of-customer research. It produces keyword-first titles, 140–160 character meta descriptions, AIDA structure opened with verbatim, verified customer quotes, honest competitor comparisons, features turned into benefits, a small no-risk call to action with truthful plan limits, and a confirmed-claims-only guardrail, then lints and verifies every quote. Use when turning pain-point research into blog content, writing "alternatives", "vs", "how to without X" or "is X worth it" posts, building a product blog index, or reviewing a draft for fabricated claims.

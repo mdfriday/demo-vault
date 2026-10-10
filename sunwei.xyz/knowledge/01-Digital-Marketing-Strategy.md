@@ -1,4 +1,10 @@
-# Digital Marketing Strategy
+---
+title: "Digital Marketing Strategy"
+description: "Digital marketing strategy starts with understanding that every marketing dollar spent begins with one critical element: understanding your customer."
+date: 2026-10-02
+tags:
+  - seedling
+---
 
 ## Foundation Principles
 
@@ -365,17 +371,19 @@ This practice improves your headline writing skills exponentially.
 
 ## Module 6: Assignment - Create Your Marketing Foundation
 
-> [!TODO]
-> Complete all foundational work before moving to traffic generation channels:
-> 
-> - [ ] Create detailed buyer persona
-> - [ ] Conduct market research survey (minimum 50 responses)
-> - [ ] Analyze survey results for top 3 pain points
-> - [ ] Set up professional website with premium theme
-> - [ ] Configure business email (yourname@yourdomain.com)
-> - [ ] Set up email marketing platform
-> - [ ] Practice writing 25 headlines using the formulas provided
-> - [ ] Write 3 email subject lines using successful models
+## Practice
+
+Complete all foundational work before moving to traffic generation channels:
+
+- [ ] Create detailed buyer persona
+- [ ] Conduct market research survey (minimum 50 responses)
+- [ ] Analyze survey results for top 3 pain points
+- [ ] Set up professional website with premium theme
+- [ ] Configure business email (yourname@yourdomain.com)
+- [ ] Set up email marketing platform
+- [ ] Practice writing 25 headlines using the formulas provided
+- [ ] Write 3 email subject lines using successful models
+
 
 ## Quick Reference: Knowledge Points Checklist
 
@@ -405,9 +413,8 @@ This practice improves your headline writing skills exponentially.
 - SEO and organic traffic
 - Social media strategies
 
-**Back to Main Index**: [[index|Digital Marketing Knowledge Base]]
+**Back to Main Index**: [[digital-marketing|Digital marketing map]]
 
 ---
 
 **Key Takeaway**: Master these foundations before spending money on ads or traffic generation.
-

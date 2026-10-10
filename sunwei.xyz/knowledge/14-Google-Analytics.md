@@ -1,4 +1,10 @@
-# Google Analytics
+---
+title: "Google Analytics"
+description: "Google Analytics is Google's free website analytics tool that tracks how people interact with your website and marketing campaigns."
+date: 2026-10-02
+tags:
+  - seedling
+---
 
 ## Definition
 
@@ -316,23 +322,25 @@
 
 ## Assignment: Analytics Mastery
 
-> [!TODO]
-> Set up comprehensive analytics:
-> 
-> - [ ] Install Google Analytics on website
-> - [ ] Verify tracking is working
-> - [ ] Set up 5-10 goals (relevant to business)
-> - [ ] Create custom dashboard
-> - [ ] Set up demographic reports
-> - [ ] Analyze traffic sources
-> - [ ] Identify top performing content
-> - [ ] Connect Google Ads account
-> - [ ] Set up e-commerce tracking (if applicable)
-> - [ ] Create custom email report
-> - [ ] Set up real-time alerts
-> - [ ] Schedule monthly review meetings
-> - [ ] Document 5 optimization opportunities
-> - [ ] Implement 3 changes based on data
+## Practice
+
+Set up comprehensive analytics:
+
+- [ ] Install Google Analytics on website
+- [ ] Verify tracking is working
+- [ ] Set up 5-10 goals (relevant to business)
+- [ ] Create custom dashboard
+- [ ] Set up demographic reports
+- [ ] Analyze traffic sources
+- [ ] Identify top performing content
+- [ ] Connect Google Ads account
+- [ ] Set up e-commerce tracking (if applicable)
+- [ ] Create custom email report
+- [ ] Set up real-time alerts
+- [ ] Schedule monthly review meetings
+- [ ] Document 5 optimization opportunities
+- [ ] Implement 3 changes based on data
+
 
 ## Quick Reference: Knowledge Checklist
 
@@ -366,4 +374,3 @@
 ---
 
 **Key Takeaway**: Data-driven decisions beat guesses. Install analytics, set goals, and review monthly. Your optimization roadmap is hidden in your analytics.
-

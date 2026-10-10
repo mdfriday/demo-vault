@@ -3,12 +3,9 @@ title: "Why Our Help Center Was Missing from Google"
 date: 2026-10-09
 lastmod: 2026-10-09
 tags:
-  - building
-  - mdfriday
+  - budding
 description: "The help center's sitemap and canonical URLs were relative, so Google could not use them. The fix is in the source. The live site is not updated yet."
 ---
-
-# Why Our Help Center Was Missing from Google
 
 The help center looked finished. The pages were online. Search still had almost nothing to work with.
 

@@ -3,8 +3,8 @@ title: Troubleshooting checklist
 weight: 90
 tags: [troubleshooting]
 date: 2026-09-19
-lastmod: 2026-10-09
-description: A checklist when publish fails: desktop setup, local preview, Guest verification, storage quotas, retention, and custom domains.
+lastmod: 2026-10-11
+description: A checklist when MDFriday publish fails: desktop setup, preview, Guest verification, storage, and the custom-domain status lines.
 ---
 
 # Troubleshooting checklist
@@ -43,9 +43,17 @@ Work top to bottom; most issues surface in the first few steps.
 
 ## F. Domain (Personal)
 
-- [ ] Authenticated + published at least once
-- [ ] DNS **short hostname** filled correctly
-- [ ] Clicked verify / refresh status; HTTPS records complete
+Match the panel text. Details are on [[publish/custom-domain|Custom domain]].
+
+- [ ] **Verify first** — sign in
+- [ ] **Publish to bind** — this project has one successful publish
+- [ ] **Upgrade to use** — the account is Personal
+- [ ] Host is the short name from the table, not `www.example.com.example.com`
+- [ ] The ownership TXT is the Host cell from the table (it starts with `_mdfriday-verify`). Later, the HTTPS row replaces any TXT on that same host
+- [ ] Cloudflare DNS is grey-cloud, not Flexible SSL
+- [ ] **Misconfigured** — refresh after DNS has had a few minutes
+- [ ] Status **Active**, then you published **once more**
+- [ ] **Paused: renew to restore** — the plan no longer includes this extra domain
 
 ## G. Credentials
 

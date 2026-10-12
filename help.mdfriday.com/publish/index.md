@@ -3,13 +3,13 @@ title: Publish
 weight: 30
 tags: [publish]
 date: 2026-09-19
-lastmod: 2026-10-09
-description: Task pages for publishing a note or folder, previewing locally, exporting a ZIP, a custom domain, history, and unpublish.
+lastmod: 2026-10-11
+description: Task pages for publishing a note or folder in MDFriday, updating it, exporting a ZIP, and binding a custom domain.
 ---
 
 # Publish
 
-← [[mdfriday/help/index|MDFriday Publish Help]]
+← [[../index|MDFriday Publish Help]]
 
 Pick a page by what you want to do:
 
@@ -19,6 +19,7 @@ Pick a page by what you want to do:
 | Publish a folder / Wiki | [[publish-folder\|Publish a folder (Wiki)]] |
 | Understand faithful / single-page / Wiki | [[modes\|Publish modes]] |
 | Preview locally first | [[local-preview\|Local preview]] |
+| Update after editing | [[update-site\|Update a published site]] |
 | Save the preview as a ZIP | [[export\|Export a ZIP]] |
 | Share the current note fastest | [[quick-share\|Quick share]] |
 | Manage projects in the right panel | [[right-panel\|Right panel]] |

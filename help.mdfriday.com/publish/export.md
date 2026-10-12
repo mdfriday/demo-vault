@@ -26,8 +26,7 @@ Save the site you just previewed as a ZIP of static files, so you can open it of
 4. In the save dialog (**Save site archive**), choose where to put the ZIP. The suggested name is the project name plus `.zip`
 5. After it finishes, Obsidian shows the path it wrote
 
-<!-- MEDIA: screenshot — Export under a local preview result -->
-![Placeholder: export after preview](../images/placeholder-export.png)
+![export after preview](../images/export.gif)
 
 ## Confirm success
 
@@ -37,7 +36,7 @@ Save the site you just previewed as a ZIP of static files, so you can open it of
 
 ## What is in the ZIP
 
-The ZIP is the built static site (HTML, CSS, images). It is not your vault, and it is not a Markdown source backup.
+The ZIP is the built static site (HTML, CSS, images). It is not your vault, and it is not a Markdown source backup. It is not a PDF or an EPUB.
 
 Hosting features are not in the file. A custom domain and the subscribe form need MDFriday hosting. Opening the ZIP elsewhere will not turn those on.
 

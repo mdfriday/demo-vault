@@ -20,13 +20,12 @@ View the build result in a local browser **without going live**.
 ## Steps
 
 1. Open the right-hand **Publish** tab
-2. Click the secondary bottom button **“Preview”**
+2. Click the button **“Preview”**
 3. Wait for “Building… / Local preview · starting local server”
 4. On success, open the local URL (like `http://127.0.0.1:port/`)
 5. When done, you can **Stop preview**
 
-<!-- MEDIA: screenshot — preview success result page -->
-![Placeholder: local preview success](../images/placeholder-preview-success.png)
+![local preview success](../images/local-preview.gif)
 
 ## Confirm success
 

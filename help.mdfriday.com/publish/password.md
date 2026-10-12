@@ -36,8 +36,7 @@ Do not publish an attachment that cannot be public. There is one password, not s
 3. [[local-preview|Preview]], then **Publish**
 4. Send the link and the password on separate channels
 
-<!-- MEDIA: screenshot — Advanced access password -->
-![Placeholder: access password](../images/placeholder-password.png)
+![access password](../images/password.gif)
 
 To encrypt one page inside a themed site, add this to that note's frontmatter and publish again:
 

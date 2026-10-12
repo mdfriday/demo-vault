@@ -9,7 +9,7 @@ description: Where Guest (clears at the next UTC 00:00), Free, and Personal quot
 
 # Plans and quotas
 
-← [[mdfriday/help/index|MDFriday Publish Help]]
+← [[../index|MDFriday Publish Help]]
 
 MDFriday Publish’s sidebar expresses capability as **Guest → Free → Personal**. Full subscription management lives on the account site, not in the narrow sidebar.
 

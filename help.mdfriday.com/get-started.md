@@ -3,81 +3,85 @@ title: Install and first publish
 weight: 10
 tags: [getting-started, install, Guest]
 date: 2026-09-19
-lastmod: 2026-10-09
-description: Install MDFriday Publish on Obsidian desktop and publish one note with no account. Guest content clears at the next UTC 00:00.
+lastmod: 2026-10-11
+description: Install MDFriday Publish on Obsidian desktop and publish one note. Success is a share link you can open. Guest clears at the next UTC 00:00.
 ---
 
 # Install and first publish
 
+Applies to plugin **v26.10.2**.
+
 ## Goal
 
-Install **MDFriday Publish** in Obsidian desktop and publish a note via the **Guest (no account)** path to get a shareable public link.
+Install the plugin and publish **one note** with no account. You are done when the panel shows a link on `https://share.mdfriday.com/...` and that link opens in a browser.
+
+A folder, a theme, and a custom domain come after this. Do not start with them.
 
 ## Prerequisites
 
-- Obsidian desktop (the plugin is **desktop-only**; see `minAppVersion` in `manifest.json`, currently **1.8.7**)
-- Outbound internet (first Guest publish may require a browser human check)
-- One Markdown note, or a folder you are ready to make public
+- Obsidian **desktop** (minimum app version **1.8.7**). The plugin does not run on mobile or iPad
+- A network connection. The first Guest publish opens a browser check
+- One Markdown note you are willing to make public
 
 ## Steps
 
-### 1. Install the plugin
+### 1. Install and enable
 
-1. Open **Settings → Community plugins** and turn off Restricted Mode if needed
-2. Browse / search **MDFriday Publish** (id: `mdfriday-publish`)
-3. Install and **enable** it
+1. **Settings → Community plugins**. Turn off Restricted mode if it blocks installs
+2. Search **MDFriday Publish** (id: `mdfriday-publish`)
+3. Install, then **Enable**
 
-You can also jump from: <https://obsidian.md/plugins?search=mdfriday-publish>
+Or open <https://obsidian.md/plugins?search=mdfriday-publish>.
 
-<!-- MEDIA: screenshot — Community Plugins search for MDFriday Publish -->
-![Placeholder: install plugin](images/placeholder-install-plugin.png)
+![install plugin](images/install-plugin.png)
 
-### 2. Open the right-hand publish panel
+### 2. Open the panel
 
-Pick any of these:
+- **Right-click** the note → **Publish to MDFriday**
+- Or right-click → **Open in MDFriday** (opens the panel only; it does not publish yet)
 
-- **Right-click** a note or folder → **“Open in MDFriday”** (opens the config panel only; does not publish yet)
-- **Right-click** → **“Publish to MDFriday”** (opens the panel and starts the publish flow)
-- Command palette: **“Quick share”** or **“Publish to MDFriday”**
+The **MDFriday** sidebar opens on the right.
 
-The **MDFriday** sidebar appears on the right (Publish | History).
+![publish menu](images/publish-menu.jpg)
 
-<!-- MEDIA: screenshot — right-click menu “Publish to MDFriday” -->
-![Placeholder: publish menu](images/placeholder-publish-menu.png)
+### 3. 10 Seconds from Plugin Install to a Live Obsidian Website - No Git, No GitHub, No Setup
 
-### 3. First Guest publish (no account)
+1. Install [MDFriday Publish](https://community.obsidian.md/plugins/mdfriday-publish) plugin from the Obsidian community plugins and enable it
+2. Right-click a note and select **Publish to MDFriday**. 
+3. Open the link in a browser. You are done.
+4. Unpublish the note if you want to remove it from the web. The link will stop working.
 
-1. Confirm the publish target is the current note / folder
-2. A single note usually defaults to **faithful publish**; a folder is always **Wiki publish** (see [[publish/modes|Publish modes]])
-3. Optional: click **Preview** to check the result in a local browser first ([[publish/local-preview|Local preview]])
-4. Click **Publish**. For Guest users who have not verified yet, the button may say **“Verify and publish”**
-5. Follow the prompt to **mdfriday.com**, complete the Turnstile human check, then return to Obsidian
-6. On success, copy the public URL and share it
+![10 seconds from install to publish](images/10-seconds-install-unpublish.gif)
 
-<!-- MEDIA: video — one-click publish demo -->
-![Placeholder: publish demo video](videos/placeholder-publish-demo.md)
-
-> [!info] Credential is issued automatically
-> The first publish automatically creates an **mdf key** (Guest or later user credential). You can view / copy it in Settings for account claim or device switches. See [[settings/credentials|Credential (mdf key)]].
+The first publish creates an **mdf key**. You can copy it later under Settings. See [[settings/credentials|Credential (mdf key)]].
 
 ## Confirm success
 
-- The panel shows **“Published successfully”** with an openable / copyable URL (production share hosts are typically `https://share.mdfriday.com/...`)
-- Project status becomes **Published**
-- Guest: content is cleared at the **next UTC 00:00** (claim Free to keep the same URL) — see [[plans/guest-free-personal|Guest / Free / Personal]]
+- The panel says the site is published and shows a URL you can open
+- Production share links look like `https://share.mdfriday.com/s/…`
+- The project status is **Published**
+
+## Before you send the link
+
+Three facts that surprise people after a successful first publish:
+
+- **Guest is a trial.** The site is removed at the next **UTC 00:00**. It is not archived. To keep the same URL, [[plans/claim-and-upgrade|claim Free]]. Free is 200 MB and stays while you stay active
+- **Only this note is public.** The rest of the vault stays on your computer. Nothing in the vault is uploaded as editable Markdown; the cloud receives the built pages
+- **The public address is the note's path.** A note becomes `{folders}/{filename}.html`. A folder home is the folder path with a trailing slash. Chinese characters in the file name stay in the URL. Renaming the note and publishing again **changes the URL**. There is no redirect from the old name. Settle the file name before you share the link. See [[publish/update-site|Update a published site]]
 
 ## Related
 
 - [[publish/publish-note|Publish a note]]
 - [[publish/publish-folder|Publish a folder]]
-- [[plans/claim-and-upgrade|Claim Guest and upgrade]]
-- [[troubleshooting|Troubleshooting]]
+- [[themes/index|Themes]]
+- [[plans/guest-free-personal|Guest / Free / Personal]]
+- <https://mdfriday.com/solutions/share-a-note/>
 
 ## Common failures
 
 | Symptom | Likely cause | See |
 | --- | --- | --- |
-| No plugin capability on mobile | Desktop only | [[faq\|FAQ · desktop]] |
-| Stuck on “Verify and publish” | Turnstile not finished or you did not return to Obsidian | [[troubleshooting\|Troubleshooting]] |
-| Publish failed · storage | Guest is **5 MB** total, shared across sites | [[plans/guest-free-personal\|Plans]] |
-| Blank preview / build failed | Attachment paths, theme, port in use, etc. | [[faq\|FAQ]] · [[troubleshooting\|Troubleshooting]] |
+| No plugin on mobile | Desktop only | [[faq\|FAQ]] |
+| Stuck on **Verify and publish** | The browser check did not finish, or you did not return to Obsidian | [[troubleshooting\|Troubleshooting]] |
+| Publish failed · storage | Guest is **5 MB** total, shared by every Guest site | [[plans/guest-free-personal\|Plans]] |
+| Preview is blank or the build fails | Image path, or a block the mode cannot render | [[reference/supported-syntax\|Supported syntax]] · [[troubleshooting\|Troubleshooting]] |

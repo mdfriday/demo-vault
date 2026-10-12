@@ -22,11 +22,16 @@ Recognize the main MDFriday Publish UI: a right sidebar (side leaf), not a cente
 5. **Publish mode** (forks by file vs folder)
 6. Theme list (when needed) + Live demo / website themes entry
 7. Guest/Free **banner** (quota and wipe-policy tips)
-8. **Advanced**: access password, custom domain
+8. **Advanced**:
+   - Title: site title shown in the browser and header
+   - Logo & favicon: optional image for the browser tab and header
+   - Navigation links: optional list of links for the header (Creator, Flint, Jasper, Quartz themes only)
+   - Password: optional access password for the whole site
+   - Subscribe: optional email subscription form for the whole site (Creator, Flint, Jasper, Quartz themes only)
+   - Custom domain: Publish the site once before binding a custom domain (see [[custom-domain|Custom domain]])
 9. Sticky bottom bar: **Preview** + **Publish** / **Verify and publish** / **Publish again**
 
-<!-- MEDIA: screenshot — full right panel -->
-![Placeholder: right panel](../images/placeholder-right-panel.png)
+![right panel](../images/right-panel.gif)
 
 ## History tab
 
@@ -47,5 +52,5 @@ See [[history|Publish history and rollback]].
 
 ## Related
 
-- [[mdfriday/help/plans/index|Plans]]
+- [[../plans/index|Plans]]
 - [[custom-domain|Custom domain]]

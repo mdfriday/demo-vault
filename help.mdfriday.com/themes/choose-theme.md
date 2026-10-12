@@ -3,8 +3,8 @@ title: How to choose a theme
 weight: 51
 tags: [themes]
 date: 2026-09-19
-lastmod: 2026-10-09
-description: Pick a theme in the right panel and check the look with Live demo before you publish.
+lastmod: 2026-10-11
+description: Pick a MDFriday theme in the right panel, open Live demo, preview locally, then publish.
 ---
 
 # How to choose a theme
@@ -15,14 +15,18 @@ Pick a theme for the current project in the right panel and confirm the look wit
 
 ## Steps
 
-1. Note: set mode to **Single-page theme**; folder: you are already in Wiki mode
-2. Select an item in the theme list (only types available for the current selection with a pack are shown)
+1. Note: set mode to **Single-page theme**, or leave **Faithful** if you want the vault's reading view. A folder is already in Wiki mode
+2. Select a theme. A note lists the six Notes themes. A folder lists Quartz, Creator, Flint, and Jasper
 3. Click **Live demo** (if present) to open an example in the browser
-4. For more options, click **View all themes on the website**
-5. [[../publish/local-preview|Local preview]] → [[../publish/publish-note|Publish]]
+4. [[../publish/local-preview|Local preview]] → [[../publish/publish-note|Publish]]
 
-<!-- MEDIA: screenshot — theme list and Live demo -->
-![Placeholder: theme picker](../images/placeholder-theme-picker.png)
+### Single-page theme
+
+![Single-page theme](../images/note-theme.jpg)
+
+### Folder (Wiki/Digital Garden) theme
+
+![Folder theme](../images/folder-theme.jpg)
 
 ## Confirm success
 

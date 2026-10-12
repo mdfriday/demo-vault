@@ -3,54 +3,51 @@ title: MDFriday Publish Help
 weight: 1
 tags: [navigation, getting-started]
 date: 2026-09-19
-lastmod: 2026-10-09
-description: Find the page for installing MDFriday Publish, publishing a note or folder, checking plans, or fixing a failed publish.
+lastmod: 2026-10-11
+description: Find the page for installing MDFriday Publish, publishing a note or folder, choosing a theme, or binding a custom domain.
 ---
 
 # Welcome to MDFriday Publish
 
-← [[mdfriday/index|MDFriday]]
-
-**MDFriday Publish** (plugin id: `mdfriday-publish`) turns **one note** or **one folder** in Obsidian into a shareable static site. The build runs locally; the cloud only hosts the build output and serves it through a global CDN.
+**MDFriday Publish** (plugin id: `mdfriday-publish`) turns **one note** or **one folder** in Obsidian into a shareable static site. The build runs on your computer. The cloud only hosts the built files and serves them through a CDN.
 
 > [!info] Version and platform
-> This docs set matches plugin **v26.10.2** (check `manifest.json` in your vault). **Desktop only** (`isDesktopOnly: true`); mobile is not supported.
+> Applies to plugin **v26.10.2**. **Desktop only**. Mobile and iPad are not supported.
 
 ## What you can do
 
 | I want to… | Go here |
 | --- | --- |
-| Share **one note** as a link | [[publish/publish-note\|Publish a note]] |
-| Turn a folder into a **Wiki / digital garden** | [[publish/publish-folder\|Publish a folder (Wiki)]] |
-| Preview before going live | [[publish/local-preview\|Local preview]] |
-| Save the built site as a ZIP | [[publish/export\|Export a ZIP]] |
-| Share as fast as possible | [[publish/quick-share\|Quick share]] |
-| Pick the look (faithful / single-page theme / Quartz) | [[mdfriday/help/themes/index\|Themes]] · [[publish/modes\|Publish modes]] |
-| Add an access password / custom domain | [[publish/password\|Access password]] · [[publish/custom-domain\|Custom domain]] |
-| Understand free vs paid limits | [[mdfriday/help/plans/index\|Plans and quotas]] |
-| Move from the original Friday plugin | [[migrate/from-friday\|Move from the Friday plugin]] |
-| Fix a problem | [[troubleshooting\|Troubleshooting]] · [[faq\|FAQ]] |
+| Publish **one note** and get a link | [[get-started\|Install and first publish]] |
+| Turn a folder into a **wiki or garden** | [[publish/publish-folder\|Publish a folder]] |
+| See it before it is public | [[publish/local-preview\|Local preview]] |
+| Update a site after I edit the notes | [[publish/update-site\|Update a published site]] |
+| Pick a look | [[themes/index\|Themes]] |
+| Add a password | [[publish/password\|Access password]] |
+| Use my own domain | [[publish/custom-domain\|Custom domain]] |
+| Know what Markdown will survive | [[reference/supported-syntax\|Supported syntax]] |
+| Save a ZIP of the built site | [[publish/export\|Export a ZIP]] |
+| Compare Guest, Free, and Personal | [[plans/index\|Plans and quotas]] |
+| Move from the old Friday plugin | [[migrate/from-friday\|Move from the Friday plugin]] |
+| Fix a failed publish | [[troubleshooting\|Troubleshooting]] · [[faq\|FAQ]] |
 
-## 30-second navigation
+## Start here
 
-1. [[get-started|Install and first publish]] — install from Community Plugins, right-click to publish
-2. [[concepts|How it differs from Obsidian Publish / Quartz]] — honest comparison
-3. [[mdfriday/help/publish/index|How to publish]] — task-oriented how-tos
-4. [[mdfriday/help/settings/index|Settings]] — mainly Credentials (mdf key) today
+1. [[get-started|Install and first publish]] — community plugin, right-click, copy the share link
+2. [[concepts|How this differs from Obsidian Publish and Quartz]] — short comparison, then back to the task
+3. [[publish/index|How to publish]] — note, folder, preview, update, domain
+4. [[themes/index|Themes]] — faithful, six single-page looks, four wiki themes
+5. [[settings/index|Settings]] — the mdf key
 
 ## Official links
 
 - Website: <https://mdfriday.com>
-- Product page: <https://mdfriday.com/products/obsidian-publish/>
+- Product: <https://mdfriday.com/products/obsidian-publish/>
 - Pricing: <https://mdfriday.com/pricing/>
-- Share-a-note solution: <https://mdfriday.com/solutions/share-a-note/>
-- Digital garden solution: <https://mdfriday.com/solutions/digital-garden/>
-- Knowledge base (legacy site; may still describe older Friday): <https://help.mdfriday.com>
+- Share a note: <https://mdfriday.com/solutions/share-a-note/>
+- Digital garden: <https://mdfriday.com/solutions/digital-garden/>
 - Community Discord: <https://discord.gg/t7FHJ6qNzT>
-- Community plugin search: `mdfriday-publish` → <https://obsidian.md/plugins?search=mdfriday-publish>
+- Community plugin: <https://obsidian.md/plugins?search=mdfriday-publish>
 
-> [!tip] Relation to “Friday Sync”
-> Sync lives in a separate repo / plugin **Obsidian Sync (MDFriday)**. This help covers **Publish only**. Unless you still see account / License entries in this plugin, do not follow Sync chapters from the old “Friday Help”.
-
-<!-- MEDIA: screenshot — help home navigation structure -->
-![Placeholder: help home](images/placeholder-help-home.png)
+> [!tip] Sync is a different plugin
+> **Obsidian Sync (MDFriday)** is separate. This help covers **Publish only**. Do not follow Sync, Netlify, or FTP chapters from older Friday Help.

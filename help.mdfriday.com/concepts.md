@@ -3,8 +3,8 @@ title: How it differs from Obsidian Publish / Quartz
 weight: 20
 tags: [concepts, comparison]
 date: 2026-09-19
-lastmod: 2026-10-09
-description: How MDFriday Publish differs from Obsidian Publish and self-hosted Quartz: a local build, no account required, and what you still run yourself.
+lastmod: 2026-10-11
+description: How MDFriday Publish differs from Obsidian Publish and self-hosted Quartz, and when those tools are the better fit.
 ---
 
 # How it differs from Obsidian Publish / Quartz
@@ -32,7 +32,7 @@ Sources: product comparison table on the website + plugin behavior (Cloudflare p
 | Local preview | ✓ In-plugin local server | — | ✓ (you start it) |
 | No-account trial | ✓ **Guest** | Usually needs an Obsidian account and subscription | “Account trial” does not apply |
 | Look and feel | **Faithful publish** (close to in-vault reading) or **Notes / Quartz themes** | Official reader look | Theme ecosystem you maintain |
-| Wiki capability | Folder → Quartz-family Wiki themes (graph, backlinks, etc.) | Official feature set | Upstream Quartz you operate yourself |
+| Wiki capability | Folder → Quartz, Creator, Flint, or Jasper | Official feature set | Upstream Quartz you operate yourself |
 | Custom domain | **Personal**: **$5/month** or **$50/year** includes 1 domain; **$60/year** includes 3. Automatic HTTPS | Supported on the official stack | DIY |
 | History / rollback | **Personal** | Limited / product-specific | Git DIY |
 | Ops burden | Done inside the plugin; no DIY CLI | Low (official hosting) | High (toolchain + config) |
@@ -47,7 +47,13 @@ The plugin forks by selection type (see `publish-config` and UI copy):
 2. **Folder**
    - **Wiki only (themed)**: faithful is not available; a Wiki engine is required for multi-page, wikilinks, and graph (default slug: `quartz`)
 
-See [[publish/modes|Publish modes]] and [[mdfriday/help/themes/index|Themes]].
+See [[publish/modes|Publish modes]] and [[themes/index|Themes]].
+
+## When MDFriday is the wrong tool
+
+- You need several passwords, or the ability to revoke one reader. Use Obsidian Publish. MDFriday encrypts the page body with one password. The title, URL, and attachments stay public. See [[publish/password|Access password]]
+- You want to edit the theme's source. Use Quartz or Hugo yourself
+- The folder depends on Canvas, Excalidraw, or Dataview queries. Those do not run in a wiki theme. See [[reference/supported-syntax|Supported syntax]]
 
 ## Difference from older “Friday” help
 

@@ -3,8 +3,8 @@ title: Publish modes
 weight: 33
 tags: [concepts, modes]
 date: 2026-09-19
-lastmod: 2026-10-09
-description: When the panel offers faithful publish, a single-page theme, or a Wiki, and which mode is the default.
+lastmod: 2026-10-11
+description: When MDFriday offers Faithful, a single-page theme, or a Wiki, and which mode is the default for a note or a folder.
 ---
 
 # Publish modes
@@ -32,10 +32,12 @@ Understand when **Faithful publish / Single-page theme / Wiki publish** appear i
 | --- | --- |
 | Share something that should “look like the vault” | Note → **Faithful** |
 | Want a more standalone / branded page | Note → **Single-page theme** |
-| A cluster of interlinked notes | **Folder → Wiki** |
+| A cluster of interlinked notes | **Folder → Wiki** (Quartz, Creator, Flint, or Jasper) |
+
+Faithful can include a Dataview table as a static snapshot of one note. A wiki theme does not run Dataview. See [[../reference/supported-syntax|Supported syntax]].
 
 ## Related
 
 - [[publish-note|Publish a note]]
 - [[publish-folder|Publish a folder]]
-- [[mdfriday/help/themes/index|Themes]]
+- [[../themes/index|Themes]]

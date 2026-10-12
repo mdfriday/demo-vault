@@ -3,8 +3,8 @@ title: FAQ
 weight: 80
 tags: [FAQ]
 date: 2026-09-19
-lastmod: 2026-10-09
-description: Short answers on desktop-only install, a publish that fails after preview, Guest sites clearing at the next UTC 00:00, and saving a ZIP.
+lastmod: 2026-10-11
+description: Short answers on desktop-only install, Dataview, Chinese file names, Guest sites clearing at the next UTC 00:00, and RSS.
 ---
 
 # FAQ
@@ -37,9 +37,9 @@ Common causes: storage quota, Guest verification incomplete, upload interrupted.
 
 Confirm images are inside the selected note or folder scope; avoid relying on absolute OS paths alone. Faithful and themed modes collect assets differently — preview both once.
 
-### Do Chinese paths work?
+### Do Chinese file names work?
 
-Usually yes. For rare encoding issues, shorten the path, avoid odd symbols, and verify links in preview.
+The file name is the URL, including Chinese characters. Wikilinks inside the published folder resolve to those paths. The four wiki themes accept Chinese in search. Preview the real notes before you share the link. Odd symbols are the usual cause of a bad path, not the Chinese characters themselves. Renaming later breaks the old URL. See [[publish/update-site|Update a published site]].
 
 ### Do I need a License to publish?
 
@@ -55,7 +55,11 @@ Guest is cleared at the **next UTC 00:00**. [[plans/claim-and-upgrade|Claim Free
 
 ### Faithful publish doesn’t match my vault exactly?
 
-Expected: only render that can be staticized ships. Runtime query features like Dataview usually do not survive into a static site.
+Faithful keeps a still of the reading view, including a Dataview result at that moment. Clicks and filters do not remain. A **themed** note or a **folder** does not run Dataview or Bases. Canvas and Excalidraw are not published. See [[reference/supported-syntax|Supported syntax]].
+
+### Is there RSS or comments?
+
+No. There is also no way to remove the Built with MDFriday footer.
 
 ### Why can’t folders use faithful?
 

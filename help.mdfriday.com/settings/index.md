@@ -9,7 +9,7 @@ description: Where MDFriday Publish settings live. The main item today is the pu
 
 # Settings
 
-← [[mdfriday/help/index|MDFriday Publish Help]]
+← [[../index|MDFriday Publish Help]]
 
 Current **MDFriday Publish** settings are intentionally lean (compared with older Friday License / long server lists).
 

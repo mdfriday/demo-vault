@@ -27,8 +27,7 @@ Browse past **publish** versions for a project and roll back when needed (site s
 4. **Rollback**: after confirm, overwrite the current published content with that historical version (site stays public)
 5. On the current Live entry you can also **Unpublish** (see [[unpublish|Unpublish]])
 
-<!-- MEDIA: screenshot — Personal history list -->
-![Placeholder: publish history](../images/placeholder-history.png)
+![publish history](../images/history.jpg)
 
 ## Confirm success
 

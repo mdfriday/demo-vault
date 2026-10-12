@@ -3,15 +3,15 @@ title: Publish a folder (Wiki)
 weight: 32
 tags: [publish, Wiki, folder]
 date: 2026-09-19
-lastmod: 2026-10-09
-description: Publish one folder as a Wiki with a Quartz-style theme. Folders cannot use faithful single-note mode.
+lastmod: 2026-10-11
+description: Publish one folder in MDFriday as a wiki. Pick Quartz, Creator, Flint, or Jasper. Folders cannot use Faithful mode.
 ---
 
 # Publish a folder (Wiki)
 
 ## Goal
 
-Select **one folder** in the vault and publish it as a Wiki / digital garden with wikilinks / graph (Quartz-family themes).
+Select **one folder** and publish it as a wiki. The theme list is **Quartz** (default), **Creator**, **Flint**, and **Jasper**. See [[../themes/wiki-quartz|Wiki themes]] for how they differ.
 
 ## Prerequisites
 
@@ -23,25 +23,24 @@ Select **one folder** in the vault and publish it as a Wiki / digital garden wit
 
 1. In the file tree, **right-click the folder** → **Publish to MDFriday**
 2. Panel badge is “Folder”; publish mode is fixed to **Wiki publish**
-3. Pick a theme in the **Wiki skin** list (defaults toward `quartz`; only Quartz-family themes are shown)
+3. Pick a theme: **Quartz**, **Creator**, **Flint**, or **Jasper**. The default is Quartz. Other packs are not listed
 4. (Optional) Open the theme **Live demo** to compare looks
 5. (Optional) [[password|Access password]], [[local-preview|Local preview]]
 6. **Publish**, then copy the URL
 
-<!-- MEDIA: screenshot — folder Wiki skin picker -->
-![Placeholder: Wiki publish](../images/placeholder-wiki-publish.png)
+![Wiki publish](../images/publish-wiki.gif)
 
 > [!warning] Scope = the folder you selected
 > Only content inside that folder ships. Whole-vault one-click upload is not the default product model. Keep private notes outside the folder, or do not select a parent that contains them.
 
 ## Confirm success
 
-- Browser can navigate multiple pages and follow `[[wikilinks]]` (exact capability depends on the Quartz theme)
+- The browser opens more than one page and follows `[[wikilinks]]` that stay inside this folder
 - The project binds to that **folder path**; after rename the plugin tries to migrate pathConfigs (if it fails, see troubleshooting)
 
 ## Related
 
-- [[../themes/wiki-quartz|Wiki / Quartz themes]]
+- [[../themes/wiki-quartz|Wiki themes]]
 - <https://mdfriday.com/solutions/digital-garden/>
 - [[modes|Publish modes]]
 

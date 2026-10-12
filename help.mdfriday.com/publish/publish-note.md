@@ -3,7 +3,7 @@ title: Publish a note
 weight: 31
 tags: [publish, single-note]
 date: 2026-09-19
-lastmod: 2026-10-09
+lastmod: 2026-10-11
 description: Publish one Markdown note as a public link. The rest of the vault stays on your device.
 ---
 
@@ -30,14 +30,13 @@ Turn **this one** Markdown note into a public (or password-protected) web link w
 6. (Optional) [[local-preview|Preview]]
 7. Click **Publish** / **Verify and publish**, then **Copy** the URL
 
-<!-- MEDIA: screenshot — single-note mode switch: faithful / single-page theme -->
-![Placeholder: note modes](../images/placeholder-note-modes.png)
+![note modes](../images/note-modes.gif)
 
 ## Confirm success
 
 - Result page shows **Published** + public URL
 - Opening the same path again **remembers** mode / theme / password toggle
-- Republishing usually updates the **same site** (mdf key / Guest credential persists)
+- Republishing the same note updates that site. See [[update-site|Update a published site]]
 
 ## Related
 
@@ -50,5 +49,5 @@ Turn **this one** Markdown note into a public (or password-protected) web link w
 | Symptom | What to do |
 | --- | --- |
 | Wanted a folder but stayed in single-note UI | Right-click the folder; see [[publish-folder\|Publish a folder]] |
-| Faithful look differs from the vault | Community plugins / custom syntax may not all staticize; try a single-page theme or simplify the note |
+| Faithful look differs from the vault | Interactive plugin output is not kept. A themed page does not run Dataview. See [[../reference/supported-syntax\|Supported syntax]] |
 | Storage full | Guest is **5 MB** total, shared across sites. Claim Free (**200 MB**) or unpublish an old site; see [[../plans/guest-free-personal\|Plans]] |

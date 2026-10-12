@@ -14,3 +14,5 @@ MDFriday is a product I own. This folder is the thinking around it: who it is fo
 - [MDFriday Publish Help](https://help.mdfriday.com/index.html)
 
 The product site is [mdfriday.com](https://mdfriday.com/products/obsidian-publish/). The weekly record of building it is [[building/index|Now]].
+- [[seo/index|SEO strategy]] — how MDFriday plans to be found, page by page, with the VOC evidence behind each page.
+- [[how-to-use|How to use this system]] — how the VOC database, topic summaries and SEO briefs fit together, and the daily workflow.

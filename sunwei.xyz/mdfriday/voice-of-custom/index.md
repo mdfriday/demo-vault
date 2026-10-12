@@ -13,6 +13,8 @@ description: "MDFriday user research: 25 customer pain-point themes distilled fr
 
 ← [[mdfriday/index|MDFriday]]
 
+VOC database (one card per voice, Obsidian Bases): [[voc-db/README|VOC database]] · SEO strategy: [[seo/index|SEO strategy]]
+
 > Don't ask "What should I build next?"
 > First ask "What are people already struggling with?"
 

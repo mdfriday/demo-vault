@@ -1,0 +1,185 @@
+filters:
+  and:
+    - file.hasTag("voc")
+    - type == "voc"
+    - file.name != "_template"
+formulas:
+  days_ago: ((today() - note.date) / 86400000).round()
+properties:
+  title:
+    displayName: What they said
+  topic:
+    displayName: Topic
+  platform:
+    displayName: Platform
+  date:
+    displayName: Date
+  persona:
+    displayName: Persona
+  competitor:
+    displayName: Competitors
+  fit:
+    displayName: Fit
+  intensity:
+    displayName: Intensity
+  decision:
+    displayName: Decision
+  reply:
+    displayName: Reply
+  engagement:
+    displayName: Engagement
+  reply_url:
+    displayName: Reply link
+  last_touch:
+    displayName: Last touch
+  seo_brief:
+    displayName: SEO page
+  url:
+    displayName: Post
+  formula.days_ago:
+    displayName: Days ago
+views:
+  - type: table
+    name: Triage
+    filters:
+      or:
+        - decision.isEmpty()
+    order:
+      - file.name
+      - title
+      - topic
+      - platform
+      - date
+      - fit
+      - intensity
+    sort:
+      - property: file.name
+        direction: DESC
+      - property: date
+        direction: DESC
+  - type: table
+    name: Reply today
+    filters:
+      and:
+        - reply == "not-replied"
+        - or:
+            - fit == "supported"
+            - fit == "partial"
+        - note.date >= today() - "30d"
+    order:
+      - file.name
+      - title
+      - topic
+      - platform
+      - date
+      - formula.days_ago
+      - intensity
+      - seo_brief
+      - url
+    sort:
+      - property: date
+        direction: DESC
+  - type: table
+    name: In conversation
+    filters:
+      and:
+        - engagement != "none"
+        - "!engagement.isEmpty()"
+    order:
+      - file.name
+      - title
+      - engagement
+      - last_touch
+      - reply_url
+    sort:
+      - property: last_touch
+        direction: DESC
+  - type: table
+    name: Opportunities
+    filters:
+      and:
+        - decision == "opportunity"
+    groupBy:
+      property: topic
+      direction: ASC
+    order:
+      - file.name
+      - title
+      - intensity
+      - fit
+      - reply
+      - seo_brief
+      - date
+    sort:
+      - property: intensity
+        direction: ASC
+    summaries:
+      title: Filled
+  - type: table
+    name: Watch list
+    filters:
+      and:
+        - decision == "watch"
+    order:
+      - file.name
+      - title
+      - topic
+      - fit
+      - intensity
+      - seo_brief
+      - date
+    sort:
+      - property: date
+        direction: DESC
+  - type: table
+    name: Pain map
+    filters:
+      and:
+        - intensity == "pain"
+    groupBy:
+      property: topic
+      direction: ASC
+    order:
+      - file.name
+      - title
+      - decision
+      - fit
+      - platform
+      - seo_brief
+      - date
+    summaries:
+      title: Filled
+  - type: table
+    name: By SEO page
+    filters:
+      and:
+        - "!seo_brief.isEmpty()"
+    groupBy:
+      property: seo_brief
+      direction: ASC
+    order:
+      - file.name
+      - title
+      - decision
+      - intensity
+      - reply
+      - date
+  - type: table
+    name: All
+    order:
+      - file.name
+      - title
+      - topic
+      - platform
+      - date
+      - persona
+      - competitor
+      - fit
+      - intensity
+      - decision
+      - reply
+      - engagement
+      - seo_brief
+    sort:
+      - property: date
+        direction: DESC

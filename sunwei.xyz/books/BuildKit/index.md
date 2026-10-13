@@ -1,11 +1,11 @@
 ---
-title: BuildKit
-description: Draft folder for a book. The title and where to read it are not set.
-date: 2026-09-28
+title: Moby BuildKit
+description: Deep Dive into Moby BuildKit - Source Code Analysis and Implementation Principles.
+date: 2021-12-21
 tags:
-  - seedling
+  - evergreen
 ---
 
 ← [[books/index|Books]]
 
-The public title, who it is for, and where to read it are not written yet. This page stays a seedling until those are real.
+Deep Dive into Moby BuildKit - Source Code Analysis and Implementation Principles.

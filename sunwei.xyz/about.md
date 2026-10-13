@@ -18,7 +18,7 @@ For the next 20 years, I want to explore more, follow my curiosity, and rediscov
 
 My first step is to turn my knowledge into assets — things I can build, share, and grow beyond the hours I work. What I study lives in [[knowledge/index|Knowledge]]. The procedures I want an AI to follow live in [[skills/index|Skills]].
 
-I'm building [[mdfriday/index|MDFriday]], writing about what I learn, and experimenting with how AI and technology can help people turn their knowledge into something valuable. The weekly record is [[building/index|Now]]. The practice of the company is [[one-person-company/index|One Person Company]].
+I'm building [[mdfriday/index|MDFriday]], writing about what I learn, and experimenting with how AI and technology can help people turn their knowledge into something valuable. The weekly record is [[building/index|Now]]. The practice of the company is [[notes/index|One Person Company]].
 
 My first goal is simple: **help as many people as I can with what I know.** I believe that when we share what we learn, we create opportunities for others — and for ourselves.
 

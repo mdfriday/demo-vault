@@ -1,12 +1,12 @@
 ---
-title: SunWei.xyz
+title: sunwei.xyz
 heroTitle: "Sun Wei tends a garden about turning knowledge into assets."
-heroSubtitle: "Programmer, building a one-person company with AI. Notes here grow slowly, from real work."
+heroSubtitle: "Own your knowledge. Build your business. Enjoy your life."
 description: "Sun Wei's digital garden: practice, knowledge, and the assets built from both."
 ---
 
-This garden records what I practice and what I learn. Knowledge stays in [[knowledge/index|Knowledge]]. The steps an AI can run to my standard live in [[skills/index|Skills]].
+# A garden for learning, building, and creating assets.
 
-[[mdfriday/index|MDFriday]], [[books/index|Books]], and [[one-person-company/index|One Person Company]] are assets other people can use. [[building/index|Now]] is the public log of the work itself.
+I'm exploring how to turn knowledge into assets through practice. This garden is where I document the journey.
 
-Read [[start-here|Start here]] for how the notes grow.
+[[start-here|Start here]] to learn how this garden grows.

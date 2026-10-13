@@ -13,4 +13,3 @@ The notes:
 
 - [[001.Switched to Storage-Based Pricing|Why we switched to storage-based pricing]]
 - [[002.Speed Is the Feature|Speed is the feature]]
-- [[003-help-center-missing-from-google|Why our help center was missing from Google]]

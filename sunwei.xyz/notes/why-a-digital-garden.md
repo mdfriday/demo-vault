@@ -35,10 +35,9 @@ One real event produces several assets. A digital garden is the structure that c
 
 - I write in Obsidian. The notes are the source files and belong to me.
 - I publish this folder as a website with [MDFriday](https://mdfriday.com). This site is itself a real case, and it is the founder's site.
-- For the structure, see [[03.operating-system|SunWei Operating System]].
+- For the structure, see [[start-here|Start here]].
 
 ## Related
 
-- [[01.strategy|Strategy]]
 - [[building/index|Building]]
 - [[about|About Me]]

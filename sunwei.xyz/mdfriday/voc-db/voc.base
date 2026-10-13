@@ -111,6 +111,8 @@ views:
       - seo_brief
       - date
     sort:
+      - property: date
+        direction: DESC
       - property: intensity
         direction: ASC
     summaries:

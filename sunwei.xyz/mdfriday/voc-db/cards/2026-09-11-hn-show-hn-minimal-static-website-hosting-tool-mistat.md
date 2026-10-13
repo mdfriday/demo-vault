@@ -6,20 +6,20 @@ platform: hn
 url: "https://news.ycombinator.com/item?id=49662930"
 author: "Lord_Zero"
 title: "Show HN: Minimal Static Website Hosting Tool (mistatic)"
-quote: "Author built mistatic to 'simplify tossing up a simple static site with no backend, no NGINX/Caddy/Traefik configs, instantly deploy with a single file copy' — good for client demos and quick shares with friends/coworkers. Project: https://github.com/VictorioBerra/mistatic"
+quote: "I built this because I self host a lot of stuff and wanted to simplify tossing up a simple static site with no backend, no NGINX/Caddy/Traffik configs, instantly deploy with a single file copy."
 need: "Self-hosters want to publish a static site with zero reverse-proxy / Nginx config friction."
 pain: "Tossing up a simple static site still requires NGINX/Caddy/Traefik configs and too much ops for demos or temporary shares."
 topic: "[[setup-and-deploy-barrier]]"
 persona: team
 competitor: []
-fit: supported
+fit: partial
 intensity: preference
 decision: fyi
-reply: not-replied
+reply: not-appropriate
 engagement: none
 reply_url:
 last_touch:
-seo_brief: "[[B31-obsidian-publish-self-hosted]]"
+seo_brief: 
 source: "marketing/voice-of-customer/personal-site/2026-09-11-hn-mistatic-static-host.md"
 tags:
   - voc
@@ -27,17 +27,18 @@ tags:
 
 # Show HN: Minimal Static Website Hosting Tool (mistatic)
 
-> Author built mistatic to 'simplify tossing up a simple static site with no backend, no NGINX/Caddy/Traefik configs, instantly deploy with a single file copy' — good for client demos and quick shares with friends/coworkers. Project: https://github.com/VictorioBerra/mistatic
+> I built this because I self host a lot of stuff and wanted to simplify tossing up a simple static site with no backend, no NGINX/Caddy/Traffik configs, instantly deploy with a single file copy.
 
 ## Context
 
-Hacker News post by Lord_Zero on 2026-09-11. The quote is copied from the raw card's summary of the post; ellipses (…) mark cuts made when the card was written.
+Show HN by Lord_Zero (2026-09-11). Author launching mistatic (Golang/Pocketbase static host). Quote re-fetched from HN Algolia item 49662930 (previous card paraphrased the project pitch). Vendor/author promo — not a user help request.
+
 
 ## Our assessment
 
-- Fit: supported · Intensity: preference · Decision: fyi
-- MDFriday covers this today. Supports [[B31-obsidian-publish-self-hosted|B31]].
-- Auto-triaged during the 2026-10-12 migration. Review before replying or citing.
+- Fit: partial · Intensity: preference · Decision: fyi
+- Hand-reviewed 2026-10-13 08:00: Show HN author promo. MDFriday removes deploy friction differently (in-Obsidian publish, no account/token) but this voice is not a lead. Cleared Auto-triaged; seo_brief cleared (was B31).
+
 
 ## Follow-up log
 

@@ -52,8 +52,9 @@ Body has three sections: **Context**, **Our assessment**, **Follow-up log**.
 ## How to judge
 
 **fit (based on confirmed product facts only)**
-- `supported`: publish a single note or a folder from a right-click; no account or token for the first publish; local build and preview; themes (including a Quartz-style wiki with graph, search and backlinks); password encryption on every plan; custom domains on Personal; ZIP export; roll back to the last 10 releases; subscribe form.
+- `supported`: publish a single note or a folder from a right-click; no account or token for the first publish; local build and preview; themes (including a Quartz-style wiki with graph, search and backlinks); password protection on every plan, supported by all themes; vault sync across devices with MDFriday Sync; custom domains on Personal; ZIP export; roll back to the last 10 releases; subscribe form.
 - `not-supported`: Canvas, Excalidraw, Dataview inside folder publishing, redirects, RSS, comments, payments, multi-user collaboration.
+- Old Friday plugin: support ends on 2027-01-20. Its users move to MDFriday Sync (sync) and MDFriday Publish (publish); from that date, China-market users get custom support (including deployment and hosting help), and old sync and publish users can contact us for one free year of the matching new service. For old-plugin voices, set `fit` against the new service, not the old plugin.
 - If unsure, use `not-supported` and note "to verify" in **Our assessment**.
 
 **intensity**

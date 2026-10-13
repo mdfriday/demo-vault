@@ -114,68 +114,68 @@ Rhythm: weekly report → monthly review → quarterly gate → annual review. A
 
 Status: `in-progress` = being written for the current month; `planned` = scheduled; `live` = published.
 
-| Brief | Page | Type | Target keyword | Month | Status |
-|---|---|---|---|---|---|
-| [[B00-guides-and-compare-hubs\|B00]] | Guides and Compare hub pages | Hub | (none — navigation page) | M01 | in-progress |
-| [[B01-publish-obsidian-notes\|B01]] | How to Publish Obsidian Notes | Guide (pillar) | publish obsidian notes | M01 | in-progress |
-| [[B02-publish-obsidian-without-github\|B02]] | Publish Obsidian Without GitHub | Guide | publish obsidian without github | M01 | in-progress |
-| [[B03-publish-obsidian-folder\|B03]] | Publish an Obsidian Folder as a Website | Guide | publish obsidian folder | M01 | in-progress |
-| [[B04-obsidian-digital-garden\|B04]] | Obsidian Digital Garden (solution page) | Solution | obsidian digital garden | M01 | in-progress |
-| [[B05-share-obsidian-notes-solution\|B05]] | Share Obsidian Notes (solution page) | Solution | share obsidian notes | M01 | in-progress |
-| [[B06-share-obsidian-note\|B06]] | Share a Single Obsidian Note as a Web Page | Guide | share obsidian note | M01 | in-progress |
-| [[B07-obsidian-publish-alternative\|B07]] | Obsidian Publish Alternative | Compare | obsidian publish alternative | M02 | planned |
-| [[B08-obsidian-website-builder\|B08]] | Obsidian Website Builder (product page) | Product | obsidian website builder | M02 | planned |
-| [[B09-obsidian-to-website-homepage\|B09]] | Obsidian to Website (homepage) | Homepage | obsidian to website | M02 | planned |
-| [[B10-pricing-page\|B10]] | Pricing page | Pricing | mdfriday pricing | M02 | planned |
-| [[B11-obsidian-publish-custom-domain\|B11]] | Obsidian Publish Custom Domain | Guide | obsidian publish custom domain | M02 | planned |
-| [[B12-obsidian-publish-free\|B12]] | Is Obsidian Publish Free? Cost and Free Ways to Publish | Guide | obsidian publish free | M02 | planned |
-| [[B13-quartz-alternative\|B13]] | Quartz Alternative | Compare | quartz alternative | M03 | planned |
-| [[B14-digital-garden-plugin-alternative\|B14]] | Digital Garden Plugin Alternative | Compare | digital garden plugin alternative | M03 | planned |
-| [[B15-move-from-obsidian-publish\|B15]] | Move from Obsidian Publish to MDFriday | Guide | migrate from obsidian publish | M03 | planned |
-| [[B16-digital-garden-without-github\|B16]] | Digital Garden Without GitHub | Guide | digital garden without github | M03 | planned |
-| [[B17-obsidian-website-examples\|B17]] | Obsidian Website Examples (showcase) | Showcase | obsidian website examples | M01–M12 | in-progress |
-| [[B18-friday-plugin-migration\|B18]] | Friday Plugin Migration Guide | Trust | (existing users) | M01 | in-progress |
-| [[B19-security-page\|B19]] | Security page | Trust | (trust page) | M01 | in-progress |
-| [[B20-changelog\|B20]] | Changelog | Trust | (trust page) | M01 | in-progress |
-| [[B21-friday-plugin-end-of-support\|B21]] | Friday Plugin End of Support (announcement) | Blog | (announcement) | M04 | planned |
-| [[B22-start-a-digital-garden-2027\|B22]] | Start a Digital Garden in 2027 | Blog (seasonal) | start a digital garden | M04 | planned |
-| [[B23-flowershow-alternative\|B23]] | Flowershow Alternative | Compare | flowershow alternative | M04 | planned |
-| [[B24-obsidian-website-without-coding\|B24]] | Obsidian Website Without Coding | Guide | obsidian website without coding | M04 | planned |
-| [[B25-obsidian-publish-themes\|B25]] | Obsidian Publish Themes | Themes | obsidian publish themes | M04 | planned |
-| [[B26-obsidian-to-html\|B26]] | Obsidian to HTML | Guide | obsidian to html | M04 | planned |
-| [[B27-markdown-wiki\|B27]] | Markdown Wiki (solution page) | Solution | markdown wiki | M05 | planned |
-| [[B28-obsidian-knowledge-base\|B28]] | Obsidian Knowledge Base (solution page) | Solution | obsidian knowledge base | M05 | planned |
-| [[B29-how-to-host-obsidian-website\|B29]] | How to Host an Obsidian Website | Guide | how to host obsidian website | M05 | planned |
-| [[B30-obsidian-wikilinks-website\|B30]] | Obsidian Wikilinks on a Website | Guide | obsidian wikilinks website | M05 | planned |
-| [[B31-obsidian-publish-self-hosted\|B31]] | Obsidian Publish Self-Hosted | Guide | obsidian publish self hosted | M05 | planned |
-| [[B32-obsidian-multilingual-website\|B32]] | Obsidian Multilingual Website | Guide | obsidian multilingual website | M06 | planned |
-| [[B33-foundry-hugo-in-typescript\|B33]] | Foundry: Hugo Reimplemented in TypeScript | Blog (technical) | (developer audience) | M06 | planned |
-| [[B34-mdfriday-on-product-hunt\|B34]] | MDFriday on Product Hunt | Blog (launch) | (launch) | M06 | planned |
-| [[B35-chinese-localization\|B35]] | Chinese localization (6 pages) | Localization | (Chinese core pages) | M06 | planned |
-| [[B36-markdown-website\|B36]] | Markdown Website (category page) | Solution | markdown website | M07 | planned |
-| [[B37-markdown-website-builder\|B37]] | Markdown Website Builder (Studio product page) | Product | markdown website builder | M07 | planned |
-| [[B38-publish-markdown-without-github\|B38]] | Publish Markdown Without GitHub | Guide | publish markdown without github | M07 | planned |
-| [[B39-markdown-docs\|B39]] | Markdown Docs (solution page) | Solution | markdown docs | M08 | planned |
-| [[B40-markdown-blog\|B40]] | Markdown Blog (solution page) | Solution | markdown blog | M08 | planned |
-| [[B41-hugo-alternative\|B41]] | Hugo Alternative | Compare | hugo alternative | M08 | planned |
-| [[B42-markdown-mermaid-website\|B42]] | Markdown Mermaid Website | Guide | markdown mermaid website | M09 | planned |
-| [[B43-markdown-latex-website\|B43]] | Markdown LaTeX Website | Guide | markdown latex website | M09 | planned |
-| [[B44-homepage-markdown-positioning\|B44]] | Homepage positioning: markdown to website | Homepage | markdown to website | M07 | planned |
-| [[B45-obsidian-newsletter\|B45]] | Obsidian Newsletter (solution page) | Solution | obsidian newsletter | M10 | planned |
-| [[B46-monetize-your-notes\|B46]] | Monetize Your Notes | Guide | monetize obsidian notes | M11 | planned |
-| [[B47-user-stories\|B47]] | User stories series (5 posts) | Story | (case studies) | M10–M12 | planned |
-| [[B48-state-of-obsidian-publishing-2027\|B48]] | State of Obsidian Publishing 2027 | Report | (original research) | M11 | planned |
-| [[B49-what-is-a-digital-garden\|B49]] | What Is a Digital Garden | Guide | what is a digital garden | M11 | planned |
-| [[B50-obsidian-course-notes-website\|B50]] | Obsidian Course Notes Website | Guide (seasonal) | obsidian for students publish notes | M11 | planned |
-| [[B51-homepage-platform-positioning\|B51]] | Homepage positioning: publishing platform | Homepage | markdown publishing platform | M12 | planned |
-| [[B52-year-one-review\|B52]] | MDFriday Year One review | Blog | (annual review) | M12 | planned |
-| [[B53-update-published-obsidian-notes\|B53]] | Update Published Obsidian Notes | Guide | update obsidian publish site | M04 | planned |
-| [[B54-obsidian-notes-broken-after-publishing\|B54]] | Obsidian Notes Broken After Publishing? What to Check First | Guide | obsidian notes broken after publishing | M05 | planned |
-| [[B55-obsidian-publishing-mistakes\|B55]] | Obsidian Publishing Mistakes | Blog | obsidian publishing mistakes | M06 | planned |
-| [[B56-quartz-vs-obsidian-publish-vs-digital-garden\|B56]] | Quartz vs Obsidian Publish vs Digital Garden | Compare | quartz vs obsidian publish | M04 | planned |
-| [[B57-obsidian-seo\|B57]] | SEO for Published Obsidian Notes | Guide | obsidian seo | M05 | planned |
-| [[B58-story-sunwei-xyz\|B58]] | Case study: Publishing a 255-Note Obsidian Garden with MDFriday | Story | (case study) | M03 | planned |
-| [[B59-story-help-center\|B59]] | Case study: How We Run MDFriday's Help Center on MDFriday | Story | (case study) | M02 | planned |
+| Brief                                                     | Page                                                            | Type             | Target keyword                         | Month   | Status      |
+| --------------------------------------------------------- | --------------------------------------------------------------- | ---------------- | -------------------------------------- | ------- | ----------- |
+| [[B00-guides-and-compare-hubs\|B00]]                      | Guides and Compare hub pages                                    | Hub              | (none — navigation page)               | M01     | in-progress |
+| [[B01-publish-obsidian-notes\|B01]]                       | How to Publish Obsidian Notes                                   | Guide (pillar)   | publish obsidian notes                 | M01     | in-progress |
+| [[B02-publish-obsidian-without-github\|B02]]              | Publish Obsidian Without GitHub                                 | Guide            | publish obsidian without github        | M01     | in-progress |
+| [[B03-publish-obsidian-folder\|B03]]                      | Publish an Obsidian Folder as a Website                         | Guide            | publish obsidian folder                | M01     | in-progress |
+| [[B04-obsidian-digital-garden\|B04]]                      | Obsidian Digital Garden (solution page)                         | Solution         | obsidian digital garden                | M01     | in-progress |
+| [[B05-share-obsidian-notes-solution\|B05]]                | Share Obsidian Notes (solution page)                            | Solution         | share obsidian notes                   | M01     | in-progress |
+| [[B06-share-obsidian-note\|B06]]                          | Share a Single Obsidian Note as a Web Page                      | Guide            | share obsidian note                    | M01     | in-progress |
+| [[B07-obsidian-publish-alternative\|B07]]                 | Obsidian Publish Alternative                                    | Compare          | obsidian publish alternative           | M02     | planned     |
+| [[B08-obsidian-website-builder\|B08]]                     | Obsidian Website Builder (product page)                         | Product          | obsidian website builder               | M02     | planned     |
+| [[B09-obsidian-to-website-homepage\|B09]]                 | Obsidian to Website (homepage)                                  | Homepage         | obsidian to website                    | M02     | planned     |
+| [[B10-pricing-page\|B10]]                                 | Pricing page                                                    | Pricing          | mdfriday pricing                       | M02     | planned     |
+| [[B11-obsidian-publish-custom-domain\|B11]]               | Obsidian Publish Custom Domain                                  | Guide            | obsidian publish custom domain         | M02     | planned     |
+| [[B12-obsidian-publish-free\|B12]]                        | Is Obsidian Publish Free? Cost and Free Ways to Publish         | Guide            | obsidian publish free                  | M02     | planned     |
+| [[B13-quartz-alternative\|B13]]                           | Quartz Alternative                                              | Compare          | quartz alternative                     | M03     | planned     |
+| [[B14-digital-garden-plugin-alternative\|B14]]            | Digital Garden Plugin Alternative                               | Compare          | digital garden plugin alternative      | M03     | planned     |
+| [[B15-move-from-obsidian-publish\|B15]]                   | Move from Obsidian Publish to MDFriday                          | Guide            | migrate from obsidian publish          | M03     | planned     |
+| [[B16-digital-garden-without-github\|B16]]                | Digital Garden Without GitHub                                   | Guide            | digital garden without github          | M03     | planned     |
+| [[B17-obsidian-website-examples\|B17]]                    | Obsidian Website Examples (showcase)                            | Showcase         | obsidian website examples              | M01–M12 | in-progress |
+| [[B18-friday-plugin-migration\|B18]]                      | Friday Plugin Migration Guide                                   | Trust            | (existing users)                       | M01     | in-progress |
+| [[B19-security-page\|B19]]                                | Security page                                                   | Trust            | (trust page)                           | M01     | in-progress |
+| [[B20-changelog\|B20]]                                    | Changelog                                                       | Trust            | (trust page)                           | M01     | in-progress |
+| [[B21-friday-plugin-end-of-support\|B21]]                 | Friday Plugin End of Support (announcement)                     | Blog             | (announcement)                         | M04     | planned     |
+| [[B22-start-a-digital-garden-2027\|B22]]                  | Start a Digital Garden in 2027                                  | Blog (seasonal)  | start a digital garden                 | M04     | planned     |
+| [[B23-flowershow-alternative\|B23]]                       | Flowershow Alternative                                          | Compare          | flowershow alternative                 | M04     | planned     |
+| [[B24-obsidian-website-without-coding\|B24]]              | Obsidian Website Without Coding                                 | Guide            | obsidian website without coding        | M04     | planned     |
+| [[B25-obsidian-publish-themes\|B25]]                      | Obsidian Publish Themes                                         | Themes           | obsidian publish themes                | M04     | planned     |
+| [[B26-obsidian-to-html\|B26]]                             | Obsidian to HTML                                                | Guide            | obsidian to html                       | M04     | planned     |
+| [[B27-markdown-wiki\|B27]]                                | Markdown Wiki (solution page)                                   | Solution         | markdown wiki                          | M05     | planned     |
+| [[B28-obsidian-knowledge-base\|B28]]                      | Obsidian Knowledge Base (solution page)                         | Solution         | obsidian knowledge base                | M05     | planned     |
+| [[B29-how-to-host-obsidian-website\|B29]]                 | How to Host an Obsidian Website                                 | Guide            | how to host obsidian website           | M05     | planned     |
+| [[B30-obsidian-wikilinks-website\|B30]]                   | Obsidian Wikilinks on a Website                                 | Guide            | obsidian wikilinks website             | M05     | planned     |
+| [[B31-obsidian-publish-self-hosted\|B31]]                 | Obsidian Publish Self-Hosted                                    | Guide            | obsidian publish self hosted           | M05     | planned     |
+| [[B32-obsidian-multilingual-website\|B32]]                | Obsidian Multilingual Website                                   | Guide            | obsidian multilingual website          | M06     | planned     |
+| [[B33-foundry-hugo-in-typescript\|B33]]                   | Foundry: Hugo Reimplemented in TypeScript                       | Blog (technical) | (developer audience)                   | M06     | planned     |
+| [[B34-mdfriday-on-product-hunt\|B34]]                     | MDFriday on Product Hunt                                        | Blog (launch)    | (launch)                               | M06     | planned     |
+| [[B35-chinese-localization\|B35]]                         | Chinese localization (6 pages)                                  | Localization     | (Chinese core pages)                   | M06     | planned     |
+| [[B36-markdown-website\|B36]]                             | Markdown Website (category page)                                | Solution         | markdown website                       | M07     | planned     |
+| [[B37-markdown-website-builder\|B37]]                     | Markdown Website Builder (Studio product page)                  | Product          | markdown website builder               | M07     | planned     |
+| [[B38-publish-markdown-without-github\|B38]]              | Publish Markdown Without GitHub                                 | Guide            | publish markdown without github        | M07     | planned     |
+| [[B39-markdown-docs\|B39]]                                | Markdown Docs (solution page)                                   | Solution         | markdown docs                          | M08     | planned     |
+| [[B40-markdown-blog\|B40]]                                | Markdown Blog (solution page)                                   | Solution         | markdown blog                          | M08     | planned     |
+| [[B41-hugo-alternative\|B41]]                             | Hugo Alternative                                                | Compare          | hugo alternative                       | M08     | planned     |
+| [[B42-markdown-mermaid-website\|B42]]                     | Markdown Mermaid Website                                        | Guide            | markdown mermaid website               | M09     | planned     |
+| [[B43-markdown-latex-website\|B43]]                       | Markdown LaTeX Website                                          | Guide            | markdown latex website                 | M09     | planned     |
+| [[B44-homepage-markdown-positioning\|B44]]                | Homepage positioning: markdown to website                       | Homepage         | markdown to website                    | M07     | planned     |
+| [[B45-obsidian-newsletter\|B45]]                          | Obsidian Newsletter (solution page)                             | Solution         | obsidian newsletter                    | M10     | planned     |
+| [[B46-monetize-your-notes\|B46]]                          | Monetize Your Notes                                             | Guide            | monetize obsidian notes                | M11     | planned     |
+| [[B47-user-stories\|B47]]                                 | User stories series (5 posts)                                   | Story            | (case studies)                         | M10–M12 | planned     |
+| [[B48-state-of-obsidian-publishing-2027\|B48]]            | State of Obsidian Publishing 2027                               | Report           | (original research)                    | M11     | planned     |
+| [[B49-what-is-a-digital-garden\|B49]]                     | What Is a Digital Garden                                        | Guide            | what is a digital garden               | M11     | planned     |
+| [[B50-obsidian-course-notes-website\|B50]]                | Obsidian Course Notes Website                                   | Guide (seasonal) | obsidian for students publish notes    | M11     | planned     |
+| [[B51-homepage-platform-positioning\|B51]]                | Homepage positioning: publishing platform                       | Homepage         | markdown publishing platform           | M12     | planned     |
+| [[B52-year-one-review\|B52]]                              | MDFriday Year One review                                        | Blog             | (annual review)                        | M12     | planned     |
+| [[B53-update-published-obsidian-notes\|B53]]              | Update Published Obsidian Notes                                 | Guide            | update obsidian publish site           | M04     | planned     |
+| [[B54-obsidian-notes-broken-after-publishing\|B54]]       | Obsidian Notes Broken After Publishing? What to Check First     | Guide            | obsidian notes broken after publishing | M05     | planned     |
+| [[B55-obsidian-publishing-mistakes\|B55]]                 | Obsidian Publishing Mistakes                                    | Blog             | obsidian publishing mistakes           | M06     | planned     |
+| [[B56-quartz-vs-obsidian-publish-vs-digital-garden\|B56]] | Quartz vs Obsidian Publish vs Digital Garden                    | Compare          | quartz vs obsidian publish             | M04     | planned     |
+| [[B57-obsidian-seo\|B57]]                                 | SEO for Published Obsidian Notes                                | Guide            | obsidian seo                           | M05     | planned     |
+| [[B58-story-sunwei-xyz\|B58]]                             | Case study: Publishing a 255-Note Obsidian Garden with MDFriday | Story            | (case study)                           | M03     | planned     |
+| [[B59-story-help-center\|B59]]                            | Case study: How We Run MDFriday's Help Center on MDFriday       | Story            | (case study)                           | M02     | planned     |
 
 ## Voice of the customer by page
 

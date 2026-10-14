@@ -6,15 +6,15 @@ platform: reddit
 url: "https://www.reddit.com/r/ObsidianMD/comments/1wc2ndt/how_to_publish_notes_with_text_color_established/"
 author: "Participant_Zero"
 title: "How to publish notes with text color established by the Fast-Text-Color plug in?"
-quote: "How to publish notes with text color established by the Fast-Text-Color plug in?"
+quote: "How do I make my published notes have teh same color as my notes in the apps? Currently, it just includes the color syntax for the plugin."
 need: "Note colors on the web match the Obsidian app after publishing"
-pain: "Only custom syntax shows and colors are lost; extra CSS doesn't help; no way to contact the plugin author"
+pain: "Published notes show the plugin’s raw color syntax instead of colors; adding CSS didn’t help and the plugin author can’t be reached"
 topic: "[[rendering-fidelity]]"
-persona: writer
+persona: unknown
 competitor: []
-fit: partial
+fit: not-supported
 intensity: pain
-decision: opportunity
+decision: watch
 reply: not-replied
 engagement: none
 reply_url:
@@ -27,17 +27,17 @@ tags:
 
 # How to publish notes with text color established by the Fast-Text-Color plug in?
 
-> How to publish notes with text color established by the Fast-Text-Color plug in?
+> How do I make my published notes have teh same color as my notes in the apps? Currently, it just includes the color syntax for the plugin.
 
 ## Context
 
-Reddit post by Participant_Zero on 2026-09-09. The raw card has no usable English user text, so the quote above is the post title.
+Reddit r/ObsidianMD post by Participant_Zero on 2026-09-09; 2 comments. Quote re-fetched verbatim from the post body on 2026-10-14 (was the title). The publishing tool isn’t named.
 
 ## Our assessment
 
-- Fit: partial · Intensity: pain · Decision: opportunity
-- MDFriday covers part of this; check the limits in the README before replying or citing it. Supports [[B54-obsidian-notes-broken-after-publishing|B54]].
-- Auto-triaged during the 2026-10-12 migration. Review before replying or citing.
+- Fit: not-supported (to verify) · Intensity: pain · Decision: watch
+- Hand-reviewed 2026-10-14 08:00: whether MDFriday renders Fast-Text-Color plugin syntax is not a confirmed fact, so fit partial→not-supported (to verify) and decision opportunity→watch per README. Persona writer→unknown. Supports [[B54-obsidian-notes-broken-after-publishing|B54]]. Cleared Auto-triaged.
+
 
 ## Follow-up log
 

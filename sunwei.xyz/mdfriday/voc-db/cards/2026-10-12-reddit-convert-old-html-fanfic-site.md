@@ -43,3 +43,5 @@ Reddit post in r/webdev by CivilBat2175 on 2026-10-12 (22:21 Asia/Shanghai). The
 ## Follow-up log
 
 - 2026-10-13 08:00 Asia/Shanghai: 5 new comments in-window (not from OP). Suggestions: Claude/any stack; try SSGs for structure; hire someone with Copilot; strip Mso-styles before CSS; AST linter for tags/hrefs. Still fyi (HTML migration, not Obsidian notes). No MDFriday fit.
+- 2026-10-13 16:00 Asia/Shanghai: 3 new comments in-window (not from OP; 2 deleted/removed). u/theshaheermalik: decide how readers will find stories first — index by author, fandom and tags plus search; convert pages to Markdown with pandoc and add front matter (title, author, fandom, rating, date). Still fyi.
+- 2026-10-14 00:00 Asia/Shanghai: 2 new comments in-window (not from OP; 1 removed). u/lepture: build a structured content model (story title, author, chapter number, publication date, original URL) to auto-generate chapter navigation, TOCs and search; Astro or Eleventy can render it, the hard part is extracting structure from the old HTML; asks whether chapters are separate files with predictable filenames. Still fyi.

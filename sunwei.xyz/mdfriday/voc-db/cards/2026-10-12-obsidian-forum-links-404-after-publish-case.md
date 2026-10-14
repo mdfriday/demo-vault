@@ -41,4 +41,5 @@ Obsidian Forum post by xexu on 2026-10-12 (22:14 Asia/Shanghai). Also writes: "T
 
 ## Follow-up log
 
-- (none yet)
+- 2026-10-14 00:00 Asia/Shanghai: 1 reply in-window (not from OP). u/CawlinTeffid (2026-10-13 23:22 Asia/Shanghai): hasn't seen casing listed as a limitation on the help site; suggests emailing support@obsidian.md if nobody answers. OP hasn't replied; still unresolved.
+- 2026-10-14: Third reply from u/dawni (2026-10-14 03:23 Asia/Shanghai): Linux filesystems are case sensitive; suggests picking links from Obsidian's suggester, using display text (`[[Setup.md|setup]]`), a case-insensitive (casefold) host option, lowercase filenames, or lowercase redirects. OP (xexu) has not replied; still unresolved. Thread now 3 posts.

@@ -6,16 +6,17 @@ platform: obsidian-forum
 url: "https://forum.obsidian.md/t/word-smith-the-ultimate-writing-studio-for-obsidian/118159"
 author: "Sadsnake1"
 title: "Word-Smith — writing studio for Obsidian"
-quote: "Plugin pitched as an ultimate Writing Studio spanning drafting-to-output workflows inside Obsidian."
-need: "Use the vault as a writing studio from draft to finished output"
-pain: "Long-form writing workflow is fragmented; looking for integrated writing/export"
+quote: "Here to present Word-Smith, a plugin that turns Obsidian into a dedicated writing studio. Something like Scrivener, but lightweight, free, and working within the vault you already have."
+need: "Plugin author presents a drafting-to-export writing studio (PDF, DOCX, MD, HTML) that works inside the existing vault"
+pain: "No user pain stated; this is a plugin launch post"
 topic: "[[export-beyond-the-web]]"
-persona: writer
-competitor: []
+persona: developer
+competitor:
+  - "Scrivener"
 fit: wont-do
-intensity: need
+intensity: preference
 decision: fyi
-reply: not-replied
+reply: not-appropriate
 engagement: none
 reply_url:
 last_touch:
@@ -27,17 +28,17 @@ tags:
 
 # Word-Smith — writing studio for Obsidian
 
-> Plugin pitched as an ultimate Writing Studio spanning drafting-to-output workflows inside Obsidian.
+> Here to present Word-Smith, a plugin that turns Obsidian into a dedicated writing studio. Something like Scrivener, but lightweight, free, and working within the vault you already have.
 
 ## Context
 
-Obsidian Forum post by Sadsnake1 on 2026-09-10. The quote is copied from the raw card's summary of the post; ellipses (…) mark cuts made when the card was written.
+Obsidian Forum plugin-launch post by Sadsnake1 (the plugin author) on 2026-09-10 (UTC). Quote re-fetched verbatim from the first post on 2026-10-14.
 
 ## Our assessment
 
-- Fit: wont-do · Intensity: need · Decision: fyi
-- Outside MDFriday's direction (website publishing). Good to know.
-- Auto-triaged during the 2026-10-12 migration. Review before replying or citing.
+- Fit: wont-do · Intensity: preference · Decision: fyi
+- Hand-reviewed 2026-10-14 08:00: author promoting their own writing/export plugin, not a user with a publishing need. Quote replaced with verbatim text (was a summary). Persona writer→developer, intensity need→preference, reply not-replied→not-appropriate, competitor +Scrivener. Cleared Auto-triaged.
+
 
 ## Follow-up log
 

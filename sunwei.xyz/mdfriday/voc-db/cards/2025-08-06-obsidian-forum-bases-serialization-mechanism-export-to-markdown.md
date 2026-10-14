@@ -43,4 +43,4 @@ Obsidian Forum post by dSebastien on 2025-08-06. The quote is copied from the ra
 
 ## Follow-up log
 
-- (none yet)
+- 2026-10-13: Thread bumped by another user (ilidio, not the OP) announcing a plugin, "Bases Serializer: freeze a Bases view into real Markdown" (https://forum.obsidian.md/t/bases-serializer-freeze-a-bases-view-into-real-markdown/119388), which writes a Base's results into the note as Markdown so they are visible to Publish and other tools. Third-party workaround for this need; still watch.

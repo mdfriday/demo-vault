@@ -6,20 +6,20 @@ platform: hn
 url: "https://news.ycombinator.com/item?id=49627889"
 author: "midzer"
 title: "Human-made webring for handcrafted personal websites"
-quote: "HN post linking https://human-made.site/ — a webring specifically for handcrafted personal websites."
-need: "People want discovery and community among handcrafted personal sites (anti-slop)."
-pain: "Indie web feels drowned by AI-generic sites; webrings re-emerge as trust filters."
-topic: "[[themes-and-customization]]"
-persona: writer
+quote: "Human-made webring for handcrafted personal websites"
+need: "Discovery and community among handcrafted personal websites"
+pain: "No pain stated; link post only"
+topic: "[[seo-discoverability-and-ai-crawlers]]"
+persona: unknown
 competitor: []
-fit: partial
-intensity: need
-decision: opportunity
-reply: not-replied
+fit: not-supported
+intensity: preference
+decision: fyi
+reply: not-appropriate
 engagement: none
 reply_url:
 last_touch:
-seo_brief: "[[B25-obsidian-publish-themes]]"
+seo_brief: 
 source: "marketing/voice-of-customer/personal-site/2026-09-09-hn-human-made-webring.md"
 tags:
   - voc
@@ -27,17 +27,17 @@ tags:
 
 # Human-made webring for handcrafted personal websites
 
-> HN post linking https://human-made.site/ — a webring specifically for handcrafted personal websites.
+> Human-made webring for handcrafted personal websites
 
 ## Context
 
-Hacker News post by midzer on 2026-09-09. The quote is copied from the raw card's summary of the post; ellipses (…) mark cuts made when the card was written.
+Hacker News link post by midzer on 2026-09-09 pointing to https://human-made.site/. No post text (10 points, 0 comments when re-checked on 2026-10-14), so the quote is the title.
 
 ## Our assessment
 
-- Fit: partial · Intensity: need · Decision: opportunity
-- MDFriday covers part of this; check the limits in the README before replying or citing it. Supports [[B25-obsidian-publish-themes|B25]].
-- Auto-triaged during the 2026-10-12 migration. Review before replying or citing.
+- Fit: not-supported · Intensity: preference · Decision: fyi
+- Hand-reviewed 2026-10-14 08:00: link share with no user voice or publishing need. Quote replaced with the title (old quote was a summary). Topic themes-and-customization→seo-discoverability-and-ai-crawlers, persona writer→unknown, fit partial→not-supported, intensity need→preference, decision opportunity→fyi, reply→not-appropriate (no discussion), seo_brief cleared (was B25). Cleared Auto-triaged.
+
 
 ## Follow-up log
 

@@ -26,6 +26,6 @@ A second brain is not a second inbox. It is a place where **ideas become reusabl
 
 ## See also
 
-- [[Digital Garden]]
+- [[Digital Garden/Productivity/Digital Garden]]
 - [[Prompt Engineering]]
 - [[Build in Public]]

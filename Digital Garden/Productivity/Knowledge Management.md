@@ -22,7 +22,7 @@ Good KM is mostly **deletion and linking**.
 
 ## From private to public
 
-Private notes become public assets when they’re clear enough for a stranger. That’s the bridge to a [[Digital Garden]] and to products like [[Share exactly what you see in Obsidian]].
+Private notes become public assets when they’re clear enough for a stranger. That’s the bridge to a [[Digital Garden/Productivity/Digital Garden]] and to products like [[Share exactly what you see in Obsidian]].
 
 Tasks for this vault:
 

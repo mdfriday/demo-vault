@@ -6,20 +6,21 @@ platform: hn
 url: "https://news.ycombinator.com/item?id=49576675"
 author: "Tomte"
 title: "Quarto 2 rewrite signal for docs publishing"
-quote: "HN discussion of Quarto 2 as 'a full rewrite of the Quarto CLI, written from the ground up in Rust' — https://opensource.posit.co/blog/2026-04-06_whats-next-quarto-2/"
-need: "Technical writers/scientists need a Markdown-centric docs/publishing toolchain (Quarto)."
+quote: "Quarto 2 is a full rewrite of the Quarto CLI, written from the ground up in Rust"
+need: "Track scientific/docs publishing toolchain changes (Quarto) as competitive landscape."
 pain: "Major CLI rewrites create upgrade anxiety; feature gaps (e.g. glossary) still requested."
 topic: "[[choosing-a-publishing-tool]]"
 persona: researcher
-competitor: []
-fit: supported
-intensity: need
-decision: opportunity
-reply: not-replied
+competitor:
+  - "Quarto"
+fit: not-supported
+intensity: preference
+decision: fyi
+reply: not-appropriate
 engagement: none
 reply_url:
 last_touch:
-seo_brief: "[[B01-publish-obsidian-notes]]"
+seo_brief:
 source: "marketing/voice-of-customer/alternatives/2026-09-05-hn-quarto-2.md"
 tags:
   - voc
@@ -27,17 +28,16 @@ tags:
 
 # Quarto 2 rewrite signal for docs publishing
 
-> HN discussion of Quarto 2 as 'a full rewrite of the Quarto CLI, written from the ground up in Rust' — https://opensource.posit.co/blog/2026-04-06_whats-next-quarto-2/
+> Quarto 2 is a full rewrite of the Quarto CLI, written from the ground up in Rust
 
 ## Context
 
-Hacker News post by Tomte on 2026-09-05. The quote is copied from the raw card's summary of the post; ellipses (…) mark cuts made when the card was written.
+Hacker News story by Tomte on 2026-09-05 linking a Posit blog post about Quarto 2. Quote is Tomte’s own first comment (verbatim via Algolia items API on 2026-10-15); the prior card paraphrase mixed summary with the blog URL.
 
 ## Our assessment
 
-- Fit: supported · Intensity: need · Decision: opportunity
-- MDFriday covers this today. Supports [[B01-publish-obsidian-notes|B01]].
-- Auto-triaged during the 2026-10-12 migration. Review before replying or citing.
+- Fit: not-supported · Intensity: preference · Decision: fyi
+- Hand-reviewed 2026-10-15 08:00: Quarto is a scientific docs toolchain, not an Obsidian/personal-site publish need. Auto-triage had fit supported / opportunity / B01 — corrected to not-supported / preference / fyi, seo_brief cleared, reply→not-appropriate, competitor +Quarto. Cleared Auto-triaged.
 
 ## Follow-up log
 

@@ -30,7 +30,7 @@ This is the page you’d open after **Publish Folder**. From here you can wander
 4. Open **Graph** when you want the map, not the path
 
 > [!abstract] Why a garden, not a blog
-> A blog is a stream. A garden is a map. Notes grow links over time — see [[Digital Garden]].
+> A blog is a stream. A garden is a map. Notes grow links over time — see [[Digital Garden/Productivity/Digital Garden]].
 
 ```mermaid
 mindmap

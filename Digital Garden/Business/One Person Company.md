@@ -22,7 +22,7 @@ A one-person company is not “do everything alone forever.” It is **own the c
 ## Leverage without a team
 
 - Public writing → [[Build in Public]] + [[Personal Branding]]
-- Knowledge base → [[Second Brain]] + [[Digital Garden]]
+- Knowledge base → [[Second Brain]] + [[Digital Garden/Productivity/Digital Garden]]
 - AI leverage → [[Claude Code]] + [[AI Agents]]
 
 | Hire / buy | Only when |

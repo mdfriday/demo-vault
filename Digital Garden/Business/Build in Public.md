@@ -22,7 +22,7 @@ Building in public is a distribution habit, not a personality type. Share **prog
 ## Cadence that doesn’t burn you out
 
 - Weekly: one artifact (note, clip, changelog)
-- Monthly: one deeper essay in the [[Digital Garden]]
+- Monthly: one deeper essay in the [[Digital Garden/Productivity/Digital Garden]]
 - Always: link back to a living note like [[Share exactly what you see in Obsidian]]
 
 ```mermaid

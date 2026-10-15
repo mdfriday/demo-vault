@@ -13,7 +13,7 @@ Audience is a privilege you earn by being useful on a schedule.
 
 - Solve one recurring problem for one clear person
 - Repeat the promise until it’s boring to you — and still helpful to them
-- Point every post back to a durable home: your [[Digital Garden]] or product
+- Point every post back to a durable home: your [[Digital Garden/Productivity/Digital Garden]] or product
 
 > [!warning]
 > Growth hacks without a promise create an audience that can’t be helped.

@@ -95,7 +95,7 @@ For early AI products, track **time saved per session** before you track ROI. Us
 - [[MCP]]
 - [[One Person Company]]
 - [[Personal Branding]]
-- [[Digital Garden]]
+- [[Digital Garden/Productivity/Digital Garden]]
 
 > [!quote]
 > Clarity compounds. Ship the clearest version you can explain in one screen.
